@@ -12,8 +12,6 @@ module cont_timer (
 );
 
 
-    //must be careful to set duration == 0 if we want the timer to operate for two seconds
-
 	logic start, active;
 	 
 	debounce trigger (
