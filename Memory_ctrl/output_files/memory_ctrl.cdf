@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/output_files/") File("memory_ctrl.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/output_files/") File("memory_ctrl.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

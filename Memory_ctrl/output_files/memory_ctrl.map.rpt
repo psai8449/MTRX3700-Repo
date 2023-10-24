@@ -1,5 +1,5 @@
 Analysis & Synthesis report for memory_ctrl
-Tue Oct 24 17:15:31 2023
+Tue Oct 24 18:37:14 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,12 +16,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. General Register Statistics
- 11. Source assignments for BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated
+ 11. Source assignments for BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated
  12. Parameter Settings for User Entity Instance: BRAM_IP:ram1|altsyncram:altsyncram_component
  13. altsyncram Parameter Settings by Entity Instance
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "BRAM_IP:ram1"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -47,7 +48,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 24 17:15:31 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 24 18:37:14 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; memory_ctrl                                 ;
 ; Top-level Entity Name              ; memory_ctrl                                 ;
@@ -167,25 +168,25 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; debounce.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/debounce.sv            ;         ;
-; memory_ctrl.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv         ;         ;
-; BRAM_IP.v                        ; yes             ; User Wizard-Generated File   ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v              ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                           ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                    ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                              ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                           ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                           ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                            ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                               ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                               ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                             ;         ;
-; db/altsyncram_e4p1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/db/altsyncram_e4p1.tdf ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; debounce.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/debounce.sv            ;         ;
+; memory_ctrl.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv         ;         ;
+; BRAM_IP.v                        ; yes             ; User Wizard-Generated File   ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                               ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                        ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                  ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                               ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                               ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                                   ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                                   ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                                 ;         ;
+; db/altsyncram_adp1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/db/altsyncram_adp1.tdf ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -229,7 +230,7 @@ refer to the applicable agreement for further details.
 ; |memory_ctrl                              ; 22 (5)              ; 24 (10)                   ; 256         ; 0            ; 0       ; 0         ; 50   ; 0            ; |memory_ctrl                                                                             ; memory_ctrl     ; work         ;
 ;    |BRAM_IP:ram1|                         ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_ctrl|BRAM_IP:ram1                                                                ; BRAM_IP         ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_ctrl|BRAM_IP:ram1|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_e4p1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_ctrl|BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated ; altsyncram_e4p1 ; work         ;
+;          |altsyncram_adp1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_ctrl|BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated ; altsyncram_adp1 ; work         ;
 ;    |debounce:U1|                          ; 17 (17)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_ctrl|debounce:U1                                                                 ; debounce        ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -240,7 +241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 ; Name                                                                                   ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
 +----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; 32           ; 8            ; 32           ; 8            ; 256  ; None ;
+; BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; None ;
 +----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
@@ -269,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated ;
+; Source assignments for BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -290,8 +291,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                       ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                       ;
 ; WIDTH_A                            ; 8                    ; Signed Integer                ;
-; WIDTHAD_A                          ; 5                    ; Signed Integer                ;
-; NUMWORDS_A                         ; 32                   ; Signed Integer                ;
+; WIDTHAD_A                          ; 10                   ; Signed Integer                ;
+; NUMWORDS_A                         ; 1024                 ; Signed Integer                ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                       ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                       ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                       ;
@@ -299,8 +300,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                       ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                       ;
 ; WIDTH_B                            ; 8                    ; Signed Integer                ;
-; WIDTHAD_B                          ; 5                    ; Signed Integer                ;
-; NUMWORDS_B                         ; 32                   ; Signed Integer                ;
+; WIDTHAD_B                          ; 10                   ; Signed Integer                ;
+; NUMWORDS_B                         ; 1024                 ; Signed Integer                ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                       ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                       ;
 ; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                       ;
@@ -333,7 +334,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_e4p1      ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_adp1      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -347,15 +348,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; BRAM_IP:ram1|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                    ;
 ;     -- WIDTH_A                            ; 8                                            ;
-;     -- NUMWORDS_A                         ; 32                                           ;
+;     -- NUMWORDS_A                         ; 1024                                         ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
 ;     -- WIDTH_B                            ; 8                                            ;
-;     -- NUMWORDS_B                         ; 32                                           ;
+;     -- NUMWORDS_B                         ; 1024                                         ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                       ;
 ;     -- OUTDATA_REG_B                      ; CLOCK0                                       ;
 ;     -- RAM_BLOCK_TYPE                     ; M9K                                          ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                     ;
 +-------------------------------------------+----------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BRAM_IP:ram1"                                                                                                                                          ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                            ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; rdaddress ; Input ; Warning  ; Input port expression (5 bits) is smaller than the input port (10 bits) it drives.  Extra input bit(s) "rdaddress[9..5]" will be connected to GND. ;
+; wraddress ; Input ; Warning  ; Input port expression (5 bits) is smaller than the input port (10 bits) it drives.  Extra input bit(s) "wraddress[9..5]" will be connected to GND. ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -397,24 +408,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 24 17:15:22 2023
+    Info: Processing started: Tue Oct 24 18:37:04 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memory_ctrl -c memory_ctrl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
-    Info (12023): Found entity 1: debounce File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/debounce.sv Line: 3
+    Info (12023): Found entity 1: debounce File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/debounce.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file memory_ctrl.sv
-    Info (12023): Found entity 1: memory_ctrl File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 4
+    Info (12023): Found entity 1: memory_ctrl File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file bram_ip.v
-    Info (12023): Found entity 1: BRAM_IP File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 39
-Info (12021): Found 1 design units, including 1 entities, in source file fifo.v
-    Info (12023): Found entity 1: fifo File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/fifo.v Line: 39
+    Info (12023): Found entity 1: BRAM_IP File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 39
 Info (12127): Elaborating entity "memory_ctrl" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at memory_ctrl.sv(52): truncated value with size 32 to match size of target (5) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 52
-Info (12128): Elaborating entity "BRAM_IP" for hierarchy "BRAM_IP:ram1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 22
-Info (12128): Elaborating entity "altsyncram" for hierarchy "BRAM_IP:ram1|altsyncram:altsyncram_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 88
-Info (12130): Elaborated megafunction instantiation "BRAM_IP:ram1|altsyncram:altsyncram_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 88
-Info (12133): Instantiated megafunction "BRAM_IP:ram1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 88
+Warning (10230): Verilog HDL assignment warning at memory_ctrl.sv(52): truncated value with size 32 to match size of target (5) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 52
+Info (12128): Elaborating entity "BRAM_IP" for hierarchy "BRAM_IP:ram1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 22
+Info (12128): Elaborating entity "altsyncram" for hierarchy "BRAM_IP:ram1|altsyncram:altsyncram_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 88
+Info (12130): Elaborated megafunction instantiation "BRAM_IP:ram1|altsyncram:altsyncram_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 88
+Info (12133): Instantiated megafunction "BRAM_IP:ram1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/BRAM_IP.v Line: 88
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
@@ -422,50 +431,52 @@ Info (12133): Instantiated megafunction "BRAM_IP:ram1|altsyncram:altsyncram_comp
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "32"
-    Info (12134): Parameter "numwords_b" = "32"
+    Info (12134): Parameter "numwords_a" = "1024"
+    Info (12134): Parameter "numwords_b" = "1024"
     Info (12134): Parameter "operation_mode" = "DUAL_PORT"
     Info (12134): Parameter "outdata_aclr_b" = "NONE"
     Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
     Info (12134): Parameter "power_up_uninitialized" = "FALSE"
     Info (12134): Parameter "ram_block_type" = "M9K"
     Info (12134): Parameter "read_during_write_mode_mixed_ports" = "OLD_DATA"
-    Info (12134): Parameter "widthad_a" = "5"
-    Info (12134): Parameter "widthad_b" = "5"
+    Info (12134): Parameter "widthad_a" = "10"
+    Info (12134): Parameter "widthad_b" = "10"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_b" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_e4p1.tdf
-    Info (12023): Found entity 1: altsyncram_e4p1 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/db/altsyncram_e4p1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_e4p1" for hierarchy "BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:U1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at debounce.sv(16): truncated value with size 32 to match size of target (12) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/debounce.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_adp1.tdf
+    Info (12023): Found entity 1: altsyncram_adp1 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/db/altsyncram_adp1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_adp1" for hierarchy "BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:U1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at debounce.sv(16): truncated value with size 32 to match size of target (12) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/debounce.sv Line: 16
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
+Info (17036): Removed 5 MSB VCC or GND address nodes from RAM block "BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ALTSYNCRAM" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/db/altsyncram_adp1.tdf Line: 33
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 8
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 8
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 8
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
-    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 8
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 8
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 8
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
+    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 9
 Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 27 output pins
     Info (21061): Implemented 28 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4794 megabytes
-    Info: Processing ended: Tue Oct 24 17:15:31 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Tue Oct 24 18:37:14 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:08
 
 

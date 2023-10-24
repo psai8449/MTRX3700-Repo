@@ -1,5 +1,5 @@
 Fitter report for memory_ctrl
-Tue Oct 24 17:15:43 2023
+Tue Oct 24 18:37:26 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Oct 24 17:15:43 2023       ;
+; Fitter Status                      ; Successful - Tue Oct 24 18:37:26 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; memory_ctrl                                 ;
 ; Top-level Entity Name              ; memory_ctrl                                 ;
@@ -156,7 +156,7 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -1162,7 +1162,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/output_files/memory_ctrl.pin.
+The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/output_files/memory_ctrl.pin.
 
 
 +---------------------------------------------------------------------------+
@@ -2224,7 +2224,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; |memory_ctrl                              ; 28 (10)     ; 24 (10)                   ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 50   ; 0            ; 4 (0)        ; 6 (5)             ; 18 (5)           ; |memory_ctrl                                                                             ; memory_ctrl     ; work         ;
 ;    |BRAM_IP:ram1|                         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |memory_ctrl|BRAM_IP:ram1                                                                ; BRAM_IP         ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |memory_ctrl|BRAM_IP:ram1|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_e4p1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |memory_ctrl|BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated ; altsyncram_e4p1 ; work         ;
+;          |altsyncram_adp1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |memory_ctrl|BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated ; altsyncram_adp1 ; work         ;
 ;    |debounce:U1|                          ; 18 (18)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 1 (1)             ; 13 (13)          ; |memory_ctrl|debounce:U1                                                                 ; debounce        ; work         ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -2307,29 +2307,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[16]                                                                                          ;                   ;         ;
 ; SW[17]                                                                                          ;                   ;         ;
 ; SW[0]                                                                                           ;                   ;         ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ;      - LEDR[0]~output                                                                           ; 0                 ; 6       ;
 ; SW[1]                                                                                           ;                   ;         ;
 ;      - LEDR[1]~output                                                                           ; 0                 ; 6       ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; SW[2]                                                                                           ;                   ;         ;
 ;      - LEDR[2]~output                                                                           ; 0                 ; 6       ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; SW[3]                                                                                           ;                   ;         ;
 ;      - LEDR[3]~output                                                                           ; 1                 ; 6       ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
 ; SW[4]                                                                                           ;                   ;         ;
 ;      - LEDR[4]~output                                                                           ; 1                 ; 6       ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
 ; SW[5]                                                                                           ;                   ;         ;
 ;      - LEDR[5]~output                                                                           ; 0                 ; 6       ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; SW[6]                                                                                           ;                   ;         ;
 ;      - LEDR[6]~output                                                                           ; 0                 ; 6       ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; SW[7]                                                                                           ;                   ;         ;
 ;      - LEDR[7]~output                                                                           ; 0                 ; 6       ;
-;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
+;      - BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; KEY[0]                                                                                          ;                   ;         ;
 ;      - read_address[0]                                                                          ; 0                 ; 0       ;
 ;      - read_address[1]                                                                          ; 0                 ; 0       ;
@@ -2375,7 +2375,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Name                                                                                   ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
 +----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_e4p1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 32           ; 8            ; 32           ; 8            ; yes                    ; no                      ; yes                    ; yes                     ; 256  ; 32                          ; 8                           ; 32                          ; 8                           ; 256                 ; 1    ; None ; M9K_X64_Y70_N0 ; Old data             ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; BRAM_IP:ram1|altsyncram:altsyncram_component|altsyncram_adp1:auto_generated|ALTSYNCRAM ; M9K  ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; yes                     ; 8192 ; 32                          ; 8                           ; 32                          ; 8                           ; 256                 ; 1    ; None ; M9K_X64_Y70_N0 ; Old data             ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 +----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -2703,7 +2703,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 6
+Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 6
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -3197,7 +3197,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3205,11 +3205,11 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 6
-Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/output_files/memory_ctrl.fit.smsg
+    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/memory_ctrl.sv Line: 6
+Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/output_files/memory_ctrl.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 482 warnings
-    Info: Peak virtual memory: 5822 megabytes
-    Info: Processing ended: Tue Oct 24 17:15:44 2023
+    Info: Peak virtual memory: 5819 megabytes
+    Info: Processing ended: Tue Oct 24 18:37:27 2023
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:10
 
@@ -3217,6 +3217,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 482 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/Memory_ctrl/output_files/memory_ctrl.fit.smsg.
+The suppressed messages can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Memory_ctrl/output_files/memory_ctrl.fit.smsg.
 
 

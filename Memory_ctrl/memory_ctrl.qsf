@@ -58,7 +58,6 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE debounce.sv
 set_global_assignment -name SYSTEMVERILOG_FILE memory_ctrl.sv
 set_global_assignment -name QIP_FILE BRAM_IP.qip
-set_global_assignment -name QIP_FILE fifo.qip
 set_location_assignment PIN_D2 -to AUD_ADCDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT
 set_location_assignment PIN_C2 -to AUD_ADCLRCK
