@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 24 17:15:31 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : memory_ctrl
+Top-level Entity Name : memory_ctrl
+Family : Cyclone IV E
+Total logic elements : 28
+    Total combinational functions : 22
+    Dedicated logic registers : 24
+Total registers : 24
+Total pins : 50
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
