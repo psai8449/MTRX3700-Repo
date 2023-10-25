@@ -1,5 +1,5 @@
 Assembler report for DE2_115_IR
-Sun Oct 22 19:30:28 2023
+Wed Oct 25 17:17:23 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,8 +10,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.sof
-  6. Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.pof
+  5. Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.sof
+  6. Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 22 19:30:28 2023 ;
+; Assembler Status      ; Successful - Wed Oct 25 17:17:23 2023 ;
 ; Revision Name         ; DE2_115_IR                            ;
 ; Top-level Entity Name ; DE2_115_IR                            ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,35 +53,35 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                              ;
-+------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                              ;
-+------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.sof ;
-; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.pof ;
-+------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                  ;
++----------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                  ;
++----------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.sof ;
+; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.pof ;
++----------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.sof ;
-+----------------+---------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                         ;
-+----------------+---------------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x005992C2                                                                                                                      ;
-; Checksum       ; 0x005992C2                                                                                                                      ;
-+----------------+---------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.sof ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                             ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x005A6349                                                                                                                          ;
+; Checksum       ; 0x005A6349                                                                                                                          ;
++----------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major Project/GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.pof ;
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                                                     ;
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode      ; 0x00000000                                                                                                                  ;
-; Checksum           ; 0x49B1D6C6                                                                                                                  ;
-; Compression Ratio  ; 1                                                                                                                           ;
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/DE2_115_IR/DE2_115_IR.pof ;
++--------------------+---------------------------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                                         ;
++--------------------+---------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode      ; 0x00000000                                                                                                                      ;
+; Checksum           ; 0x49B22886                                                                                                                      ;
+; Compression Ratio  ; 1                                                                                                                               ;
++--------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -90,15 +90,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 22 19:30:24 2023
+    Info: Processing started: Wed Oct 25 17:17:17 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE2_115_IR -c DE2_115_IR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4689 megabytes
-    Info: Processing ended: Sun Oct 22 19:30:28 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4691 megabytes
+    Info: Processing ended: Wed Oct 25 17:17:23 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:02
 
 

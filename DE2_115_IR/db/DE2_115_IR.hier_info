@@ -5,27 +5,27 @@ CLOCK3_50 => ~NO_FANOUT~
 ENETCLK_25 => ~NO_FANOUT~
 SMA_CLKIN => ~NO_FANOUT~
 SMA_CLKOUT <= <GND>
-LEDG[0] <= <GND>
-LEDG[1] <= <GND>
+LEDG[0] <= send[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= send[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[2] <= <GND>
-LEDG[3] <= <GND>
-LEDG[4] <= <GND>
-LEDG[5] <= <GND>
+LEDG[3] <= send[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[4] <= send[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[5] <= send[5].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[6] <= <GND>
-LEDG[7] <= <GND>
+LEDG[7] <= send[7].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[8] <= <GND>
-LEDR[0] <= <GND>
-LEDR[1] <= <GND>
-LEDR[2] <= <GND>
-LEDR[3] <= <GND>
-LEDR[4] <= <GND>
-LEDR[5] <= <GND>
-LEDR[6] <= <GND>
-LEDR[7] <= <GND>
-LEDR[8] <= <GND>
-LEDR[9] <= <GND>
-LEDR[10] <= <GND>
-LEDR[11] <= <GND>
+LEDR[0] <= hex_data[16].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= hex_data[17].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= hex_data[18].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= hex_data[19].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= hex_data[20].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= hex_data[21].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= hex_data[22].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= hex_data[23].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= hex_data[24].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= hex_data[25].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[10] <= hex_data[26].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[11] <= hex_data[27].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[12] <= <GND>
 LEDR[13] <= <GND>
 LEDR[14] <= <GND>
@@ -488,7 +488,7 @@ EX_IO[6] <> EX_IO[6]
 
 
 |DE2_115_IR|pll1:u0
-inclk0 => sub_wire4[0].IN1
+inclk0 => sub_wire1[0].IN1
 c0 <= altpll:altpll_component.clk
 c1 <= altpll:altpll_component.clk
 

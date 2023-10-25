@@ -476,6 +476,54 @@ assign	OTG_LSPEED	=	1'bz;
 //		else
 //		    data_read <= 0;
 //	end
+
+//output [17:0] LEDR;
+reg [7:0] send;
+
+//assign LEDR[8:0] = send[8:0];
+reg [11:0] prev_data;
+
+assign LEDR[11:0] = hex_data[27:16];
+
+assign LEDG[7:0] = send[7:0];
+
+always @( * ) begin
+	
+	if ( hex_data != prev_data ) begin
+		case(hex_data[27:16]) 
+			12'b1101_0000_0010: begin		// 2
+				send[7:0] = 8'b0000_0010;
+			end
+			
+			12'b1011_0000_0100: begin		// 4
+				send[7:0] = 8'b0000_1000;
+			end
+			
+			12'b1010_0000_0101: begin		// 5
+				send[7:0] = 8'b0001_0000;
+			end
+			
+			12'b1001_0000_0110: begin		// 6
+				send[7:0] = 8'b0010_0000;
+			end
+			
+			12'b0111_0000_1000: begin		// 8
+				send[7:0] = 8'b1000_0000;
+			end
+			
+			12'b1111_0000_0000: begin		// 0 
+				send[7:0] = 8'b0000_0001;
+			end
+			
+			default: begin
+				send[7:0] = 8'b0000_0000;
+			end
+		endcase
+		
+		prev_data <= hex_data;
+		
+	end
+end
  
 pll1 u0(
 		.inclk0(CLOCK_50),
@@ -533,5 +581,7 @@ SEG_HEX u9(//display the HEX on HEX7
            .oHEX_D(HEX7)
            );           
 
+			  
+	  
 endmodule
 
