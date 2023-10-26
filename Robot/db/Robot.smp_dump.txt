@@ -1,9 +1,13 @@
 
-State Machine - |top_level|uart_rx:uart_rx_u|state
-Name state.CLEANUP state.STOP_BIT state.DATA_BITS state.WAIT state.START_BIT state.IDLE 
-state.IDLE 0 0 0 0 0 0 
-state.START_BIT 0 0 0 0 1 1 
-state.WAIT 0 0 0 1 0 1 
-state.DATA_BITS 0 0 1 0 0 1 
-state.STOP_BIT 0 1 0 0 0 1 
-state.CLEANUP 1 0 0 0 0 1 
+State Machine - |top_level|uart_tx:uart_tx_u|state
+Name state.STOP state.DATA state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.DATA 0 1 0 1 
+state.STOP 1 0 0 1 
+
+State Machine - |top_level|IR_RECEIVE:u1|state
+Name state.IDLE state.DATAREAD state.GUIDANCE 
+state.IDLE 0 0 0 
+state.GUIDANCE 1 0 1 
+state.DATAREAD 1 1 0 
