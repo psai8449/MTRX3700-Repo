@@ -121,10 +121,10 @@ logic tx_valid;
 logic tx_ready;
 
 assign tx_valid = 1'b1;
-assign tx_byte[7:0] = send[7:0];
+assign tx_byte = send;
 
 uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
-	.clk 				(CLOCK50),
+	.clk 				(CLOCK_50),
 	.tx				(EX_IO[2]),
 	.valid			(tx_valid),
 	.ready			(tx_ready),
