@@ -33,7 +33,7 @@ logic [7:0] send;
 logic [11:0] prev_data;
 
 assign LEDR[11:0] = hex_data[27:16];
-assign LEDG[7:0] = send[7:0];
+//assign LEDG[7:0] = send[7:0];
 
 always @( * ) begin
 	
@@ -71,6 +71,22 @@ always @( * ) begin
 		prev_data <= hex_data;
 		
 	end
+end
+
+logic [2:0] binary;
+
+always @( * ) begin
+  case (send)
+    8'b00000001: binary = 3'b000;
+    8'b00000010: binary = 3'b001;
+    8'b00000100: binary = 3'b010;
+    8'b00001000: binary = 3'b011;
+    8'b00010000: binary = 3'b100;
+    8'b00100000: binary = 3'b101;
+    8'b01000000: binary = 3'b110;
+    8'b10000000: binary = 3'b111;
+    default: binary = 3'b000; // Default case, you can choose any value
+  endcase
 end
 
 logic clk50;
@@ -121,7 +137,8 @@ logic tx_valid;
 logic tx_ready;
 
 assign tx_valid = 1'b1;
-assign tx_byte = send;
+assign tx_byte = {SW[7:6], binary, 3'b000};
+assign LEDG = tx_byte;
 
 uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
 	.clk 				(CLOCK_50),
