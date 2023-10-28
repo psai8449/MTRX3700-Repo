@@ -1,7 +1,11 @@
+// The intention of this code is to simulate the signals the fpga would receive and then 
+// transmit as an 8-bit value
 
+// 8-bit value is produced here using GPIO pins which is then transmitted via serial
 
-int i, j;
+int i, j, v;
 bool p;
+byte a; 
 
 void setup() {
   // put your setup code here, to run once:
@@ -13,31 +17,29 @@ void setup() {
   
   p = 0;
   
-  byte a [8]; 
-  for (j = 0; j < 8; j++){
-    a[j] = 1 << j;
+  for (j = 2; j < 10; j++) {  // initialises all of input GPIO pins
+    pinMode(j, OUTPUT);
   }
   
-}`
+}
 
 void loop() {
-  // put your main code here, to run repeatedly
+
   if ( p == 1) {
-    digitalWrite(LED_BUILTIN, HIGH);
-    
-    if ( i == 8 ){
-      i = 0;
+    digitalWrite(LED_BUILTIN, HIGH);  // communicates that the board should be transmitting
+
+    for (v = 2; v < 10; v++) {    // writes individual bits of the byte: "a" using bitWrite
+      bitWrite(a, v - 2 ,digitalRead(v));
     }
     
-    Serial2.write(a[i]);
-    Serial.write(a[i]);
-    i++;
+    Serial2.write(char(a));
+    Serial.write(char(a));    // to display on serial monitor
   }
   else {
     digitalWrite(LED_BUILTIN, LOW);
   }
   
-  delay(1000);
+  delay(200);
   p = !p;
   
 }
