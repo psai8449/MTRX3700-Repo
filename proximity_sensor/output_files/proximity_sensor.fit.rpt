@@ -1,5 +1,5 @@
 Fitter report for proximity_sensor
-Sat Oct 28 11:19:28 2023
+Sat Oct 28 15:29:58 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Oct 28 11:19:28 2023       ;
+; Fitter Status                      ; Successful - Sat Oct 28 15:29:58 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; proximity_sensor                            ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -3410,10 +3410,10 @@ Warning (169064): Following 36 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
 Info (144001): Generated suppressed messages file C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/output_files/proximity_sensor.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 484 warnings
-    Info: Peak virtual memory: 5841 megabytes
-    Info: Processing ended: Sat Oct 28 11:19:28 2023
+    Info: Peak virtual memory: 5838 megabytes
+    Info: Processing ended: Sat Oct 28 15:29:58 2023
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +----------------------------+

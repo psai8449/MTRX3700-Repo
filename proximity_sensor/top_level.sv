@@ -11,6 +11,21 @@ module top_level(
   assign echo = GPIO[35];
   assign GPIO[34] = trigger;
 
+  debounce reset_edge(
+    .clk(CLOCK_50),
+    .button(!KEY[2]),
+    .button_edge(reset)
+  );
+
+  sensor_driver u0(
+    .clk(CLOCK_50),
+    .rst(reset),
+    .measure(start),
+    .echo(echo),
+    .trig(trigger), 
+    .distance(LEDR)
+  );
+  
   // Add a timer for measurements
   always @(posedge CLOCK_50) begin
     if (measurement_trigger)
@@ -19,27 +34,15 @@ module top_level(
       start <= 1'b0;
   end
 
-
-
-  sensor_driver u0(
-    .clk(CLOCK_50),
-    .rst(reset),
-    .measure(start), // Measure on trigger
-    .echo(echo),
-    .trig(trigger), 
-    .distance(LEDR)
-  );
-
-  // Add a 0.5-second timer
   reg [31:0] counter = 0;
-  parameter COUNT_MAX = 25_000_000; // Adjust for your CLOCK_50 frequency
+  parameter COUNT_MAX = 25_000_000; // currently set to pulse every 0.5 seconds
 
   always @(posedge CLOCK_50) begin
     if (reset) begin
-      measurement_trigger <= 1'b0; // Reset the measurement trigger
+      measurement_trigger <= 1'b0; // Reset the trigger
       counter <= 0;
     end else if (measurement_trigger) begin
-      measurement_trigger <= 1'b0; // Reset the trigger after measurement
+      measurement_trigger <= 1'b0; // Reset the trigger
       counter <= 0;
     end else begin
       if (counter == COUNT_MAX) begin
@@ -50,11 +53,5 @@ module top_level(
       end
     end
   end
-//  
-//  debounce reset_edge(
-//    .clk(CLOCK_50),
-//    .button(!KEY[2]),  // Changed to KEY[2] for reset
-//    .button_edge(reset)
-//  );
   
 endmodule

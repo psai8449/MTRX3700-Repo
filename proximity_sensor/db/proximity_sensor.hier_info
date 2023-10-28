@@ -39,14 +39,14 @@ KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => _.IN1
 KEY[3] => ~NO_FANOUT~
-LEDR[0] << sensor_driver:u0.distance
-LEDR[1] << sensor_driver:u0.distance
-LEDR[2] << sensor_driver:u0.distance
-LEDR[3] << sensor_driver:u0.distance
-LEDR[4] << sensor_driver:u0.distance
-LEDR[5] << sensor_driver:u0.distance
-LEDR[6] << sensor_driver:u0.distance
-LEDR[7] << sensor_driver:u0.distance
+LEDR[0] <= sensor_driver:u0.distance
+LEDR[1] <= sensor_driver:u0.distance
+LEDR[2] <= sensor_driver:u0.distance
+LEDR[3] <= sensor_driver:u0.distance
+LEDR[4] <= sensor_driver:u0.distance
+LEDR[5] <= sensor_driver:u0.distance
+LEDR[6] <= sensor_driver:u0.distance
+LEDR[7] <= sensor_driver:u0.distance
 
 
 |top_level|debounce:reset_edge

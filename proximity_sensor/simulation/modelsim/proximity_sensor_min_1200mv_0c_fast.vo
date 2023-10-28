@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "10/28/2023 11:19:37"
+// DATE "10/28/2023 15:30:07"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -34,7 +34,7 @@ module top_level (
 	KEY,
 	LEDR);
 input 	CLOCK_50;
-output 	[35:0] GPIO;
+inout 	[35:0] GPIO;
 input 	[3:0] KEY;
 output 	[7:0] LEDR;
 

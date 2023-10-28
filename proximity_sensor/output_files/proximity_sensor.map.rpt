@@ -1,5 +1,5 @@
 Analysis & Synthesis report for proximity_sensor
-Sat Oct 28 11:19:13 2023
+Sat Oct 28 15:29:43 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 28 11:19:13 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 28 15:29:43 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; proximity_sensor                            ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -434,7 +434,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Oct 28 11:19:04 2023
+    Info: Processing started: Sat Oct 28 15:29:33 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proximity_sensor -c proximity_sensor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -445,8 +445,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file sensor_
 Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
     Info (12023): Found entity 1: debounce File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/debounce.sv Line: 1
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:reset_edge" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 26
-Info (12128): Elaborating entity "sensor_driver" for hierarchy "sensor_driver:u0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 35
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:reset_edge" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 18
+Info (12128): Elaborating entity "sensor_driver" for hierarchy "sensor_driver:u0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 27
 Info (278001): Inferred 1 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "sensor_driver:u0|Mult0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
 Info (12130): Elaborated megafunction instantiation "sensor_driver:u0|lpm_mult:Mult0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
@@ -519,9 +519,9 @@ Info (21057): Implemented 204 device resources after synthesis - the final resou
     Info (21061): Implemented 151 logic cells
     Info (21062): Implemented 4 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Sat Oct 28 11:19:13 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Sat Oct 28 15:29:43 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 
