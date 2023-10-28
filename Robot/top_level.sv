@@ -32,6 +32,30 @@ logic [31:0] hex_data;
 logic [7:0] send;
 logic [11:0] prev_data;
 
+logic clk50;
+
+pll1 u0(
+	.inclk0		(CLOCK_50),
+	//irda clock 50M 
+	.c0			(clk50),          
+//	.c1			()
+);
+
+IR_RECEIVE u1(
+	///clk 50MHz////
+	.iCLK			(clk50), 
+	//reset          
+	.iRST_n		(KEY[0]),        
+	//IRDA code input
+	.iIRDA		(IRDA_RXD), 
+	//read command      
+	//.iREAD(data_read),
+	//data ready      					
+	.oDATA_READY(data_ready),
+	//decoded data 32bit
+	.oDATA		(hex_data)        
+);
+
 assign LEDR[11:0] = hex_data[27:16];
 //assign LEDG[7:0] = send[7:0];
 
@@ -99,29 +123,7 @@ always @( * ) begin
   endcase
 end
 
-logic clk50;
 
-pll1 u0(
-	.inclk0		(CLOCK_50),
-	//irda clock 50M 
-	.c0			(clk50),          
-//	.c1			()
-);
-
-IR_RECEIVE u1(
-	///clk 50MHz////
-	.iCLK			(clk50), 
-	//reset          
-	.iRST_n		(KEY[0]),        
-	//IRDA code input
-	.iIRDA		(IRDA_RXD), 
-	//read command      
-	//.iREAD(data_read),
-	//data ready      					
-	.oDATA_READY(data_ready),
-	//decoded data 32bit
-	.oDATA		(hex_data)        
-);
 	
 	
 //***********************************************************************

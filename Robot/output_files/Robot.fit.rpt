@@ -1,5 +1,5 @@
 Fitter report for Robot
-Sat Oct 28 16:36:18 2023
+Sat Oct 28 20:40:56 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Oct 28 16:36:18 2023       ;
+; Fitter Status                      ; Successful - Sat Oct 28 20:40:56 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Robot                                       ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -163,8 +163,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
-;     Processors 3-4         ;   0.4%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processors 3-4         ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -2963,7 +2963,7 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'Rob
 Info (332144): No user constrained generated clocks found in the design
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332125): Found combinational loop of 4 nodes File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 40
+Warning (332125): Found combinational loop of 4 nodes File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 64
     Warning (332126): Node "Equal0~8|combout"
     Warning (332126): Node "Equal0~3|datad"
     Warning (332126): Node "Equal0~3|combout"
@@ -3446,7 +3446,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -3460,7 +3460,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3487,10 +3487,10 @@ Warning (169064): Following 7 pins have no output enable or a GND or VCC output 
     Info (169065): Pin EX_IO[2] has a permanently enabled output enable File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 9
 Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 480 warnings
-    Info: Peak virtual memory: 5712 megabytes
-    Info: Processing ended: Sat Oct 28 16:36:18 2023
+    Info: Peak virtual memory: 5692 megabytes
+    Info: Processing ended: Sat Oct 28 20:40:56 2023
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+

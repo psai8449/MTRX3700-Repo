@@ -7,7 +7,6 @@ source_file = 1, C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Ma
 source_file = 1, C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/BRAM_IP.qip
 source_file = 1, C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/BRAM_IP.v
 source_file = 1, C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/fsm.sv
-source_file = 1, C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/ir_interpreter.sv
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_pll.inc
