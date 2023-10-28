@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "LEDG[1]",
+					"strict" : false
+				},
+				{
 					"name" : "LEDG[3]",
 					"strict" : false
 				},
@@ -13,10 +17,6 @@
 				},
 				{
 					"name" : "LEDG[5]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDG[6]",
 					"strict" : false
 				},
 				{
@@ -80,23 +80,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "GPIO[5]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[6]",
+					"strict" : false
+				},
+				{
 					"name" : "GPIO[7]",
-					"strict" : false
-				},
-				{
-					"name" : "GPIO[8]",
-					"strict" : false
-				},
-				{
-					"name" : "GPIO[9]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
 					"strict" : false
 				},
 				{
@@ -105,6 +97,14 @@
 				},
 				{
 					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
 					"strict" : false
 				},
 				{

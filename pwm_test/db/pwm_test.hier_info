@@ -1,0 +1,32 @@
+|top_level
+CLOCK_50 => CLOCK_50.IN1
+LEDG[0] << pwm:u1.pwm_out
+LEDG[1] << <GND>
+LEDG[2] << <GND>
+LEDG[3] << <GND>
+LEDG[4] << <GND>
+LEDG[5] << <GND>
+LEDG[6] << <GND>
+LEDG[7] << <GND>
+LEDG[8] << <GND>
+
+
+|top_level|pwm:u1
+clk => cmp.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+rst => ~NO_FANOUT~
+pwm_out <= pwm_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

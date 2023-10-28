@@ -29,18 +29,21 @@ logic [31:0] IR_input;
 //);
 
 //**************************** Motor Control ***************************
-logic PWM;
-assign GPIO[8] = PWM;
-assign GPIO[9] = PWM;
 
-DualMotorControlFinal motor1 (
+
+Motor_ctrl_redone motor1 (
     .clk			(CLOCK_50),                // System Clock  
     .IR_input	(send),
-    .pwm			(PWM),
-    .ina1		(GPIO[4]),
-	 .inb1		(GPIO[6]),
-	 .ina2		(GPIO[5]),
-	 .inb2		(GPIO[7])  // Direction controls for two motors
+	 
+	 .enable1	(GPIO[3]),
+	 .pwm1		(GPIO[9]),
+    .ina1		(GPIO[5]),
+	 .inb1		(GPIO[7]),
+	 
+	 .enable2	(GPIO[2]),
+	 .pwm2		(GPIO[8]),
+	 .ina2		(GPIO[4]),
+	 .inb2		(GPIO[6])  // Direction controls for two motors
 );
 
 //**********************************************************************
@@ -77,33 +80,34 @@ IR_RECEIVE u1(
 
 assign LEDR[11:0] = hex_data[27:16];
 //assign LEDG[7:0] = send[7:0];
+assign LEDG = send;
 
 always_ff @( CLOCK_50 ) begin
 	
 	if ( hex_data != prev_data ) begin
 		case(hex_data[27:16]) 
 			12'b1101_0000_0010: begin		// 2	Forwards
-				send[7:0] = 8'b0000_0010;
+				send[7:0] <= 8'b0000_0010;
 			end
 			
 			12'b1011_0000_0100: begin		// 4	Left
-				send[7:0] = 8'b0000_1000;
+				send[7:0] <= 8'b0000_1000;
 			end
 			
 			12'b1010_0000_0101: begin		// 5	Brake??
-				send[7:0] = 8'b0001_0000;
+				send[7:0] <= 8'b0001_0000;
 			end
 			
 			12'b1001_0000_0110: begin		// 6	Right
-				send[7:0] = 8'b0010_0000;
+				send[7:0] <= 8'b0010_0000;
 			end
 			
 			12'b0111_0000_1000: begin		// 8	Backwards
-				send[7:0] = 8'b1000_0000;
+				send[7:0] <= 8'b1000_0000;
 			end
 			
 			default: begin
-				send[7:0] = 8'b0000_0000;
+				send[7:0] <= 8'b0000_0000;
 			end
 				
 		endcase
@@ -112,29 +116,21 @@ always_ff @( CLOCK_50 ) begin
 		
 	end
 	
-	else begin
-	
-		prev_data <= 16'b0000_0000_0000_0000;
-		send[7:0] = 8'b0000_0000;
-		
-	end
 	
 end
 
 
-logic [2:0] binary;
+logic [2:0] motor_stat;
 
 always @( * ) begin
   case (send)
-    8'b00000001: binary = 3'b000;
-    8'b00000010: binary = 3'b001;
-    8'b00000100: binary = 3'b010;
-    8'b00001000: binary = 3'b011;
-    8'b00010000: binary = 3'b100;
-    8'b00100000: binary = 3'b101;
-    8'b01000000: binary = 3'b110;
-    8'b10000000: binary = 3'b111;
-    default: binary = 3'b000; // Default case, you can choose any value
+    8'b0000_0000: motor_stat = 3'b000;
+    8'b0000_0010: motor_stat = 3'b001;
+    8'b0000_1000: motor_stat = 3'b010;
+    8'b0001_0000: motor_stat = 3'b011;
+    8'b0010_0000: motor_stat = 3'b100;
+    8'b1000_0000: motor_stat = 3'b101;
+    default: motor_stat = 3'b111; // Default case, you can choose any value
   endcase
 end
 
@@ -164,8 +160,8 @@ logic tx_valid;
 logic tx_ready;
 
 assign tx_valid = 1'b1;
-assign tx_byte = {SW[7:6], binary, 3'b000};
-assign LEDG = tx_byte;
+assign tx_byte = {motor_stat, ,1'b0};
+
 
 uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
 	.clk 				(CLOCK_50),
