@@ -5,8 +5,8 @@ SW[2] => ~NO_FANOUT~
 SW[3] => ~NO_FANOUT~
 SW[4] => ~NO_FANOUT~
 SW[5] => ~NO_FANOUT~
-SW[6] => tx_byte[6].IN1
-SW[7] => tx_byte[7].IN1
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
 SW[8] => ~NO_FANOUT~
 SW[9] => ~NO_FANOUT~
 SW[10] => ~NO_FANOUT~
@@ -21,7 +21,7 @@ KEY[0] => KEY[0].IN1
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-CLOCK_50 => CLOCK_50.IN3
+CLOCK_50 => CLOCK_50.IN4
 IRDA_RXD => IRDA_RXD.IN1
 EX_IO[0] <> <UNC>
 EX_IO[1] <> <UNC>
@@ -64,8 +64,7 @@ GPIO[30] <> <UNC>
 GPIO[31] <> <UNC>
 GPIO[32] <> <UNC>
 GPIO[33] <> <UNC>
-GPIO[34] <> <UNC>
-GPIO[35] <> <UNC>
+GPIO[34] <> GPIO[34]
 LEDG[0] <= send[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[1] <= send[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[2] <= send[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -655,5 +654,63 @@ data_to_send[6] => data_to_send_temp.DATAB
 data_to_send[7] => data_to_send_temp.DATAB
 valid => next_state.IN0
 ready <= ready.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_level|sensor_driver:u2
+clk => distanceRAW_in_cm[24].CLK
+clk => distanceRAW_in_cm[25].CLK
+clk => distanceRAW_in_cm[26].CLK
+clk => distanceRAW_in_cm[27].CLK
+clk => distanceRAW_in_cm[28].CLK
+clk => distanceRAW_in_cm[29].CLK
+clk => distanceRAW_in_cm[30].CLK
+clk => distanceRAW_in_cm[31].CLK
+clk => distanceRAW[0].CLK
+clk => distanceRAW[1].CLK
+clk => distanceRAW[2].CLK
+clk => distanceRAW[3].CLK
+clk => distanceRAW[4].CLK
+clk => distanceRAW[5].CLK
+clk => distanceRAW[6].CLK
+clk => distanceRAW[7].CLK
+clk => distanceRAW[8].CLK
+clk => distanceRAW[9].CLK
+clk => distanceRAW[10].CLK
+clk => distanceRAW[11].CLK
+clk => distanceRAW[12].CLK
+clk => distanceRAW[13].CLK
+clk => distanceRAW[14].CLK
+clk => distanceRAW[15].CLK
+clk => distanceRAW[16].CLK
+clk => distanceRAW[17].CLK
+clk => distanceRAW[18].CLK
+clk => distanceRAW[19].CLK
+clk => distanceRAW[20].CLK
+clk => distanceRAW[21].CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+measure => state.IN1
+echo => Selector3.IN1
+echo => Selector2.IN1
+echo => state.DATAB
+trig <= inTRIGGER.DB_MAX_OUTPUT_PORT_TYPE
+distance[0] <= distanceRAW_in_cm[24].DB_MAX_OUTPUT_PORT_TYPE
+distance[1] <= distanceRAW_in_cm[25].DB_MAX_OUTPUT_PORT_TYPE
+distance[2] <= distanceRAW_in_cm[26].DB_MAX_OUTPUT_PORT_TYPE
+distance[3] <= distanceRAW_in_cm[27].DB_MAX_OUTPUT_PORT_TYPE
+distance[4] <= distanceRAW_in_cm[28].DB_MAX_OUTPUT_PORT_TYPE
+distance[5] <= distanceRAW_in_cm[29].DB_MAX_OUTPUT_PORT_TYPE
+distance[6] <= distanceRAW_in_cm[30].DB_MAX_OUTPUT_PORT_TYPE
+distance[7] <= distanceRAW_in_cm[31].DB_MAX_OUTPUT_PORT_TYPE
 
 

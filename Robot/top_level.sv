@@ -160,7 +160,7 @@ logic tx_valid;
 logic tx_ready;
 
 assign tx_valid = 1'b1;
-assign tx_byte = {motor_stat, proximity[7:4], 1'b0};
+assign tx_byte = {motor_stat, proximity_stat[7:4], 1'b0};
 
 
 uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
@@ -192,7 +192,7 @@ uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
 
 
 
-  sensor_driver u0(
+  sensor_driver u2(
     .clk			(CLOCK_50),
     .rst			(reset),
     .measure	(start), // Measure on trigger
