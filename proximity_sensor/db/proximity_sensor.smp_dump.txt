@@ -1,0 +1,8 @@
+
+State Machine - |top_level|sensor_driver:u0|state
+Name state.DISPLAY_DISTANCE state.COUNTECHO state.WAIT state.TRIGGER state.IDLE 
+state.IDLE 0 0 0 0 0 
+state.TRIGGER 0 0 0 1 1 
+state.WAIT 0 0 1 0 1 
+state.COUNTECHO 0 1 0 0 1 
+state.DISPLAY_DISTANCE 1 0 0 0 1 
