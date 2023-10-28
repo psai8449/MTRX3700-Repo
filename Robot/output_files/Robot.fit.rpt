@@ -1,9 +1,5 @@
 Fitter report for Robot
-<<<<<<< HEAD
-Sun Oct 29 06:40:30 2023
-=======
-Sat Oct 28 15:23:14 2023
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
+Sun Oct 29 08:12:47 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -78,28 +74,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Fitter Status                      ; Successful - Sun Oct 29 06:40:30 2023       ;
-=======
-; Fitter Status                      ; Successful - Sat Oct 28 15:23:14 2023       ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
+; Fitter Status                      ; Successful - Sun Oct 29 08:12:47 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Robot                                       ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-<<<<<<< HEAD
 ; Total logic elements               ; 428 / 114,480 ( < 1 % )                     ;
 ;     Total combinational functions  ; 396 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 286 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 286                                         ;
-=======
-; Total logic elements               ; 438 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 399 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 284 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 284                                         ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; Total pins                         ; 94 / 529 ( 18 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
@@ -173,17 +158,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
-<<<<<<< HEAD
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.5%      ;
-;     Processors 3-4         ;   0.5%      ;
+;     Processor 2            ;   0.4%      ;
+;     Processors 3-4         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -259,88 +243,6 @@ refer to the applicable agreement for further details.
 ; proximity:u100|sensor_driver:u0|distanceRAW[21]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; proximity:u100|sensor_driver:u0|distanceRAW[21]~_Duplicate_1                     ; Q                ;                       ;
 ; proximity:u100|sensor_driver:u0|distanceRAW[21]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                                  ;                  ;                       ;
 +----------------------------------------------------------+-----------------+------------------+---------------------+-----------+----------------+----------------------------------------------------------------------------------+------------------+-----------------------+
-=======
-; Maximum used               ; 6           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.4%      ;
-+----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                                                                                                     ;
-+-------------------------------------------+-----------------+------------------+---------------------+-----------+----------------+-------------------------------------------------------------------+------------------+-----------------------+
-; Node                                      ; Action          ; Operation        ; Reason              ; Node Port ; Node Port Name ; Destination Node                                                  ; Destination Port ; Destination Port Name ;
-+-------------------------------------------+-----------------+------------------+---------------------+-----------+----------------+-------------------------------------------------------------------+------------------+-----------------------+
-; sensor_driver:u2|distanceRAW[0]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[0]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[0]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[0]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[1]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[1]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[1]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[1]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[2]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[2]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[2]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[2]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[3]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[3]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[3]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[3]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[4]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[4]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[4]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[4]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[5]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[5]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[5]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[5]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[6]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[6]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[6]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[6]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[7]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[7]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[7]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[7]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[8]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[8]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[8]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[8]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[9]           ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[9]           ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[9]~_Duplicate_1                      ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[9]~SCLR_LUT  ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[10]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[10]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[10]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[10]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[11]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[11]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[11]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[11]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[12]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[12]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[12]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[12]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[13]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[13]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[13]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[13]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[14]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[14]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[14]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[14]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[15]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[15]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[15]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[15]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[16]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[16]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[16]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[16]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[17]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[17]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[17]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[17]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[18]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult3 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[18]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[18]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[18]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[19]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult3 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[19]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[19]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[19]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[20]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult3 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[20]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[20]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[20]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-; sensor_driver:u2|distanceRAW[21]          ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult3 ; DATAA            ;                       ;
-; sensor_driver:u2|distanceRAW[21]          ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; sensor_driver:u2|distanceRAW[21]~_Duplicate_1                     ; Q                ;                       ;
-; sensor_driver:u2|distanceRAW[21]~SCLR_LUT ; Created         ; Register Packing ; Timing optimization ;           ;                ;                                                                   ;                  ;                       ;
-+-------------------------------------------+-----------------+------------------+---------------------+-----------+----------------+-------------------------------------------------------------------+------------------+-----------------------+
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1219,13 +1121,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-<<<<<<< HEAD
 ;     -- Requested    ; 0.00 % ( 0 / 910 ) ; 0.00 % ( 0 / 910 )         ; 0.00 % ( 0 / 910 )       ;
 ;     -- Achieved     ; 0.00 % ( 0 / 910 ) ; 0.00 % ( 0 / 910 )         ; 0.00 % ( 0 / 910 )       ;
-=======
-;     -- Requested    ; 0.00 % ( 0 / 911 ) ; 0.00 % ( 0 / 911 )         ; 0.00 % ( 0 / 911 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 911 ) ; 0.00 % ( 0 / 911 )         ; 0.00 % ( 0 / 911 )       ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -1248,11 +1145,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-<<<<<<< HEAD
 ; Top                            ; 0.00 % ( 0 / 898 )    ; N/A                     ; Source File       ; N/A                 ;       ;
-=======
-; Top                            ; 0.00 % ( 0 / 899 )    ; N/A                     ; Source File       ; N/A                 ;       ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -1260,7 +1153,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/output_files/Robot.pin.
+The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.pin.
 
 
 +-----------------------------------------------------------------------+
@@ -1268,7 +1161,6 @@ The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-<<<<<<< HEAD
 ; Total logic elements                        ; 428 / 114,480 ( < 1 % ) ;
 ;     -- Combinational with no register       ; 142                     ;
 ;     -- Register only                        ; 32                      ;
@@ -1289,28 +1181,6 @@ The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
 ; Total LABs:  partially or completely used   ; 32 / 7,155 ( < 1 % )    ;
-=======
-; Total logic elements                        ; 438 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 154                     ;
-;     -- Register only                        ; 39                      ;
-;     -- Combinational with a register        ; 245                     ;
-;                                             ;                         ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 137                     ;
-;     -- 3 input functions                    ; 59                      ;
-;     -- <=2 input functions                  ; 203                     ;
-;     -- Register only                        ; 39                      ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 238                     ;
-;     -- arithmetic mode                      ; 161                     ;
-;                                             ;                         ;
-; Total registers*                            ; 284 / 117,053 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 284 / 114,480 ( < 1 % ) ;
-;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
-;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 37 / 7,155 ( < 1 % )    ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 94 / 529 ( 18 % )       ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -1328,19 +1198,11 @@ The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
-<<<<<<< HEAD
 ; Average interconnect usage (total/H/V)      ; 0.2% / 0.2% / 0.3%      ;
 ; Peak interconnect usage (total/H/V)         ; 3.4% / 3.0% / 4.4%      ;
 ; Maximum fan-out                             ; 163                     ;
 ; Highest non-global fan-out                  ; 132                     ;
 ; Total fan-out                               ; 2287                    ;
-=======
-; Average interconnect usage (total/H/V)      ; 0.3% / 0.2% / 0.3%      ;
-; Peak interconnect usage (total/H/V)         ; 3.6% / 2.4% / 5.3%      ;
-; Maximum fan-out                             ; 163                     ;
-; Highest non-global fan-out                  ; 132                     ;
-; Total fan-out                               ; 2295                    ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; Average fan-out                             ; 2.38                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -1354,7 +1216,6 @@ The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-<<<<<<< HEAD
 ; Total logic elements                        ; 428 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- Combinational with no register       ; 142                    ; 0                              ;
 ;     -- Register only                        ; 32                     ; 0                              ;
@@ -1375,28 +1236,6 @@ The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Total LABs:  partially or completely used   ; 32 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
-=======
-; Total logic elements                        ; 438 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 154                    ; 0                              ;
-;     -- Register only                        ; 39                     ; 0                              ;
-;     -- Combinational with a register        ; 245                    ; 0                              ;
-;                                             ;                        ;                                ;
-; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 137                    ; 0                              ;
-;     -- 3 input functions                    ; 59                     ; 0                              ;
-;     -- <=2 input functions                  ; 203                    ; 0                              ;
-;     -- Register only                        ; 39                     ; 0                              ;
-;                                             ;                        ;                                ;
-; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 238                    ; 0                              ;
-;     -- arithmetic mode                      ; 161                    ; 0                              ;
-;                                             ;                        ;                                ;
-; Total registers                             ; 284                    ; 0                              ;
-;     -- Dedicated logic registers            ; 284 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- I/O registers                        ; 0                      ; 0                              ;
-;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 37 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 94                     ; 0                              ;
@@ -1413,13 +1252,8 @@ The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-<<<<<<< HEAD
 ;     -- Total Connections                    ; 2350                   ; 171                            ;
 ;     -- Registered Connections               ; 991                    ; 0                              ;
-=======
-;     -- Total Connections                    ; 2358                   ; 171                            ;
-;     -- Registered Connections               ; 1005                   ; 0                              ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 86                     ; 164                            ;
@@ -1451,11 +1285,7 @@ The pin-out file can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-<<<<<<< HEAD
 ; CLOCK_50 ; Y2    ; 2        ; 0            ; 36           ; 14           ; 126                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-=======
-; CLOCK_50 ; Y2    ; 2        ; 0            ; 36           ; 14           ; 124                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; IRDA_RXD ; Y15   ; 3        ; 56           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; KEY[0]   ; M23   ; 6        ; 115          ; 40           ; 7            ; 132                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; KEY[1]   ; M21   ; 6        ; 115          ; 53           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
@@ -2524,7 +2354,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+--------------------------------------+
 
 
-<<<<<<< HEAD
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                        ;
 +---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------+-------------------+--------------+
@@ -2540,26 +2369,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |sensor_driver:u0|              ; 79 (79)     ; 43 (43)                   ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 0    ; 0            ; 36 (36)      ; 0 (0)             ; 43 (43)          ; |top_level|proximity:u100|sensor_driver:u0                                        ; sensor_driver     ; work         ;
 ;          |lpm_mult:Mult0|             ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|proximity:u100|sensor_driver:u0|lpm_mult:Mult0                         ; lpm_mult          ; work         ;
 ;             |mult_ngt:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|proximity:u100|sensor_driver:u0|lpm_mult:Mult0|mult_ngt:auto_generated ; mult_ngt          ; work         ;
-;    |uart_tx:uart_tx_u|                ; 67 (67)     ; 46 (46)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 46 (46)          ; |top_level|uart_tx:uart_tx_u                                                      ; uart_tx           ; work         ;
+;    |uart_tx:u3|                       ; 67 (67)     ; 46 (46)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 46 (46)          ; |top_level|uart_tx:u3                                                             ; uart_tx           ; work         ;
 +---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------+-------------------+--------------+
-=======
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                            ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+-------------------+--------------+
-; Compilation Hierarchy Node            ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                   ; Entity Name       ; Library Name ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+-------------------+--------------+
-; |top_level                            ; 438 (70)    ; 284 (34)                  ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 94   ; 0            ; 154 (32)     ; 39 (1)            ; 245 (62)         ; |top_level                                                            ; top_level         ; work         ;
-;    |IR_RECEIVE:u1|                    ; 221 (221)   ; 163 (163)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 58 (58)      ; 37 (37)           ; 126 (126)        ; |top_level|IR_RECEIVE:u1                                              ; IR_RECEIVE        ; work         ;
-;    |Motor_ctrl_redone:motor1|         ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |top_level|Motor_ctrl_redone:motor1                                   ; Motor_ctrl_redone ; work         ;
-;    |pll1:u0|                          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0                                                    ; pll1              ; work         ;
-;       |altpll:altpll_component|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0|altpll:altpll_component                            ; altpll            ; work         ;
-;          |pll1_altpll:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated ; pll1_altpll       ; work         ;
-;    |sensor_driver:u2|                 ; 79 (79)     ; 41 (41)                   ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 0    ; 0            ; 38 (38)      ; 0 (0)             ; 41 (41)          ; |top_level|sensor_driver:u2                                           ; sensor_driver     ; work         ;
-;       |lpm_mult:Mult0|                ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|sensor_driver:u2|lpm_mult:Mult0                            ; lpm_mult          ; work         ;
-;          |mult_ngt:auto_generated|    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated    ; mult_ngt          ; work         ;
-;    |uart_tx:uart_tx_u|                ; 64 (64)     ; 46 (46)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 1 (1)             ; 45 (45)          ; |top_level|uart_tx:uart_tx_u                                          ; uart_tx           ; work         ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+-------------------+--------------+
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -2659,18 +2470,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[9]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO[34] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO[35] ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-<<<<<<< HEAD
 ; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; KEY[0]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-=======
-; KEY[0]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; IRDA_RXD ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-<<<<<<< HEAD
 +----------------------------------------------------------------------------------+
 ; Pad To Core Delay Chain Fanout                                                   ;
 +----------------------------------------------------+-------------------+---------+
@@ -2882,219 +2687,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - IR_RECEIVE:u1|always3~1                     ; 0                 ; 6       ;
 ;      - IR_RECEIVE:u1|always1~1                     ; 0                 ; 6       ;
 +----------------------------------------------------+-------------------+---------+
-=======
-+---------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                      ;
-+---------------------------------------+-------------------+---------+
-; Source Pin / Fanout                   ; Pad To Core Index ; Setting ;
-+---------------------------------------+-------------------+---------+
-; SW[0]                                 ;                   ;         ;
-; SW[1]                                 ;                   ;         ;
-; SW[2]                                 ;                   ;         ;
-; SW[3]                                 ;                   ;         ;
-; SW[4]                                 ;                   ;         ;
-; SW[5]                                 ;                   ;         ;
-; SW[6]                                 ;                   ;         ;
-; SW[7]                                 ;                   ;         ;
-; SW[8]                                 ;                   ;         ;
-; SW[9]                                 ;                   ;         ;
-; SW[10]                                ;                   ;         ;
-; SW[11]                                ;                   ;         ;
-; SW[12]                                ;                   ;         ;
-; SW[13]                                ;                   ;         ;
-; SW[14]                                ;                   ;         ;
-; SW[15]                                ;                   ;         ;
-; SW[16]                                ;                   ;         ;
-; SW[17]                                ;                   ;         ;
-; KEY[1]                                ;                   ;         ;
-; KEY[2]                                ;                   ;         ;
-; KEY[3]                                ;                   ;         ;
-; EX_IO[0]                              ;                   ;         ;
-; EX_IO[1]                              ;                   ;         ;
-; EX_IO[3]                              ;                   ;         ;
-; EX_IO[4]                              ;                   ;         ;
-; EX_IO[5]                              ;                   ;         ;
-; EX_IO[6]                              ;                   ;         ;
-; GPIO[0]                               ;                   ;         ;
-; GPIO[1]                               ;                   ;         ;
-; GPIO[10]                              ;                   ;         ;
-; GPIO[11]                              ;                   ;         ;
-; GPIO[12]                              ;                   ;         ;
-; GPIO[13]                              ;                   ;         ;
-; GPIO[14]                              ;                   ;         ;
-; GPIO[15]                              ;                   ;         ;
-; GPIO[16]                              ;                   ;         ;
-; GPIO[17]                              ;                   ;         ;
-; GPIO[18]                              ;                   ;         ;
-; GPIO[19]                              ;                   ;         ;
-; GPIO[20]                              ;                   ;         ;
-; GPIO[21]                              ;                   ;         ;
-; GPIO[22]                              ;                   ;         ;
-; GPIO[23]                              ;                   ;         ;
-; GPIO[24]                              ;                   ;         ;
-; GPIO[25]                              ;                   ;         ;
-; GPIO[26]                              ;                   ;         ;
-; GPIO[27]                              ;                   ;         ;
-; GPIO[28]                              ;                   ;         ;
-; GPIO[29]                              ;                   ;         ;
-; GPIO[30]                              ;                   ;         ;
-; GPIO[31]                              ;                   ;         ;
-; GPIO[32]                              ;                   ;         ;
-; GPIO[33]                              ;                   ;         ;
-; EX_IO[2]                              ;                   ;         ;
-; GPIO[2]                               ;                   ;         ;
-; GPIO[3]                               ;                   ;         ;
-; GPIO[4]                               ;                   ;         ;
-; GPIO[5]                               ;                   ;         ;
-; GPIO[6]                               ;                   ;         ;
-; GPIO[7]                               ;                   ;         ;
-; GPIO[8]                               ;                   ;         ;
-; GPIO[9]                               ;                   ;         ;
-; GPIO[34]                              ;                   ;         ;
-; GPIO[35]                              ;                   ;         ;
-;      - sensor_driver:u2|state~12      ; 0                 ; 6       ;
-;      - sensor_driver:u2|Selector3~0   ; 0                 ; 6       ;
-;      - sensor_driver:u2|Selector2~0   ; 0                 ; 6       ;
-; KEY[0]                                ;                   ;         ;
-;      - IR_RECEIVE:u1|oDATA[0]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[1]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[2]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[3]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[4]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[5]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[6]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[7]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[8]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[9]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[10]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[11]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[12]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[13]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[14]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[15]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[16]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[17]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[18]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[19]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[20]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[21]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[22]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[23]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[24]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[25]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[26]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[27]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[28]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[29]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[30]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[31]        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[16]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[23]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[22]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[21]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[20]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[19]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[18]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[17]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[31]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[30]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[29]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[28]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[27]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[26]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[25]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[24]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[15]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[14]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[13]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[12]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[11]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[10]         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[9]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[8]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[7]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[6]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[5]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[4]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[3]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[2]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[1]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[0]          ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[0]      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[1]      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[2]      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[3]      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[4]      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[5]      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[2]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[3]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[4]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[5]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[6]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[7]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[8]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[9]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[10]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[11]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[12]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[13]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[14]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[15]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[16]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[17]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[0]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[1]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[0]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[1]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[2]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[3]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[4]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[5]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[6]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[7]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[8]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[9]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[10]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[11]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[12]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[13]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[14]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[15]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[16]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[17]  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[0]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[1]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[2]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[3]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[4]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[5]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[6]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[7]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[8]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[9]    ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[10]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[11]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[12]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[13]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[14]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[15]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[16]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[17]   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_ready       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_buf[16]~6   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state.DATAREAD   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count_flag  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state.GUIDANCE   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state.IDLE       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count_flag ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count_flag  ; 0                 ; 6       ;
-; CLOCK_50                              ;                   ;         ;
-; IRDA_RXD                              ;                   ;         ;
-;      - IR_RECEIVE:u1|always5~1        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|always3~1        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|always1~1        ; 0                 ; 6       ;
-+---------------------------------------+-------------------+---------+
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3103,7 +2695,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                        ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                                                    ; PIN_Y2              ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-<<<<<<< HEAD
 ; CLOCK_50                                                                    ; PIN_Y2              ; 125     ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 ; Equal0~12                                                                   ; LCCOMB_X114_Y38_N30 ; 17      ; Latch enable ; yes    ; Global Clock         ; GCLK7            ; --                        ;
 ; IR_RECEIVE:u1|bitcount[5]~18                                                ; LCCOMB_X110_Y39_N6  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
@@ -3113,32 +2704,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IR_RECEIVE:u1|idle_count_flag                                               ; FF_X112_Y39_N27     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; IR_RECEIVE:u1|state.DATAREAD                                                ; FF_X113_Y37_N19     ; 43      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; IR_RECEIVE:u1|state_count_flag                                              ; FF_X113_Y37_N25     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-=======
-; CLOCK_50                                                                    ; PIN_Y2              ; 123     ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; Equal0~12                                                                   ; LCCOMB_X107_Y43_N16 ; 17      ; Latch enable ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; IR_RECEIVE:u1|bitcount[2]~18                                                ; LCCOMB_X111_Y41_N24 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|data_buf[16]~6                                                ; LCCOMB_X108_Y41_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|data_count_flag                                               ; FF_X109_Y42_N31     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|data_ready                                                    ; FF_X109_Y41_N27     ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|idle_count_flag                                               ; FF_X109_Y42_N21     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|state.DATAREAD                                                ; FF_X110_Y42_N31     ; 43      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|state_count_flag                                              ; FF_X109_Y42_N19     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; KEY[0]                                                                      ; PIN_M23             ; 132     ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; measurement_trigger~1                                                       ; LCCOMB_X95_Y9_N20   ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1               ; 163     ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-<<<<<<< HEAD
 ; proximity:u100|measurement_trigger~1                                        ; LCCOMB_X76_Y30_N20  ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; proximity:u100|sensor_driver:u0|state.DISPLAY_DISTANCE                      ; FF_X72_Y33_N3       ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; proximity:u100|sensor_driver:u0|state.IDLE                                  ; FF_X72_Y33_N19      ; 12      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; uart_tx:uart_tx_u|count[27]~40                                              ; LCCOMB_X101_Y39_N22 ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; uart_tx:uart_tx_u|state.IDLE                                                ; FF_X101_Y39_N25     ; 15      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-=======
-; sensor_driver:u2|state.DISPLAY_DISTANCE                                     ; FF_X92_Y3_N23       ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; sensor_driver:u2|state.IDLE                                                 ; FF_X92_Y3_N29       ; 12      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; uart_tx:uart_tx_u|count[3]~40                                               ; LCCOMB_X98_Y43_N30  ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; uart_tx:uart_tx_u|state.IDLE                                                ; FF_X98_Y43_N7       ; 15      ; Clock enable ; no     ; --                   ; --               ; --                        ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
+; uart_tx:u3|count[27]~40                                                     ; LCCOMB_X101_Y39_N22 ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; uart_tx:u3|state.IDLE                                                       ; FF_X101_Y39_N25     ; 15      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -3147,15 +2719,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                        ; Location            ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-<<<<<<< HEAD
 ; CLOCK_50                                                                    ; PIN_Y2              ; 125     ; 4                                    ; Global Clock         ; GCLK4            ; --                        ;
 ; Equal0~12                                                                   ; LCCOMB_X114_Y38_N30 ; 17      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
 ; pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1               ; 163     ; 1                                    ; Global Clock         ; GCLK3            ; --                        ;
-=======
-; CLOCK_50                                                                    ; PIN_Y2              ; 123     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; Equal0~12                                                                   ; LCCOMB_X107_Y43_N16 ; 17      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
-; pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1               ; 163     ; 8                                    ; Global Clock         ; GCLK3            ; --                        ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 +-----------------------------------------------------------------------------+---------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -3176,7 +2742,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+-------------+---------------------+-------------------+
 
 
-<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; DSP Block Details                                                                                                                                                                                                                                                                  ;
 +-------------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
@@ -3187,18 +2752,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; proximity:u100|sensor_driver:u0|lpm_mult:Mult0|mult_ngt:auto_generated|w173w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X71_Y33_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
 ;    proximity:u100|sensor_driver:u0|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ;                            ; DSPMULT_X71_Y33_N0 ; Unsigned            ;                                ; yes                   ; no                    ; no                ;                 ;
 +-------------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
-=======
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; DSP Block Details                                                                                                                                                                                                                                                  ;
-+----------------------------------------------------------------------+----------------------------+-------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
-; Name                                                                 ; Mode                       ; Location          ; Sign Representation ; Has Input Shift Register Chain ; Data A Input Register ; Data B Input Register ; Pipeline Register ; Output Register ;
-+----------------------------------------------------------------------+----------------------------+-------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
-; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_out4     ; Simple Multiplier (18-bit) ; DSPOUT_X93_Y2_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult3 ;                            ; DSPMULT_X93_Y2_N0 ; Unsigned            ;                                ; no                    ; yes                   ; no                ;                 ;
-; sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|w173w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X93_Y3_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    sensor_driver:u2|lpm_mult:Mult0|mult_ngt:auto_generated|mac_mult1 ;                            ; DSPMULT_X93_Y3_N0 ; Unsigned            ;                                ; yes                   ; no                    ; no                ;                 ;
-+----------------------------------------------------------------------+----------------------------+-------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 
 
 +-------------------------------------------------+
@@ -3206,7 +2759,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-<<<<<<< HEAD
 ; Block interconnects   ; 445 / 342,891 ( < 1 % ) ;
 ; C16 interconnects     ; 70 / 10,120 ( < 1 % )   ;
 ; C4 interconnects      ; 459 / 209,544 ( < 1 % ) ;
@@ -3215,23 +2767,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Local interconnects   ; 275 / 119,088 ( < 1 % ) ;
 ; R24 interconnects     ; 45 / 9,963 ( < 1 % )    ;
 ; R4 interconnects      ; 359 / 289,782 ( < 1 % ) ;
-=======
-; Block interconnects   ; 468 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 78 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 509 / 209,544 ( < 1 % ) ;
-; Direct links          ; 186 / 342,891 ( < 1 % ) ;
-; Global clocks         ; 3 / 20 ( 15 % )         ;
-; Local interconnects   ; 264 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 78 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 299 / 289,782 ( < 1 % ) ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 +-----------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-<<<<<<< HEAD
 ; Number of Logic Elements  (Average = 13.38) ; Number of LABs  (Total = 32) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
@@ -3250,45 +2791,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 14                                          ; 3                            ;
 ; 15                                          ; 2                            ;
 ; 16                                          ; 17                           ;
-=======
-; Number of Logic Elements  (Average = 11.84) ; Number of LABs  (Total = 37) ;
-+---------------------------------------------+------------------------------+
-; 1                                           ; 2                            ;
-; 2                                           ; 2                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 2                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 2                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 2                            ;
-; 11                                          ; 3                            ;
-; 12                                          ; 0                            ;
-; 13                                          ; 2                            ;
-; 14                                          ; 1                            ;
-; 15                                          ; 3                            ;
-; 16                                          ; 16                           ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-<<<<<<< HEAD
 ; LAB-wide Signals  (Average = 2.03) ; Number of LABs  (Total = 32) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 14                           ;
 ; 1 Clock                            ; 27                           ;
 ; 1 Clock enable                     ; 6                            ;
-=======
-; LAB-wide Signals  (Average = 1.78) ; Number of LABs  (Total = 37) ;
-+------------------------------------+------------------------------+
-; 1 Async. clear                     ; 14                           ;
-; 1 Clock                            ; 27                           ;
-; 1 Clock enable                     ; 7                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; 1 Sync. clear                      ; 14                           ;
 ; 2 Clock enables                    ; 3                            ;
 ; 2 Clocks                           ; 1                            ;
@@ -3298,45 +2811,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-<<<<<<< HEAD
 ; Number of Signals Sourced  (Average = 22.00) ; Number of LABs  (Total = 32) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
-=======
-; Number of Signals Sourced  (Average = 19.03) ; Number of LABs  (Total = 37) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 1                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; 4                                            ; 0                            ;
-; 5                                            ; 2                            ;
+; 5                                            ; 1                            ;
 ; 6                                            ; 1                            ;
 ; 7                                            ; 0                            ;
 ; 8                                            ; 2                            ;
 ; 9                                            ; 0                            ;
-<<<<<<< HEAD
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 1                            ;
 ; 13                                           ; 2                            ;
 ; 14                                           ; 1                            ;
-=======
-; 10                                           ; 2                            ;
-; 11                                           ; 3                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; 15                                           ; 0                            ;
 ; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
-<<<<<<< HEAD
 ; 19                                           ; 0                            ;
 ; 20                                           ; 1                            ;
 ; 21                                           ; 0                            ;
@@ -3350,21 +2845,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 29                                           ; 0                            ;
 ; 30                                           ; 0                            ;
 ; 31                                           ; 3                            ;
-=======
-; 19                                           ; 1                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 4                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 2                            ;
-; 27                                           ; 1                            ;
-; 28                                           ; 1                            ;
-; 29                                           ; 3                            ;
-; 30                                           ; 1                            ;
-; 31                                           ; 0                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; 32                                           ; 5                            ;
 +----------------------------------------------+------------------------------+
 
@@ -3372,7 +2852,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-<<<<<<< HEAD
 ; Number of Signals Sourced Out  (Average = 9.16) ; Number of LABs  (Total = 32) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
@@ -3391,39 +2870,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 13                                              ; 3                            ;
 ; 14                                              ; 1                            ;
 ; 15                                              ; 1                            ;
-=======
-; Number of Signals Sourced Out  (Average = 8.38) ; Number of LABs  (Total = 37) ;
-+-------------------------------------------------+------------------------------+
-; 0                                               ; 0                            ;
-; 1                                               ; 9                            ;
-; 2                                               ; 2                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 1                            ;
-; 5                                               ; 5                            ;
-; 6                                               ; 2                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 0                            ;
-; 9                                               ; 1                            ;
-; 10                                              ; 2                            ;
-; 11                                              ; 2                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 2                            ;
-; 15                                              ; 3                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; 16                                              ; 4                            ;
 ; 17                                              ; 0                            ;
 ; 18                                              ; 0                            ;
 ; 19                                              ; 0                            ;
-<<<<<<< HEAD
 ; 20                                              ; 1                            ;
 ; 21                                              ; 0                            ;
 ; 22                                              ; 0                            ;
-=======
-; 20                                              ; 0                            ;
-; 21                                              ; 0                            ;
-; 22                                              ; 1                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; 23                                              ; 0                            ;
 ; 24                                              ; 0                            ;
 ; 25                                              ; 0                            ;
@@ -3435,16 +2888,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-<<<<<<< HEAD
 ; Number of Distinct Inputs  (Average = 11.75) ; Number of LABs  (Total = 32) ;
-=======
-; Number of Distinct Inputs  (Average = 10.62) ; Number of LABs  (Total = 37) ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 2                            ;
-<<<<<<< HEAD
 ; 3                                            ; 3                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 1                            ;
@@ -3466,40 +2914,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
-=======
-; 3                                            ; 5                            ;
-; 4                                            ; 2                            ;
-; 5                                            ; 1                            ;
-; 6                                            ; 2                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 3                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 4                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 4                            ;
-; 17                                           ; 2                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 1                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; 24                                           ; 0                            ;
 ; 25                                           ; 0                            ;
 ; 26                                           ; 0                            ;
 ; 27                                           ; 0                            ;
 ; 28                                           ; 0                            ;
-<<<<<<< HEAD
 ; 29                                           ; 1                            ;
-=======
-; 29                                           ; 0                            ;
-; 30                                           ; 1                            ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 +----------------------------------------------+------------------------------+
 
 
@@ -3655,13 +3075,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[9]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO[34]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO[35]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-<<<<<<< HEAD
 ; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-=======
-; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; IRDA_RXD           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -3707,11 +3122,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------+------------------------+-------------------+
 ; Source Clock(s)                                ; Destination Clock(s)   ; Delay Added in ns ;
 +------------------------------------------------+------------------------+-------------------+
-<<<<<<< HEAD
 ; u0|altpll_component|auto_generated|pll1|clk[0] ; IR_RECEIVE:u1|oDATA[0] ; 158.7             ;
-=======
-; u0|altpll_component|auto_generated|pll1|clk[0] ; IR_RECEIVE:u1|oDATA[0] ; 166.4             ;
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 +------------------------------------------------+------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -3722,7 +3133,6 @@ This will disable optimization of problematic paths and expose them for further 
 +-------------------------+----------------------+-------------------+
 ; Source Register         ; Destination Register ; Delay Added in ns ;
 +-------------------------+----------------------+-------------------+
-<<<<<<< HEAD
 ; IR_RECEIVE:u1|oDATA[3]  ; prev_data[3]         ; 7.430             ;
 ; IR_RECEIVE:u1|oDATA[2]  ; prev_data[2]         ; 7.430             ;
 ; IR_RECEIVE:u1|oDATA[5]  ; prev_data[5]         ; 7.430             ;
@@ -3748,44 +3158,18 @@ This will disable optimization of problematic paths and expose them for further 
 ; IR_RECEIVE:u1|oDATA[0]  ; prev_data[0]         ; 5.630             ;
 +-------------------------+----------------------+-------------------+
 Note: This table only shows the top 23 path(s) that have the largest delay added for hold.
-=======
-; IR_RECEIVE:u1|oDATA[1]  ; prev_data[1]         ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[2]  ; prev_data[2]         ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[4]  ; prev_data[4]         ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[7]  ; prev_data[7]         ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[6]  ; prev_data[6]         ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[9]  ; prev_data[9]         ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[8]  ; prev_data[8]         ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[10] ; prev_data[10]        ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[11] ; prev_data[11]        ; 8.421             ;
-; IR_RECEIVE:u1|oDATA[25] ; send[4]              ; 8.021             ;
-; IR_RECEIVE:u1|oDATA[17] ; send[4]              ; 7.942             ;
-; IR_RECEIVE:u1|oDATA[18] ; send[5]              ; 7.940             ;
-; IR_RECEIVE:u1|oDATA[26] ; send[1]              ; 7.940             ;
-; IR_RECEIVE:u1|oDATA[24] ; send[3]              ; 7.938             ;
-; IR_RECEIVE:u1|oDATA[20] ; send[4]              ; 7.928             ;
-; IR_RECEIVE:u1|oDATA[21] ; send[4]              ; 7.928             ;
-; IR_RECEIVE:u1|oDATA[22] ; send[4]              ; 7.928             ;
-; IR_RECEIVE:u1|oDATA[23] ; send[4]              ; 7.928             ;
-; IR_RECEIVE:u1|oDATA[16] ; send[4]              ; 7.928             ;
-; IR_RECEIVE:u1|oDATA[27] ; send[4]              ; 7.928             ;
-; IR_RECEIVE:u1|oDATA[19] ; send[4]              ; 7.928             ;
-; IR_RECEIVE:u1|oDATA[0]  ; prev_data[0]         ; 6.620             ;
-+-------------------------+----------------------+-------------------+
-Note: This table only shows the top 22 path(s) that have the largest delay added for hold.
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 
 
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device EP4CE115F29C7 for design "Robot"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (15535): Implemented PLL "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 43
-    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of 0 degrees (0 ps) for pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] port File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 43
+Info (15535): Implemented PLL "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 43
+    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of 0 degrees (0 ps) for pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] port File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 43
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -3814,11 +3198,11 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 6
+Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 6
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
-Info (176353): Automatically promoted node pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 77
+Info (176353): Automatically promoted node pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 77
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node Equal0~12  File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 87
+Info (176353): Automatically promoted node Equal0~12  File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 87
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -4262,18 +3646,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X104_Y37 to location X115_Y48
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-<<<<<<< HEAD
-Info (11888): Total time spent on timing analysis during the Fitter is 0.51 seconds.
-=======
-Info (11888): Total time spent on timing analysis during the Fitter is 0.41 seconds.
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
+Info (11888): Total time spent on timing analysis during the Fitter is 0.47 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -4281,7 +3661,6 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 45 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-<<<<<<< HEAD
     Info (169178): Pin EX_IO[0] uses I/O standard 3.3-V LVTTL at J10 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 9
     Info (169178): Pin EX_IO[1] uses I/O standard 3.3-V LVTTL at J14 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 9
     Info (169178): Pin EX_IO[3] uses I/O standard 3.3-V LVTTL at H14 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 9
@@ -4373,112 +3752,15 @@ Warning (169064): Following 43 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 10
 Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 440 warnings
-    Info: Peak virtual memory: 5723 megabytes
-    Info: Processing ended: Sun Oct 29 06:40:31 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:10
-=======
-    Info (169178): Pin EX_IO[0] uses I/O standard 3.3-V LVTTL at J10 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169178): Pin EX_IO[1] uses I/O standard 3.3-V LVTTL at J14 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169178): Pin EX_IO[3] uses I/O standard 3.3-V LVTTL at H14 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169178): Pin EX_IO[4] uses I/O standard 3.3-V LVTTL at F14 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169178): Pin EX_IO[5] uses I/O standard 3.3-V LVTTL at E10 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169178): Pin EX_IO[6] uses I/O standard 3.3-V LVTTL at D9 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169178): Pin GPIO[0] uses I/O standard 3.3-V LVTTL at AB22 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[1] uses I/O standard 3.3-V LVTTL at AC15 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[10] uses I/O standard 3.3-V LVTTL at AC19 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[11] uses I/O standard 3.3-V LVTTL at AF16 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[12] uses I/O standard 3.3-V LVTTL at AD19 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[13] uses I/O standard 3.3-V LVTTL at AF15 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[14] uses I/O standard 3.3-V LVTTL at AF24 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[15] uses I/O standard 3.3-V LVTTL at AE21 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[16] uses I/O standard 3.3-V LVTTL at AF25 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[17] uses I/O standard 3.3-V LVTTL at AC22 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[18] uses I/O standard 3.3-V LVTTL at AE22 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[19] uses I/O standard 3.3-V LVTTL at AF21 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[20] uses I/O standard 3.3-V LVTTL at AF22 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[21] uses I/O standard 3.3-V LVTTL at AD22 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[22] uses I/O standard 3.3-V LVTTL at AG25 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[23] uses I/O standard 3.3-V LVTTL at AD25 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[24] uses I/O standard 3.3-V LVTTL at AH25 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[25] uses I/O standard 3.3-V LVTTL at AE25 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[26] uses I/O standard 3.3-V LVTTL at AG22 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[27] uses I/O standard 3.3-V LVTTL at AE24 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[28] uses I/O standard 3.3-V LVTTL at AH22 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[29] uses I/O standard 3.3-V LVTTL at AF26 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[30] uses I/O standard 3.3-V LVTTL at AE20 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[31] uses I/O standard 3.3-V LVTTL at AG23 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[32] uses I/O standard 3.3-V LVTTL at AF20 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[33] uses I/O standard 3.3-V LVTTL at AH26 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin EX_IO[2] uses I/O standard 3.3-V LVTTL at H13 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169178): Pin GPIO[2] uses I/O standard 3.3-V LVTTL at AB21 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[3] uses I/O standard 3.3-V LVTTL at Y17 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[4] uses I/O standard 3.3-V LVTTL at AC21 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[5] uses I/O standard 3.3-V LVTTL at Y16 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[6] uses I/O standard 3.3-V LVTTL at AD21 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[7] uses I/O standard 3.3-V LVTTL at AE16 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[8] uses I/O standard 3.3-V LVTTL at AD15 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[9] uses I/O standard 3.3-V LVTTL at AE15 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[34] uses I/O standard 3.3-V LVTTL at AH23 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin GPIO[35] uses I/O standard 3.3-V LVTTL at AG26 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 6
-    Info (169178): Pin IRDA_RXD uses I/O standard 3.3-V LVTTL at Y15 File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 7
-Warning (169064): Following 43 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin EX_IO[0] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169065): Pin EX_IO[1] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169065): Pin EX_IO[3] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169065): Pin EX_IO[4] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169065): Pin EX_IO[5] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169065): Pin EX_IO[6] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169065): Pin GPIO[0] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[1] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[10] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[11] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[12] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[13] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[14] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[15] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[16] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[17] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[18] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[19] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[20] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[21] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[22] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[23] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[24] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[25] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[26] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[27] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[28] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[29] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[30] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[31] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[32] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[33] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin EX_IO[2] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 9
-    Info (169065): Pin GPIO[2] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[3] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[4] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[5] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[6] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[7] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[8] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[9] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[34] has a permanently enabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-    Info (169065): Pin GPIO[35] has a permanently disabled output enable File: C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/top_level.sv Line: 10
-Info (144001): Generated suppressed messages file C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/output_files/Robot.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 440 warnings
-    Info: Peak virtual memory: 5831 megabytes
-    Info: Processing ended: Sat Oct 28 15:23:15 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:24
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
+    Info: Peak virtual memory: 5724 megabytes
+    Info: Processing ended: Sun Oct 29 08:12:48 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/Robot/output_files/Robot.fit.smsg.
+The suppressed messages can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.fit.smsg.
 
 

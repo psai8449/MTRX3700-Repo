@@ -25,7 +25,7 @@ CLOCK_50 => CLOCK_50.IN4
 IRDA_RXD => IRDA_RXD.IN1
 EX_IO[0] <> <UNC>
 EX_IO[1] <> <UNC>
-EX_IO[2] <> uart_tx:uart_tx_u.tx
+EX_IO[2] <> uart_tx:u3.tx
 EX_IO[3] <> <UNC>
 EX_IO[4] <> <UNC>
 EX_IO[5] <> <UNC>
@@ -64,39 +64,35 @@ GPIO[30] <> <UNC>
 GPIO[31] <> <UNC>
 GPIO[32] <> <UNC>
 GPIO[33] <> <UNC>
-<<<<<<< HEAD
 GPIO[34] <> proximity:u100.GPIO_34
 GPIO[35] <> proximity:u100.GPIO_35
-=======
-GPIO[34] <> GPIO[34]
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
-LEDG[0] <= send[0].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[1] <= send[1].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[2] <= send[2].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[3] <= send[3].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[4] <= send[4].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[5] <= send[5].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[6] <= send[6].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[7] <= send[7].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[8] <= <GND>
-LEDR[0] <= tx_byte[4].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= tx_byte[5].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= tx_byte[6].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] <= tx_byte[7].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] <= <GND>
-LEDR[5] <= <GND>
-LEDR[6] <= <GND>
-LEDR[7] <= <GND>
-LEDR[8] <= <GND>
-LEDR[9] <= <GND>
-LEDR[10] <= <GND>
-LEDR[11] <= <GND>
-LEDR[12] <= <GND>
-LEDR[13] <= <GND>
-LEDR[14] <= <GND>
-LEDR[15] <= <GND>
-LEDR[16] <= <GND>
-LEDR[17] <= <GND>
+LEDG[0] << send[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] << send[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] << send[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[3] << send[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[4] << send[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[5] << send[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[6] << send[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[7] << send[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[8] << <GND>
+LEDR[0] << tx_byte[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << tx_byte[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << tx_byte[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << tx_byte[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+LEDR[10] << <GND>
+LEDR[11] << <GND>
+LEDR[12] << <GND>
+LEDR[13] << <GND>
+LEDR[14] << <GND>
+LEDR[15] << <GND>
+LEDR[16] << <GND>
+LEDR[17] << <GND>
 
 
 |top_level|Motor_ctrl_redone:motor1
@@ -556,7 +552,7 @@ oDATA[30] <= oDATA[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 oDATA[31] <= oDATA[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|uart_tx:uart_tx_u
+|top_level|uart_tx:u3
 clk => count[0].CLK
 clk => count[1].CLK
 clk => count[2].CLK
@@ -661,7 +657,6 @@ valid => next_state.IN0
 ready <= ready.DB_MAX_OUTPUT_PORT_TYPE
 
 
-<<<<<<< HEAD
 |top_level|proximity:u100
 CLOCK_50 => CLOCK_50.IN1
 GPIO_34 <> GPIO_34
@@ -676,9 +671,6 @@ LEDR[7] <= sensor_driver:u0.distance
 
 
 |top_level|proximity:u100|sensor_driver:u0
-=======
-|top_level|sensor_driver:u2
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 clk => distanceRAW_in_cm[24].CLK
 clk => distanceRAW_in_cm[25].CLK
 clk => distanceRAW_in_cm[26].CLK

@@ -161,7 +161,6 @@ logic tx_ready;
 
 assign tx_valid = 1'b1;
 
-logic [7:0] proximity_stat;
 assign LEDR[3:0] = prox_status;
 
 logic [3:0] prox_status;
@@ -174,7 +173,7 @@ assign tx_byte = {prox_status[3:0], motor_stat, 1'b1};
 
 //assign tx_byte = SW[7:0];
 
-uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
+uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) u3 (
 	.clk 				(CLOCK_50),
 	.tx				(EX_IO[2]),
 	.valid			(tx_valid),
@@ -193,32 +192,13 @@ uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
   .GPIO_34(GPIO[34]),
   .LEDR(proximity_stat)
   );
-  logic start, reset, measurement_trigger;
-  logic echo, trigger;
+  
+  
   logic [7:0] proximity_stat;
 
-  assign echo = GPIO[35];
-  assign GPIO[34] = trigger;
-
-  // Add a timer for measurements
-  always @(posedge CLOCK_50) begin
-    if (measurement_trigger)
-      start <= 1'b1;
-    else
-      start <= 1'b0;
-  end
 
 
 
-  sensor_driver u2(
-    .clk			(CLOCK_50),
-    .rst			(reset),
-    .measure	(start), // Measure on trigger
-    .echo		(echo),
-    .trig		(trigger), 
-    .distance	(proximity_stat)
-
-  );
   
   //**************************************************************************
 

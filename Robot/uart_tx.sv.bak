@@ -1,5 +1,3 @@
-
-
 // Example of a UART TX module. Use this as inspiration for your RX module!
 module  uart_tx  #(parameter CLKS_PER_BIT) (
 	input  clk, 
