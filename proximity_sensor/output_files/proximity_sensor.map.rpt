@@ -1,5 +1,5 @@
 Analysis & Synthesis report for proximity_sensor
-Sat Oct 28 11:19:13 2023
+Sun Oct 29 04:13:28 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -19,13 +19,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: Top-level Entity: |top_level
- 14. Parameter Settings for User Entity Instance: debounce:reset_edge
- 15. Parameter Settings for User Entity Instance: sensor_driver:u0
- 16. Parameter Settings for Inferred Entity Instance: sensor_driver:u0|lpm_mult:Mult0
- 17. lpm_mult Parameter Settings by Entity Instance
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 14. Parameter Settings for User Entity Instance: sensor_driver:u0
+ 15. Parameter Settings for Inferred Entity Instance: sensor_driver:u0|lpm_mult:Mult0
+ 16. lpm_mult Parameter Settings by Entity Instance
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -51,15 +50,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 28 11:19:13 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 29 04:13:28 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; proximity_sensor                            ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 151                                         ;
-;     Total combinational functions  ; 149                                         ;
-;     Dedicated logic registers      ; 114                                         ;
-; Total registers                    ; 114                                         ;
+; Total logic elements               ; 102                                         ;
+;     Total combinational functions  ; 101                                         ;
+;     Dedicated logic registers      ; 79                                          ;
+; Total registers                    ; 79                                          ;
 ; Total pins                         ; 49                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -159,34 +158,33 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv     ;         ;
-; sensor_driver.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv ;         ;
-; debounce.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/debounce.sv      ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf        ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc      ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc     ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc        ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc        ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc        ;         ;
-; db/mult_ngt.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/db/mult_ngt.tdf  ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                       ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv     ;         ;
+; sensor_driver.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/sensor_driver.sv ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                                ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                              ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                             ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc                                                                ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                                ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                                ;         ;
+; db/mult_ngt.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/db/mult_ngt.tdf  ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -194,20 +192,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 151            ;
+; Estimated Total logic elements              ; 102            ;
 ;                                             ;                ;
-; Total combinational functions               ; 149            ;
+; Total combinational functions               ; 101            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 28             ;
+;     -- 4 input functions                    ; 16             ;
 ;     -- 3 input functions                    ; 21             ;
-;     -- <=2 input functions                  ; 100            ;
+;     -- <=2 input functions                  ; 64             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 44             ;
-;     -- arithmetic mode                      ; 105            ;
+;     -- normal mode                          ; 27             ;
+;     -- arithmetic mode                      ; 74             ;
 ;                                             ;                ;
-; Total registers                             ; 114            ;
-;     -- Dedicated logic registers            ; 114            ;
+; Total registers                             ; 79             ;
+;     -- Dedicated logic registers            ; 79             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 49             ;
@@ -215,9 +213,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 4              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 114            ;
-; Total fan-out                               ; 856            ;
-; Average fan-out                             ; 2.13           ;
+; Maximum fan-out                             ; 79             ;
+; Total fan-out                               ; 599            ;
+; Average fan-out                             ; 1.88           ;
 +---------------------------------------------+----------------+
 
 
@@ -226,8 +224,7 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name   ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+---------------+--------------+
-; |top_level                         ; 149 (45)            ; 114 (34)                  ; 0           ; 4            ; 0       ; 2         ; 49   ; 0            ; |top_level                                                         ; top_level     ; work         ;
-;    |debounce:reset_edge|           ; 47 (47)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|debounce:reset_edge                                     ; debounce      ; work         ;
+; |top_level                         ; 101 (44)            ; 79 (34)                   ; 0           ; 4            ; 0       ; 2         ; 49   ; 0            ; |top_level                                                         ; top_level     ; work         ;
 ;    |sensor_driver:u0|              ; 57 (57)             ; 45 (45)                   ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_level|sensor_driver:u0                                        ; sensor_driver ; work         ;
 ;       |lpm_mult:Mult0|             ; 0 (0)               ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_level|sensor_driver:u0|lpm_mult:Mult0                         ; lpm_mult      ; work         ;
 ;          |mult_ngt:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_level|sensor_driver:u0|lpm_mult:Mult0|mult_ngt:auto_generated ; mult_ngt      ; work         ;
@@ -284,24 +281,23 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 114   ;
-; Number of registers using Synchronous Clear  ; 96    ;
+; Total registers                              ; 79    ;
+; Number of registers using Synchronous Clear  ; 64    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|debounce:reset_edge|count[9] ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|counter[26]                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|counter[4]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -311,16 +307,6 @@ Encoding Type:  One-Hot
 +----------------+----------+-----------------------------------------------+
 ; COUNT_MAX      ; 25000000 ; Signed Integer                                ;
 +----------------+----------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debounce:reset_edge ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; delay_val      ; 2500  ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -395,27 +381,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 49                          ;
-; cycloneiii_ff         ; 114                         ;
-;     CLR               ; 5                           ;
+; cycloneiii_ff         ; 79                          ;
 ;     ENA               ; 8                           ;
-;     ENA SCLR          ; 32                          ;
 ;     SCLR              ; 64                          ;
-;     plain             ; 5                           ;
+;     plain             ; 7                           ;
 ; cycloneiii_io_obuf    ; 36                          ;
-; cycloneiii_lcell_comb ; 149                         ;
-;     arith             ; 105                         ;
-;         2 data inputs ; 90                          ;
+; cycloneiii_lcell_comb ; 101                         ;
+;     arith             ; 74                          ;
+;         2 data inputs ; 59                          ;
 ;         3 data inputs ; 15                          ;
-;     normal            ; 44                          ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 4                           ;
+;     normal            ; 27                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 6                           ;
-;         4 data inputs ; 28                          ;
+;         4 data inputs ; 16                          ;
 ; cycloneiii_mac_mult   ; 2                           ;
 ; cycloneiii_mac_out    ; 2                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.47                        ;
+; Average LUT depth     ; 2.07                        ;
 +-----------------------+-----------------------------+
 
 
@@ -434,23 +418,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Oct 28 11:19:04 2023
+    Info: Processing started: Sun Oct 29 04:13:17 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proximity_sensor -c proximity_sensor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file top_level.sv
-    Info (12023): Found entity 1: top_level File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 1
+    Info (12023): Found entity 1: top_level File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sensor_driver.sv
-    Info (12023): Found entity 1: sensor_driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 1
+    Info (12023): Found entity 1: sensor_driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
-    Info (12023): Found entity 1: debounce File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/debounce.sv Line: 1
+    Info (12023): Found entity 1: debounce File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/debounce.sv Line: 1
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:reset_edge" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 26
-Info (12128): Elaborating entity "sensor_driver" for hierarchy "sensor_driver:u0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 35
+Info (12128): Elaborating entity "sensor_driver" for hierarchy "sensor_driver:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 31
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "sensor_driver:u0|Mult0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
-Info (12130): Elaborated megafunction instantiation "sensor_driver:u0|lpm_mult:Mult0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
-Info (12133): Instantiated megafunction "sensor_driver:u0|lpm_mult:Mult0" with the following parameter: File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "sensor_driver:u0|Mult0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
+Info (12130): Elaborated megafunction instantiation "sensor_driver:u0|lpm_mult:Mult0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
+Info (12133): Instantiated megafunction "sensor_driver:u0|lpm_mult:Mult0" with the following parameter: File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/sensor_driver.sv Line: 89
     Info (12134): Parameter "LPM_WIDTHA" = "22"
     Info (12134): Parameter "LPM_WIDTHB" = "13"
     Info (12134): Parameter "LPM_WIDTHP" = "35"
@@ -461,67 +444,68 @@ Info (12133): Instantiated megafunction "sensor_driver:u0|lpm_mult:Mult0" with t
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_ngt.tdf
-    Info (12023): Found entity 1: mult_ngt File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/db/mult_ngt.tdf Line: 30
+    Info (12023): Found entity 1: mult_ngt File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/db/mult_ngt.tdf Line: 30
 Info (13014): Ignored 27 buffer(s)
     Info (13019): Ignored 27 SOFT buffer(s)
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[34]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[34]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
-    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "GPIO[34]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
+    Warning (13010): Node "GPIO[34]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 4
-Info (21057): Implemented 204 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 4
+Info (21057): Implemented 155 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 8 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 151 logic cells
+    Info (21061): Implemented 102 logic cells
     Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Sat Oct 28 11:19:13 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Sun Oct 29 04:13:28 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:06
 
 

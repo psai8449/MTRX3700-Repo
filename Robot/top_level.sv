@@ -7,7 +7,7 @@ module top_level (
 	input logic IRDA_RXD,
 	
 	inout logic [6:0] EX_IO,
-	inout logic [35:0] GPIO,
+	inout [35:0] GPIO,
 	
 	output logic [8:0] LEDG,
 	output logic [17:0] LEDR
@@ -78,7 +78,7 @@ IR_RECEIVE u1(
 	.oDATA		(hex_data)        
 );
 
-assign LEDR[11:0] = hex_data[27:16];
+//assign LEDR[11:0] = hex_data[27:16];
 //assign LEDG[7:0] = send[7:0];
 assign LEDG = send;
 
@@ -124,12 +124,12 @@ logic [2:0] motor_stat;
 
 always @( * ) begin
   case (send)
-    8'b0000_0000: motor_stat = 3'b000;
-    8'b0000_0010: motor_stat = 3'b001;
-    8'b0000_1000: motor_stat = 3'b010;
-    8'b0001_0000: motor_stat = 3'b011;
-    8'b0010_0000: motor_stat = 3'b100;
-    8'b1000_0000: motor_stat = 3'b101;
+    8'b0000_0000: motor_stat = 3'b000;		// default
+    8'b0000_0010: motor_stat = 3'b001;		// forwards	
+    8'b0000_1000: motor_stat = 3'b010;		// left
+    8'b0001_0000: motor_stat = 3'b011;		// brake
+    8'b0010_0000: motor_stat = 3'b100;		// right
+    8'b1000_0000: motor_stat = 3'b101;		// backwards
     default: motor_stat = 3'b111; // Default case, you can choose any value
   endcase
 end
@@ -160,8 +160,18 @@ logic tx_valid;
 logic tx_ready;
 
 assign tx_valid = 1'b1;
-assign tx_byte = {motor_stat, proximity[7:4], 1'b0};
+logic [7:0] proximity_stat;
+assign LEDR[3:0] = prox_status;
 
+logic [3:0] prox_status;
+
+always_comb begin
+	prox_status = ( proximity_stat > 6'b111111) ? 4'b1111 : ( (proximity_stat < 3'b100) ? 4'b0000 : proximity_stat[5:2] ); 
+end
+
+assign tx_byte = {prox_status[3:0], motor_stat, 1'b1};
+
+//assign tx_byte = SW[7:0];
 
 uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
 	.clk 				(CLOCK_50),
@@ -175,52 +185,12 @@ uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
 
 //************************ Proximity **************************************
 
-  logic start, reset, measurement_trigger;
-  logic echo, trigger;
-  logic [7:0] proximity_stat;
-
-  assign echo = GPIO[35];
-  assign GPIO[34] = trigger;
-
-  // Add a timer for measurements
-  always @(posedge CLOCK_50) begin
-    if (measurement_trigger)
-      start <= 1'b1;
-    else
-      start <= 1'b0;
-  end
-
-
-
-  sensor_driver u0(
-    .clk			(CLOCK_50),
-    .rst			(reset),
-    .measure	(start), // Measure on trigger
-    .echo		(echo),
-    .trig		(trigger), 
-    .distance	(proximity_stat)
+  proximity u100(
+  .CLOCK_50(CLOCK_50),
+  .GPIO_35(GPIO[35]),
+  .GPIO_34(GPIO[34]),
+  .LEDR(proximity_stat)
   );
-
-  // Add a 0.5-second timer
-  reg [31:0] counter = 0;
-  parameter COUNT_MAX = 25_000_000; // Adjust for your CLOCK_50 frequency
-
-  always @(posedge CLOCK_50) begin
-    if (reset) begin
-      measurement_trigger <= 1'b0; // Reset the measurement trigger
-      counter <= 0;
-    end else if (measurement_trigger) begin
-      measurement_trigger <= 1'b0; // Reset the trigger after measurement
-      counter <= 0;
-    end else begin
-      if (counter == COUNT_MAX) begin
-        counter <= 0;
-        measurement_trigger <= 1'b1; // Trigger measurement every 0.5 seconds
-      end else begin
-        counter <= counter + 1;
-      end
-    end
-  end
   
   //**************************************************************************
 

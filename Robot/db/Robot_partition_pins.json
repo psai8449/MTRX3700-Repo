@@ -40,38 +40,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[4]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[5]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[6]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[7]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[8]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[9]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[10]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[11]",
-					"strict" : false
-				},
-				{
 					"name" : "EX_IO[2]",
 					"strict" : false
 				},
@@ -92,7 +60,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "GPIO[34]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[35]",
 					"strict" : false
 				},
 				{
@@ -100,11 +72,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
