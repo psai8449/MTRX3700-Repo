@@ -160,12 +160,9 @@ logic tx_valid;
 logic tx_ready;
 
 assign tx_valid = 1'b1;
-<<<<<<< HEAD
+
 logic [7:0] proximity_stat;
 assign LEDR[3:0] = prox_status;
-=======
-assign tx_byte = {motor_stat, proximity_stat[7:4], 1'b0};
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 
 logic [3:0] prox_status;
 
@@ -189,13 +186,13 @@ uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
 
 //************************ Proximity **************************************
 
-<<<<<<< HEAD
+
   proximity u100(
   .CLOCK_50(CLOCK_50),
   .GPIO_35(GPIO[35]),
   .GPIO_34(GPIO[34]),
   .LEDR(proximity_stat)
-=======
+  );
   logic start, reset, measurement_trigger;
   logic echo, trigger;
   logic [7:0] proximity_stat;
@@ -220,7 +217,7 @@ uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
     .echo		(echo),
     .trig		(trigger), 
     .distance	(proximity_stat)
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
+
   );
   
   //**************************************************************************
