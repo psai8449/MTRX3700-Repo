@@ -7,6 +7,7 @@ module top_level (
 	input logic IRDA_RXD,
 	
 	inout logic [6:0] EX_IO,
+	inout logic [35:0] GPIO,
 	
 	output logic [8:0] LEDG,
 	output logic [17:0] LEDR
@@ -14,6 +15,8 @@ module top_level (
 
 logic data_ready;
 logic [31:0] IR_input;
+
+
 
 //
 //BRAM_IP ram1 (
@@ -25,6 +28,22 @@ logic [31:0] IR_input;
 //	.q				(  )
 //);
 
+//**************************** Motor Control ***************************
+logic PWM;
+assign GPIO[8] = PWM;
+assign GPIO[9] = PWM;
+
+DualMotorControlFinal motor1 (
+    .clk			(CLOCK_50),                // System Clock  
+    .IR_input	(send),
+    .pwm			(PWM),
+    .ina1		(GPIO[4]),
+	 .inb1		(GPIO[6]),
+	 .ina2		(GPIO[5]),
+	 .inb2		(GPIO[7])  // Direction controls for two motors
+);
+
+//**********************************************************************
 
 //**************************** IR stuff ********************************
 
@@ -37,7 +56,7 @@ logic clk50;
 pll1 u0(
 	.inclk0		(CLOCK_50),
 	//irda clock 50M 
-	.c0			(clk50),          
+	.c0			(clk50)        
 //	.c1			()
 );
 
@@ -63,28 +82,24 @@ always_ff @( CLOCK_50 ) begin
 	
 	if ( hex_data != prev_data ) begin
 		case(hex_data[27:16]) 
-			12'b1101_0000_0010: begin		// 2
+			12'b1101_0000_0010: begin		// 2	Forwards
 				send[7:0] = 8'b0000_0010;
 			end
 			
-			12'b1011_0000_0100: begin		// 4
+			12'b1011_0000_0100: begin		// 4	Left
 				send[7:0] = 8'b0000_1000;
 			end
 			
-			12'b1010_0000_0101: begin		// 5
+			12'b1010_0000_0101: begin		// 5	Brake??
 				send[7:0] = 8'b0001_0000;
 			end
 			
-			12'b1001_0000_0110: begin		// 6
+			12'b1001_0000_0110: begin		// 6	Right
 				send[7:0] = 8'b0010_0000;
 			end
 			
-			12'b0111_0000_1000: begin		// 8
+			12'b0111_0000_1000: begin		// 8	Backwards
 				send[7:0] = 8'b1000_0000;
-			end
-			
-			12'b1111_0000_0000: begin		// 0 
-				send[7:0] = 8'b0000_0001;
 			end
 			
 			default: begin
@@ -157,7 +172,7 @@ uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) uart_tx_u (
 	.tx				(EX_IO[2]),
 	.valid			(tx_valid),
 	.ready			(tx_ready),
-	.data_to_send	(tx_byte),
+	.data_to_send	(tx_byte)
 );
 
 

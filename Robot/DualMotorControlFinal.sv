@@ -1,3 +1,4 @@
+
 module DualMotorControlFinal (
     input logic clk,                // System Clock  
     input [7:0] IR_input,
@@ -37,10 +38,12 @@ module DualMotorControlFinal (
         case(current_state)
             idle: begin
                 brake = 1'b1;
-                next_state = (IR_input == 8'b0000_0010) ? forwards : idle;
-                next_state = (IR_input == 8'b1000_0000) ? backwards : idle;
-                next_state = (IR_input == 8'b0000_1000) ? left : idle;
-                next_state = (IR_input == 8'b0010_0000) ? right : idle;
+                next_state = (IR_input == 8'b00000010) ? forwards : idle;
+                next_state = (IR_input == 8'b10000000) ? backwards : idle;
+                next_state = (IR_input == 8'b00001000) ? left : idle;
+                next_state = (IR_input == 8'b00100000) ? right : idle;
+				    direction1 = 1'b0;
+                direction2 = 1'b0;
             end
             forwards: begin
                 brake = 1'b0;
@@ -66,6 +69,13 @@ module DualMotorControlFinal (
                 direction2 = 1'b1;
                 next_state = idle;
             end
+				
+				default: begin
+					brake = 1'b1;
+					direction1 = 1'b0;
+               direction2 = 1'b0;
+					next_state = idle;
+				end
         endcase
     end
 
