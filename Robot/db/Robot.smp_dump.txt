@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 State Machine - |top_level|proximity:u100|sensor_driver:u0|state
+=======
+State Machine - |top_level|sensor_driver:u2|state
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 Name state.DISPLAY_DISTANCE state.COUNTECHO state.WAIT state.TRIGGER state.IDLE 
 state.IDLE 0 0 0 0 0 
 state.TRIGGER 0 0 0 1 1 

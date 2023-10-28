@@ -65,6 +65,13 @@
 				},
 				{
 					"name" : "GPIO[35]",
+<<<<<<< HEAD
+=======
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 					"strict" : false
 				},
 				{
@@ -72,10 +79,13 @@
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
 					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
+=======
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 					"name" : "IRDA_RXD",
 					"strict" : false
 				}

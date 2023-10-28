@@ -1,5 +1,9 @@
 Fitter report for proximity_sensor
+<<<<<<< HEAD
 Sun Oct 29 04:13:43 2023
+=======
+Sat Oct 28 15:29:58 2023
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -70,7 +74,11 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Fitter Status                      ; Successful - Sun Oct 29 04:13:43 2023       ;
+=======
+; Fitter Status                      ; Successful - Sat Oct 28 15:29:58 2023       ;
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; proximity_sensor                            ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -3404,10 +3412,17 @@ Warning (169064): Following 36 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/top_level.sv Line: 3
 Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/proximity_sensor/output_files/proximity_sensor.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 484 warnings
+<<<<<<< HEAD
     Info: Peak virtual memory: 5704 megabytes
     Info: Processing ended: Sun Oct 29 04:13:43 2023
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:07
+=======
+    Info: Peak virtual memory: 5838 megabytes
+    Info: Processing ended: Sat Oct 28 15:29:58 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:24
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 
 
 +----------------------------+

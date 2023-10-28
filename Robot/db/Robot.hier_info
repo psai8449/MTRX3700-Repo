@@ -64,8 +64,12 @@ GPIO[30] <> <UNC>
 GPIO[31] <> <UNC>
 GPIO[32] <> <UNC>
 GPIO[33] <> <UNC>
+<<<<<<< HEAD
 GPIO[34] <> proximity:u100.GPIO_34
 GPIO[35] <> proximity:u100.GPIO_35
+=======
+GPIO[34] <> GPIO[34]
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 LEDG[0] <= send[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[1] <= send[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[2] <= send[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -657,6 +661,7 @@ valid => next_state.IN0
 ready <= ready.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |top_level|proximity:u100
 CLOCK_50 => CLOCK_50.IN1
 GPIO_34 <> GPIO_34
@@ -671,6 +676,9 @@ LEDR[7] <= sensor_driver:u0.distance
 
 
 |top_level|proximity:u100|sensor_driver:u0
+=======
+|top_level|sensor_driver:u2
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 clk => distanceRAW_in_cm[24].CLK
 clk => distanceRAW_in_cm[25].CLK
 clk => distanceRAW_in_cm[26].CLK

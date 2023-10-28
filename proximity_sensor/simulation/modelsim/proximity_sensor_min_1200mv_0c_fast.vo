@@ -16,7 +16,11 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
+<<<<<<< HEAD
 // DATE "10/29/2023 04:13:51"
+=======
+// DATE "10/28/2023 15:30:07"
+>>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
