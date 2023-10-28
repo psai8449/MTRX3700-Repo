@@ -19,7 +19,11 @@ module top_level(
       start <= 1'b0;
   end
 
-
+  debounce reset_edge(
+    .clk(CLOCK_50),
+    .button(!KEY[2]),  // Changed to KEY[2] for reset
+    .button_edge(reset)
+  );
 
   sensor_driver u0(
     .clk(CLOCK_50),
@@ -50,11 +54,5 @@ module top_level(
       end
     end
   end
-//  
-//  debounce reset_edge(
-//    .clk(CLOCK_50),
-//    .button(!KEY[2]),  // Changed to KEY[2] for reset
-//    .button_edge(reset)
-//  );
-  
+
 endmodule
