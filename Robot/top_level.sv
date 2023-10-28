@@ -35,7 +35,7 @@ logic [11:0] prev_data;
 assign LEDR[11:0] = hex_data[27:16];
 //assign LEDG[7:0] = send[7:0];
 
-always @( * ) begin
+always_ff @( CLOCK_50 ) begin
 	
 	if ( hex_data != prev_data ) begin
 		case(hex_data[27:16]) 
@@ -66,12 +66,22 @@ always @( * ) begin
 			default: begin
 				send[7:0] = 8'b0000_0000;
 			end
+				
 		endcase
 		
 		prev_data <= hex_data;
 		
 	end
+	
+	else begin
+	
+		prev_data <= 16'b0000_0000_0000_0000;
+		send[7:0] = 8'b0000_0000;
+		
+	end
+	
 end
+
 
 logic [2:0] binary;
 

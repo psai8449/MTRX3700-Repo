@@ -1,5 +1,5 @@
 Flow report for Robot
-Thu Oct 26 18:39:30 2023
+Sat Oct 28 16:36:29 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct 26 18:39:30 2023       ;
+; Flow Status                        ; Successful - Sat Oct 28 16:36:29 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Robot                                       ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 307 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 272 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 290 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 237 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 207 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 207                                         ;
 ; Total pins                         ; 58 / 529 ( 11 % )                           ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/26/2023 18:38:36 ;
+; Start date & time ; 10/28/2023 16:35:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Robot               ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 817174291806.169830591610300           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 817174291806.169847135532284           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -98,12 +98,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4795 MB             ; 00:00:13                           ;
-; Fitter               ; 00:00:19     ; 1.0                     ; 5695 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4685 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4843 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4655 MB             ; 00:00:00                           ;
-; Total                ; 00:00:49     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4795 MB             ; 00:00:06                           ;
+; Fitter               ; 00:00:11     ; 1.0                     ; 5712 MB             ; 00:00:08                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4851 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4655 MB             ; 00:00:00                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

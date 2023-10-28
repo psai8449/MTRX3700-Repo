@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at top_level.sv(40): always construct contains both blocking and non-blocking assignments File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 40
+Warning (10268): Verilog HDL information at top_level.sv(38): always construct contains both blocking and non-blocking assignments File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 38

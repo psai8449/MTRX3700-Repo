@@ -1,5 +1,5 @@
 Fitter report for Robot
-Thu Oct 26 18:39:18 2023
+Sat Oct 28 16:36:18 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -71,15 +71,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Oct 26 18:39:18 2023       ;
+; Fitter Status                      ; Successful - Sat Oct 28 16:36:18 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Robot                                       ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 307 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 272 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 290 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 237 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 207 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 207                                         ;
 ; Total pins                         ; 58 / 529 ( 11 % )                           ;
@@ -163,9 +163,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
-;     Processor 3            ;   0.3%      ;
-;     Processor 4            ;   0.3%      ;
+;     Processor 2            ;   0.4%      ;
+;     Processors 3-4         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -1117,8 +1116,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 617 ) ; 0.00 % ( 0 / 617 )         ; 0.00 % ( 0 / 617 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 617 ) ; 0.00 % ( 0 / 617 )         ; 0.00 % ( 0 / 617 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 581 ) ; 0.00 % ( 0 / 581 )         ; 0.00 % ( 0 / 581 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 581 ) ; 0.00 % ( 0 / 581 )         ; 0.00 % ( 0 / 581 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -1141,7 +1140,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 605 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 569 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -1157,26 +1156,26 @@ The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 307 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 100                     ;
-;     -- Register only                        ; 35                      ;
-;     -- Combinational with a register        ; 172                     ;
+; Total logic elements                        ; 290 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 83                      ;
+;     -- Register only                        ; 53                      ;
+;     -- Combinational with a register        ; 154                     ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 119                     ;
-;     -- 3 input functions                    ; 42                      ;
-;     -- <=2 input functions                  ; 111                     ;
-;     -- Register only                        ; 35                      ;
+;     -- 4 input functions                    ; 109                     ;
+;     -- 3 input functions                    ; 19                      ;
+;     -- <=2 input functions                  ; 109                     ;
+;     -- Register only                        ; 53                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 185                     ;
+;     -- normal mode                          ; 150                     ;
 ;     -- arithmetic mode                      ; 87                      ;
 ;                                             ;                         ;
 ; Total registers*                            ; 207 / 117,053 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 207 / 114,480 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 24 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 26 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 58 / 529 ( 11 % )       ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -1187,19 +1186,19 @@ The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C
 ; Total block memory implementation bits      ; 0 / 3,981,312 ( 0 % )   ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )         ;
 ; PLLs                                        ; 1 / 4 ( 25 % )          ;
-; Global signals                              ; 3                       ;
-;     -- Global clocks                        ; 3 / 20 ( 15 % )         ;
+; Global signals                              ; 2                       ;
+;     -- Global clocks                        ; 2 / 20 ( 10 % )         ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )           ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )           ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 0.2% / 0.2% / 0.3%      ;
-; Peak interconnect usage (total/H/V)         ; 2.4% / 2.2% / 2.8%      ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%      ;
+; Peak interconnect usage (total/H/V)         ; 2.3% / 1.7% / 3.2%      ;
 ; Maximum fan-out                             ; 163                     ;
 ; Highest non-global fan-out                  ; 132                     ;
-; Total fan-out                               ; 1690                    ;
-; Average fan-out                             ; 2.60                    ;
+; Total fan-out                               ; 1578                    ;
+; Average fan-out                             ; 2.56                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -1212,26 +1211,26 @@ The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 307 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 100                    ; 0                              ;
-;     -- Register only                        ; 35                     ; 0                              ;
-;     -- Combinational with a register        ; 172                    ; 0                              ;
+; Total logic elements                        ; 290 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 83                     ; 0                              ;
+;     -- Register only                        ; 53                     ; 0                              ;
+;     -- Combinational with a register        ; 154                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 119                    ; 0                              ;
-;     -- 3 input functions                    ; 42                     ; 0                              ;
-;     -- <=2 input functions                  ; 111                    ; 0                              ;
-;     -- Register only                        ; 35                     ; 0                              ;
+;     -- 4 input functions                    ; 109                    ; 0                              ;
+;     -- 3 input functions                    ; 19                     ; 0                              ;
+;     -- <=2 input functions                  ; 109                    ; 0                              ;
+;     -- Register only                        ; 53                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 185                    ; 0                              ;
+;     -- normal mode                          ; 150                    ; 0                              ;
 ;     -- arithmetic mode                      ; 87                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Total registers                             ; 207                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 207 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 24 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 26 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 58                     ; 0                              ;
@@ -1239,7 +1238,7 @@ The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C
 ; Total memory bits                           ; 0                      ; 0                              ;
 ; Total RAM block bits                        ; 0                      ; 0                              ;
 ; PLL                                         ; 0 / 4 ( 0 % )          ; 1 / 4 ( 25 % )                 ;
-; Clock control block                         ; 2 / 24 ( 8 % )         ; 1 / 24 ( 4 % )                 ;
+; Clock control block                         ; 1 / 24 ( 4 % )         ; 1 / 24 ( 4 % )                 ;
 ;                                             ;                        ;                                ;
 ; Connections                                 ;                        ;                                ;
 ;     -- Input Connections                    ; 170                    ; 1                              ;
@@ -1248,8 +1247,8 @@ The pin-out file can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 1683                   ; 171                            ;
-;     -- Registered Connections               ; 837                    ; 0                              ;
+;     -- Total Connections                    ; 1571                   ; 171                            ;
+;     -- Registered Connections               ; 804                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 14                     ; 164                            ;
@@ -2283,12 +2282,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node            ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                   ; Entity Name ; Library Name ;
 +---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+-------------+--------------+
-; |top_level                            ; 307 (25)    ; 207 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 58   ; 0            ; 100 (22)     ; 35 (0)            ; 172 (33)         ; |top_level                                                            ; top_level   ; work         ;
-;    |IR_RECEIVE:u1|                    ; 222 (222)   ; 163 (163)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 34 (34)           ; 129 (129)        ; |top_level|IR_RECEIVE:u1                                              ; IR_RECEIVE  ; work         ;
+; |top_level                            ; 290 (15)    ; 207 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 58   ; 0            ; 83 (15)      ; 53 (0)            ; 154 (12)         ; |top_level                                                            ; top_level   ; work         ;
+;    |IR_RECEIVE:u1|                    ; 213 (213)   ; 163 (163)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 50 (50)      ; 51 (51)           ; 112 (112)        ; |top_level|IR_RECEIVE:u1                                              ; IR_RECEIVE  ; work         ;
 ;    |pll1:u0|                          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0                                                    ; pll1        ; work         ;
 ;       |altpll:altpll_component|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0|altpll:altpll_component                            ; altpll      ; work         ;
 ;          |pll1_altpll:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated ; pll1_altpll ; work         ;
-;    |uart_tx:uart_tx_u|                ; 63 (63)     ; 44 (44)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 1 (1)             ; 43 (43)          ; |top_level|uart_tx:uart_tx_u                                          ; uart_tx     ; work         ;
+;    |uart_tx:uart_tx_u|                ; 62 (62)     ; 44 (44)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 2 (2)             ; 42 (42)          ; |top_level|uart_tx:uart_tx_u                                          ; uart_tx     ; work         ;
 +---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2353,9 +2352,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; EX_IO[2] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[6]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[7]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; KEY[0]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; KEY[0]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; IRDA_RXD ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; IRDA_RXD ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -2397,177 +2396,175 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - uart_tx:uart_tx_u|data_to_send_temp[7]        ; 1                 ; 6       ;
 ;      - LEDG[7]~output                                ; 1                 ; 6       ;
 ; KEY[0]                                               ;                   ;         ;
-;      - IR_RECEIVE:u1|oDATA[0]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[1]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[2]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[3]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[4]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[5]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[6]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[7]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[8]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[9]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[10]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[11]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[12]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[13]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[14]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[15]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[16]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[17]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[18]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[19]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[20]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[21]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[22]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[23]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[24]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[25]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[26]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[27]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[28]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[29]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[30]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|oDATA[31]                       ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[16]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[23]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[22]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[21]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[20]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[19]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[18]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[17]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[31]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[30]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[29]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[28]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[27]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[26]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[25]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[24]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[15]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[14]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[13]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[12]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[11]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[10]                        ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[9]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[8]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[7]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[6]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[5]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[4]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[3]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[2]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[1]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data[0]                         ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[0]                     ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[1]                     ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[2]                     ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[3]                     ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[4]                     ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|bitcount[5]                     ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[2]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[3]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[4]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[5]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[6]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[7]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[8]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[9]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[10]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[11]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[12]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[13]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[14]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[15]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[16]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[17]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[0]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count[1]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[0]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[1]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[2]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[3]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[4]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[5]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[6]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[7]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[8]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[9]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[10]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[11]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[12]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[13]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[14]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[15]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[16]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count[17]                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[0]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[1]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[2]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[3]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[4]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[5]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[6]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[7]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[8]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[9]                   ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[10]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[11]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[12]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[13]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[14]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[15]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[16]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count[17]                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_ready                      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_buf[16]~6                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state.DATAREAD                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|data_count_flag                 ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state.GUIDANCE                  ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state.IDLE                      ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|state_count_flag                ; 0                 ; 6       ;
-;      - IR_RECEIVE:u1|idle_count_flag                 ; 0                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[16]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[17]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[18]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[19]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[20]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[21]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[22]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[23]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[24]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[25]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[26]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[27]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[27]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[23]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[22]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[21]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[20]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[19]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[18]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[17]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[16]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[31]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[30]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[29]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[28]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[26]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[25]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[24]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[15]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[14]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[13]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[12]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[11]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[10]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[9]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[8]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[7]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[6]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[5]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[4]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[3]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[2]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[1]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data[0]                         ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|bitcount[0]                     ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|bitcount[1]                     ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|bitcount[2]                     ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|bitcount[3]                     ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|bitcount[4]                     ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|bitcount[5]                     ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[2]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[3]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[4]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[5]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[6]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[7]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[8]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[9]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[10]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[11]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[12]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[13]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[14]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[15]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[16]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[17]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[0]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count[1]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[0]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[1]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[2]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[3]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[4]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[5]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[6]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[7]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[8]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[9]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[10]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[11]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[12]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[13]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[14]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[15]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[16]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count[17]                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[0]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[1]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[2]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[3]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[4]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[5]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[6]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[7]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[8]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[9]                   ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[10]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[11]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[12]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[13]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[14]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[15]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[16]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count[17]                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_ready                      ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[0]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[11]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[10]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[9]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[8]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[7]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[6]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[5]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[4]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[3]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[2]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[1]                        ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[15]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[14]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[13]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[12]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[31]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[30]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[29]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|oDATA[28]                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_buf[27]~6                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state.DATAREAD                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|data_count_flag                 ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state.GUIDANCE                  ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state.IDLE                      ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|state_count_flag                ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|idle_count_flag                 ; 1                 ; 6       ;
 ; CLOCK_50                                             ;                   ;         ;
 ; IRDA_RXD                                             ;                   ;         ;
-;      - IR_RECEIVE:u1|always5~1                       ; 1                 ; 6       ;
-;      - IR_RECEIVE:u1|always3~1                       ; 1                 ; 6       ;
-;      - IR_RECEIVE:u1|always1~1                       ; 1                 ; 6       ;
+;      - IR_RECEIVE:u1|always5~1                       ; 0                 ; 6       ;
+;      - IR_RECEIVE:u1|always3~1                       ; 0                 ; 6       ;
+;      - IR_RECEIVE:u1|always1~1                       ; 0                 ; 6       ;
 +------------------------------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                           ;
-+-----------------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                        ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                                                                    ; PIN_Y2              ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; CLOCK_50                                                                    ; PIN_Y2              ; 44      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; Equal0~12                                                                   ; LCCOMB_X103_Y47_N2  ; 18      ; Latch enable ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; IR_RECEIVE:u1|bitcount[3]~18                                                ; LCCOMB_X108_Y45_N30 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|data_buf[16]~6                                                ; LCCOMB_X106_Y44_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|data_count_flag                                               ; FF_X105_Y46_N31     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|data_ready                                                    ; FF_X106_Y44_N13     ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|idle_count_flag                                               ; FF_X105_Y46_N27     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|state.DATAREAD                                                ; FF_X106_Y46_N29     ; 43      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; IR_RECEIVE:u1|state_count_flag                                              ; FF_X105_Y46_N29     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; KEY[0]                                                                      ; PIN_M23             ; 132     ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1               ; 163     ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; uart_tx:uart_tx_u|count[12]~40                                              ; LCCOMB_X100_Y47_N22 ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; uart_tx:uart_tx_u|state.IDLE                                                ; FF_X100_Y47_N7      ; 12      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+-----------------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                          ;
++-----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                        ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                                                                    ; PIN_Y2             ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                                                                    ; PIN_Y2             ; 44      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; IR_RECEIVE:u1|bitcount[4]~18                                                ; LCCOMB_X99_Y49_N2  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; IR_RECEIVE:u1|data_buf[27]~6                                                ; LCCOMB_X98_Y55_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; IR_RECEIVE:u1|data_count_flag                                               ; FF_X100_Y50_N27    ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; IR_RECEIVE:u1|data_ready                                                    ; FF_X99_Y55_N21     ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; IR_RECEIVE:u1|idle_count_flag                                               ; FF_X100_Y50_N23    ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; IR_RECEIVE:u1|state.DATAREAD                                                ; FF_X97_Y50_N19     ; 43      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; IR_RECEIVE:u1|state_count_flag                                              ; FF_X97_Y50_N23     ; 18      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; KEY[0]                                                                      ; PIN_M23            ; 132     ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1              ; 163     ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; uart_tx:uart_tx_u|count[31]~40                                              ; LCCOMB_X81_Y70_N26 ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; uart_tx:uart_tx_u|state.IDLE                                                ; FF_X81_Y70_N1      ; 12      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++-----------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                                             ;
-+-----------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                                                        ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK_50                                                                    ; PIN_Y2             ; 44      ; 3                                    ; Global Clock         ; GCLK4            ; --                        ;
-; Equal0~12                                                                   ; LCCOMB_X103_Y47_N2 ; 18      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
-; pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1              ; 163     ; 4                                    ; Global Clock         ; GCLK3            ; --                        ;
-+-----------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                                   ;
++-----------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                                                        ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CLOCK_50                                                                    ; PIN_Y2   ; 44      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 163     ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
++-----------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------+
@@ -2575,90 +2572,90 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 321 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 69 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 364 / 209,544 ( < 1 % ) ;
-; Direct links          ; 73 / 342,891 ( < 1 % )  ;
-; Global clocks         ; 3 / 20 ( 15 % )         ;
+; Block interconnects   ; 270 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 26 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 243 / 209,544 ( < 1 % ) ;
+; Direct links          ; 44 / 342,891 ( < 1 % )  ;
+; Global clocks         ; 2 / 20 ( 10 % )         ;
 ; Local interconnects   ; 212 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 54 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 309 / 289,782 ( < 1 % ) ;
+; R24 interconnects     ; 24 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 172 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.79) ; Number of LABs  (Total = 24) ;
+; Number of Logic Elements  (Average = 11.15) ; Number of LABs  (Total = 26) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 2                            ;
-; 2                                           ; 0                            ;
-; 3                                           ; 1                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 0                            ;
+; 1                                           ; 4                            ;
+; 2                                           ; 1                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 1                            ;
 ; 8                                           ; 0                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 0                            ;
-; 13                                          ; 3                            ;
-; 14                                          ; 1                            ;
+; 9                                           ; 2                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 1                            ;
+; 12                                          ; 1                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 0                            ;
 ; 15                                          ; 2                            ;
-; 16                                          ; 13                           ;
+; 16                                          ; 12                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.42) ; Number of LABs  (Total = 24) ;
+; LAB-wide Signals  (Average = 2.04) ; Number of LABs  (Total = 26) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 16                           ;
+; 1 Async. clear                     ; 14                           ;
 ; 1 Clock                            ; 20                           ;
-; 1 Clock enable                     ; 9                            ;
-; 1 Sync. clear                      ; 12                           ;
-; 2 Clock enables                    ; 1                            ;
+; 1 Clock enable                     ; 6                            ;
+; 1 Sync. clear                      ; 10                           ;
+; 2 Clock enables                    ; 3                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 21.38) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced  (Average = 18.50) ; Number of LABs  (Total = 26) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 2                            ;
-; 2                                            ; 0                            ;
+; 1                                            ; 4                            ;
+; 2                                            ; 1                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 2                            ;
-; 6                                            ; 1                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 1                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 1                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
+; 18                                           ; 2                            ;
 ; 19                                           ; 0                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 2                            ;
-; 23                                           ; 1                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 0                            ;
 ; 24                                           ; 1                            ;
-; 25                                           ; 4                            ;
-; 26                                           ; 3                            ;
+; 25                                           ; 2                            ;
+; 26                                           ; 2                            ;
 ; 27                                           ; 0                            ;
-; 28                                           ; 1                            ;
-; 29                                           ; 2                            ;
-; 30                                           ; 2                            ;
+; 28                                           ; 4                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 1                            ;
 ; 31                                           ; 0                            ;
 ; 32                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
@@ -2667,57 +2664,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.38) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced Out  (Average = 6.31) ; Number of LABs  (Total = 26) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 5                            ;
-; 2                                               ; 1                            ;
+; 1                                               ; 7                            ;
+; 2                                               ; 3                            ;
 ; 3                                               ; 2                            ;
-; 4                                               ; 0                            ;
-; 5                                               ; 2                            ;
+; 4                                               ; 2                            ;
+; 5                                               ; 1                            ;
 ; 6                                               ; 1                            ;
-; 7                                               ; 1                            ;
+; 7                                               ; 0                            ;
 ; 8                                               ; 0                            ;
-; 9                                               ; 2                            ;
-; 10                                              ; 3                            ;
-; 11                                              ; 3                            ;
+; 9                                               ; 3                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 1                            ;
 ; 12                                              ; 0                            ;
 ; 13                                              ; 1                            ;
-; 14                                              ; 0                            ;
+; 14                                              ; 2                            ;
 ; 15                                              ; 1                            ;
 ; 16                                              ; 2                            ;
 +-------------------------------------------------+------------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 10.46) ; Number of LABs  (Total = 24) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 1                            ;
-; 3                                            ; 1                            ;
-; 4                                            ; 2                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 3                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 2                            ;
-; 10                                           ; 2                            ;
-; 11                                           ; 2                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 2                            ;
-; 17                                           ; 2                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
-+----------------------------------------------+------------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++---------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 9.08) ; Number of LABs  (Total = 26) ;
++---------------------------------------------+------------------------------+
+; 0                                           ; 0                            ;
+; 1                                           ; 0                            ;
+; 2                                           ; 1                            ;
+; 3                                           ; 4                            ;
+; 4                                           ; 5                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 3                            ;
+; 10                                          ; 2                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 2                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 2                            ;
+; 15                                          ; 2                            ;
+; 16                                          ; 1                            ;
+; 17                                          ; 0                            ;
+; 18                                          ; 0                            ;
+; 19                                          ; 1                            ;
+; 20                                          ; 0                            ;
+; 21                                          ; 0                            ;
+; 22                                          ; 0                            ;
+; 23                                          ; 0                            ;
+; 24                                          ; 1                            ;
++---------------------------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -2878,45 +2877,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                               ;
-+------------------------------------------------+------------------------+-------------------+
-; Source Clock(s)                                ; Destination Clock(s)   ; Delay Added in ns ;
-+------------------------------------------------+------------------------+-------------------+
-; u0|altpll_component|auto_generated|pll1|clk[0] ; IR_RECEIVE:u1|oDATA[0] ; 194.2             ;
-+------------------------------------------------+------------------------+-------------------+
++-------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                             ;
++------------------------------------------------+----------------------+-------------------+
+; Source Clock(s)                                ; Destination Clock(s) ; Delay Added in ns ;
++------------------------------------------------+----------------------+-------------------+
+; u0|altpll_component|auto_generated|pll1|clk[0] ; CLOCK_50,I/O         ; 34.7              ;
+; u0|altpll_component|auto_generated|pll1|clk[0] ; CLOCK_50             ; 3.3               ;
++------------------------------------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+--------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                      ;
-+-------------------------+----------------------+-------------------+
-; Source Register         ; Destination Register ; Delay Added in ns ;
-+-------------------------+----------------------+-------------------+
-; IR_RECEIVE:u1|oDATA[1]  ; prev_data[1]         ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[3]  ; prev_data[3]         ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[2]  ; prev_data[2]         ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[4]  ; prev_data[4]         ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[7]  ; prev_data[7]         ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[6]  ; prev_data[6]         ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[8]  ; prev_data[8]         ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[10] ; prev_data[10]        ; 8.024             ;
-; IR_RECEIVE:u1|oDATA[20] ; send[0]              ; 7.211             ;
-; IR_RECEIVE:u1|oDATA[21] ; send[0]              ; 7.211             ;
-; IR_RECEIVE:u1|oDATA[22] ; send[0]              ; 7.211             ;
-; IR_RECEIVE:u1|oDATA[23] ; send[0]              ; 7.211             ;
-; IR_RECEIVE:u1|oDATA[19] ; send[7]              ; 7.165             ;
-; IR_RECEIVE:u1|oDATA[24] ; send[4]              ; 7.112             ;
-; IR_RECEIVE:u1|oDATA[17] ; send[4]              ; 7.094             ;
-; IR_RECEIVE:u1|oDATA[27] ; send[4]              ; 7.094             ;
-; IR_RECEIVE:u1|oDATA[26] ; send[0]              ; 7.000             ;
-; IR_RECEIVE:u1|oDATA[18] ; send[3]              ; 6.995             ;
-; IR_RECEIVE:u1|oDATA[16] ; send[4]              ; 6.977             ;
-; IR_RECEIVE:u1|oDATA[25] ; send[0]              ; 6.911             ;
-; IR_RECEIVE:u1|oDATA[0]  ; prev_data[0]         ; 6.224             ;
-+-------------------------+----------------------+-------------------+
-Note: This table only shows the top 21 path(s) that have the largest delay added for hold.
++--------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                        ;
++-------------------------+----------------------------------------+-------------------+
+; Source Register         ; Destination Register                   ; Delay Added in ns ;
++-------------------------+----------------------------------------+-------------------+
+; IR_RECEIVE:u1|oDATA[17] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.961             ;
+; IR_RECEIVE:u1|oDATA[18] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.793             ;
+; IR_RECEIVE:u1|oDATA[26] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.793             ;
+; IR_RECEIVE:u1|oDATA[16] ; uart_tx:uart_tx_u|data_to_send_temp[3] ; 3.724             ;
+; IR_RECEIVE:u1|oDATA[25] ; uart_tx:uart_tx_u|data_to_send_temp[3] ; 3.683             ;
+; IR_RECEIVE:u1|oDATA[0]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.638             ;
+; IR_RECEIVE:u1|oDATA[11] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.638             ;
+; IR_RECEIVE:u1|oDATA[10] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.638             ;
+; IR_RECEIVE:u1|oDATA[9]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.638             ;
+; IR_RECEIVE:u1|oDATA[8]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[7]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[6]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[5]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[4]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[3]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[2]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[1]  ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[15] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[14] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[13] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[12] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[31] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[30] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[29] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[28] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[23] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[22] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[21] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[20] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[24] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[27] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
+; IR_RECEIVE:u1|oDATA[19] ; uart_tx:uart_tx_u|data_to_send_temp[5] ; 3.566             ;
++-------------------------+----------------------------------------+-------------------+
+Note: This table only shows the top 32 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2948,21 +2959,22 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location N7
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location P28
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Warning (335093): The Timing Analyzer is analyzing 18 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Robot.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained generated clocks found in the design
 Info (332144): No user constrained base clocks found in the design
-Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: Equal0~0  from: datad  to: combout
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332125): Found combinational loop of 4 nodes File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 40
+    Warning (332126): Node "Equal0~8|combout"
+    Warning (332126): Node "Equal0~3|datad"
+    Warning (332126): Node "Equal0~3|combout"
+    Warning (332126): Node "Equal0~8|dataa"
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 6
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176353): Automatically promoted node pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 77
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node Equal0~12  File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 40
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -3440,14 +3452,15 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X92_Y37 to location X103_Y48
+    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X92_Y49 to location X103_Y60
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.39 seconds.
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3473,11 +3486,11 @@ Warning (169064): Following 7 pins have no output enable or a GND or VCC output 
     Info (169065): Pin EX_IO[6] has a permanently disabled output enable File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 9
     Info (169065): Pin EX_IO[2] has a permanently enabled output enable File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 9
 Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 476 warnings
-    Info: Peak virtual memory: 5695 megabytes
-    Info: Processing ended: Thu Oct 26 18:39:19 2023
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Fitter was successful. 0 errors, 480 warnings
+    Info: Peak virtual memory: 5712 megabytes
+    Info: Processing ended: Sat Oct 28 16:36:18 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+
