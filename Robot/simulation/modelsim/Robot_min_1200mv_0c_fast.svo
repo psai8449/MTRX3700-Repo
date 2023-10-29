@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "10/29/2023 17:13:40"
+// DATE "10/29/2023 17:30:22"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -37,14 +37,14 @@ module top_level (
 	GPIO,
 	LEDG,
 	LEDR);
-input 	[17:0] SW;
-input 	[3:0] KEY;
-input 	CLOCK_50;
-input 	IRDA_RXD;
-output 	[6:0] EX_IO;
-output 	[35:0] GPIO;
-output 	[8:0] LEDG;
-output 	[17:0] LEDR;
+input 	logic [17:0] SW ;
+input 	logic [3:0] KEY ;
+input 	logic CLOCK_50 ;
+input 	logic IRDA_RXD ;
+inout 	logic [6:0] EX_IO ;
+inout 	logic [35:0] GPIO ;
+output 	logic [8:0] LEDG ;
+output 	logic [17:0] LEDR ;
 
 // Design Ports Information
 // SW[0]	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -964,59 +964,59 @@ wire \motor1|WideOr3~0_combout ;
 wire \motor1|WideOr3~1_combout ;
 wire \motor1|WideOr1~0_combout ;
 wire \motor1|WideOr1~1_combout ;
-wire \motor1|Left|Add0~31 ;
-wire \motor1|Left|Add0~32_combout ;
-wire \motor1|Left|counter~1_combout ;
-wire \motor1|Right|Equal0~0_combout ;
-wire \motor1|Left|Add0~0_combout ;
-wire \motor1|Left|counter~6_combout ;
-wire \motor1|Left|Add0~1 ;
-wire \motor1|Left|Add0~2_combout ;
-wire \motor1|Left|Add0~3 ;
-wire \motor1|Left|Add0~4_combout ;
-wire \motor1|Left|Add0~5 ;
-wire \motor1|Left|Add0~6_combout ;
-wire \motor1|Left|Add0~7 ;
-wire \motor1|Left|Add0~8_combout ;
-wire \motor1|Left|Add0~9 ;
-wire \motor1|Left|Add0~10_combout ;
-wire \motor1|Left|counter~2_combout ;
-wire \motor1|Left|Add0~11 ;
-wire \motor1|Left|Add0~12_combout ;
-wire \motor1|Left|Add0~13 ;
-wire \motor1|Left|Add0~14_combout ;
-wire \motor1|Left|counter~3_combout ;
-wire \motor1|Left|Add0~15 ;
-wire \motor1|Left|Add0~16_combout ;
-wire \motor1|Right|Equal0~1_combout ;
-wire \motor1|Right|Equal0~2_combout ;
-wire \motor1|Right|Equal0~3_combout ;
-wire \motor1|Right|Equal0~4_combout ;
-wire \motor1|Right|Equal0~5_combout ;
-wire \motor1|Left|Add0~17 ;
-wire \motor1|Left|Add0~18_combout ;
-wire \motor1|Left|counter~4_combout ;
-wire \motor1|Left|Add0~19 ;
-wire \motor1|Left|Add0~20_combout ;
-wire \motor1|Left|counter~5_combout ;
-wire \motor1|Left|Add0~21 ;
-wire \motor1|Left|Add0~22_combout ;
-wire \motor1|Left|Add0~23 ;
-wire \motor1|Left|Add0~24_combout ;
-wire \motor1|Left|Add0~25 ;
-wire \motor1|Left|Add0~26_combout ;
-wire \motor1|Left|Add0~27 ;
-wire \motor1|Left|Add0~28_combout ;
-wire \motor1|Left|Add0~29 ;
-wire \motor1|Left|Add0~30_combout ;
-wire \motor1|Left|counter~0_combout ;
-wire \motor1|Right|LessThan0~0_combout ;
-wire \motor1|Right|LessThan0~1_combout ;
-wire \motor1|Right|LessThan0~2_combout ;
-wire \motor1|Right|LessThan0~3_combout ;
-wire \motor1|Right|pwm_out~feeder_combout ;
-wire \motor1|Right|pwm_out~q ;
-wire \motor1|Left|pwm_out~q ;
+wire \motor1|PWM1|Add0~31 ;
+wire \motor1|PWM1|Add0~32_combout ;
+wire \motor1|PWM1|counter~1_combout ;
+wire \motor1|PWM2|Equal0~0_combout ;
+wire \motor1|PWM1|Add0~0_combout ;
+wire \motor1|PWM1|counter~6_combout ;
+wire \motor1|PWM1|Add0~1 ;
+wire \motor1|PWM1|Add0~2_combout ;
+wire \motor1|PWM1|Add0~3 ;
+wire \motor1|PWM1|Add0~4_combout ;
+wire \motor1|PWM1|Add0~5 ;
+wire \motor1|PWM1|Add0~6_combout ;
+wire \motor1|PWM1|Add0~7 ;
+wire \motor1|PWM1|Add0~8_combout ;
+wire \motor1|PWM1|Add0~9 ;
+wire \motor1|PWM1|Add0~10_combout ;
+wire \motor1|PWM1|counter~2_combout ;
+wire \motor1|PWM1|Add0~11 ;
+wire \motor1|PWM1|Add0~12_combout ;
+wire \motor1|PWM1|Add0~13 ;
+wire \motor1|PWM1|Add0~14_combout ;
+wire \motor1|PWM1|counter~3_combout ;
+wire \motor1|PWM1|Add0~15 ;
+wire \motor1|PWM1|Add0~16_combout ;
+wire \motor1|PWM2|Equal0~1_combout ;
+wire \motor1|PWM2|Equal0~2_combout ;
+wire \motor1|PWM2|Equal0~3_combout ;
+wire \motor1|PWM2|Equal0~4_combout ;
+wire \motor1|PWM2|Equal0~5_combout ;
+wire \motor1|PWM1|Add0~17 ;
+wire \motor1|PWM1|Add0~18_combout ;
+wire \motor1|PWM1|counter~4_combout ;
+wire \motor1|PWM1|Add0~19 ;
+wire \motor1|PWM1|Add0~20_combout ;
+wire \motor1|PWM1|counter~5_combout ;
+wire \motor1|PWM1|Add0~21 ;
+wire \motor1|PWM1|Add0~22_combout ;
+wire \motor1|PWM1|Add0~23 ;
+wire \motor1|PWM1|Add0~24_combout ;
+wire \motor1|PWM1|Add0~25 ;
+wire \motor1|PWM1|Add0~26_combout ;
+wire \motor1|PWM1|Add0~27 ;
+wire \motor1|PWM1|Add0~28_combout ;
+wire \motor1|PWM1|Add0~29 ;
+wire \motor1|PWM1|Add0~30_combout ;
+wire \motor1|PWM1|counter~0_combout ;
+wire \motor1|PWM2|LessThan0~0_combout ;
+wire \motor1|PWM2|LessThan0~1_combout ;
+wire \motor1|PWM2|LessThan0~2_combout ;
+wire \motor1|PWM2|LessThan0~3_combout ;
+wire \motor1|PWM2|pwm_out~feeder_combout ;
+wire \motor1|PWM2|pwm_out~q ;
+wire \motor1|PWM1|pwm_out~q ;
 wire [31:0] \u100|u0|distanceRAW_in_cm ;
 wire [5:0] \u1|bitcount ;
 wire [35:0] \u100|u0|Mult0|auto_generated|w173w ;
@@ -1032,7 +1032,7 @@ wire [2:0] \u3|bit_index ;
 wire [31:0] \u1|oDATA ;
 wire [31:0] \u1|data_buf ;
 wire [7:0] \u3|data_to_send_temp ;
-wire [16:0] \motor1|Left|counter ;
+wire [16:0] \motor1|PWM1|counter ;
 wire [7:0] send;
 wire [11:0] prev_data;
 
@@ -2056,7 +2056,7 @@ defparam \GPIO[7]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X60_Y0_N16
 cycloneive_io_obuf \GPIO[8]~output (
-	.i(\motor1|Right|pwm_out~q ),
+	.i(\motor1|PWM2|pwm_out~q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -2069,7 +2069,7 @@ defparam \GPIO[8]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X60_Y0_N9
 cycloneive_io_obuf \GPIO[9]~output (
-	.i(\motor1|Left|pwm_out~q ),
+	.i(\motor1|PWM1|pwm_out~q ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -15172,61 +15172,61 @@ defparam \motor1|WideOr1~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N14
-cycloneive_lcell_comb \motor1|Left|Add0~30 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~30 (
 // Equation(s):
-// \motor1|Left|Add0~30_combout  = (\motor1|Left|counter [15] & (!\motor1|Left|Add0~29 )) # (!\motor1|Left|counter [15] & ((\motor1|Left|Add0~29 ) # (GND)))
-// \motor1|Left|Add0~31  = CARRY((!\motor1|Left|Add0~29 ) # (!\motor1|Left|counter [15]))
+// \motor1|PWM1|Add0~30_combout  = (\motor1|PWM1|counter [15] & (!\motor1|PWM1|Add0~29 )) # (!\motor1|PWM1|counter [15] & ((\motor1|PWM1|Add0~29 ) # (GND)))
+// \motor1|PWM1|Add0~31  = CARRY((!\motor1|PWM1|Add0~29 ) # (!\motor1|PWM1|counter [15]))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [15]),
+	.datab(\motor1|PWM1|counter [15]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~29 ),
-	.combout(\motor1|Left|Add0~30_combout ),
-	.cout(\motor1|Left|Add0~31 ));
+	.cin(\motor1|PWM1|Add0~29 ),
+	.combout(\motor1|PWM1|Add0~30_combout ),
+	.cout(\motor1|PWM1|Add0~31 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~30 .lut_mask = 16'h3C3F;
-defparam \motor1|Left|Add0~30 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~30 .lut_mask = 16'h3C3F;
+defparam \motor1|PWM1|Add0~30 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N16
-cycloneive_lcell_comb \motor1|Left|Add0~32 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~32 (
 // Equation(s):
-// \motor1|Left|Add0~32_combout  = \motor1|Left|Add0~31  $ (!\motor1|Left|counter [16])
+// \motor1|PWM1|Add0~32_combout  = \motor1|PWM1|Add0~31  $ (!\motor1|PWM1|counter [16])
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(\motor1|Left|counter [16]),
-	.cin(\motor1|Left|Add0~31 ),
-	.combout(\motor1|Left|Add0~32_combout ),
+	.datad(\motor1|PWM1|counter [16]),
+	.cin(\motor1|PWM1|Add0~31 ),
+	.combout(\motor1|PWM1|Add0~32_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|Add0~32 .lut_mask = 16'hF00F;
-defparam \motor1|Left|Add0~32 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~32 .lut_mask = 16'hF00F;
+defparam \motor1|PWM1|Add0~32 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N18
-cycloneive_lcell_comb \motor1|Left|counter~1 (
+cycloneive_lcell_comb \motor1|PWM1|counter~1 (
 // Equation(s):
-// \motor1|Left|counter~1_combout  = (!\motor1|Right|Equal0~5_combout  & \motor1|Left|Add0~32_combout )
+// \motor1|PWM1|counter~1_combout  = (!\motor1|PWM2|Equal0~5_combout  & \motor1|PWM1|Add0~32_combout )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\motor1|Right|Equal0~5_combout ),
-	.datad(\motor1|Left|Add0~32_combout ),
+	.datac(\motor1|PWM2|Equal0~5_combout ),
+	.datad(\motor1|PWM1|Add0~32_combout ),
 	.cin(gnd),
-	.combout(\motor1|Left|counter~1_combout ),
+	.combout(\motor1|PWM1|counter~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|counter~1 .lut_mask = 16'h0F00;
-defparam \motor1|Left|counter~1 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|counter~1 .lut_mask = 16'h0F00;
+defparam \motor1|PWM1|counter~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N19
-dffeas \motor1|Left|counter[16] (
+dffeas \motor1|PWM1|counter[16] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|counter~1_combout ),
+	.d(\motor1|PWM1|counter~1_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15235,69 +15235,69 @@ dffeas \motor1|Left|counter[16] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [16]),
+	.q(\motor1|PWM1|counter [16]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[16] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[16] .power_up = "low";
+defparam \motor1|PWM1|counter[16] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[16] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N24
-cycloneive_lcell_comb \motor1|Right|Equal0~0 (
+cycloneive_lcell_comb \motor1|PWM2|Equal0~0 (
 // Equation(s):
-// \motor1|Right|Equal0~0_combout  = (!\motor1|Left|counter [12] & !\motor1|Left|counter [13])
+// \motor1|PWM2|Equal0~0_combout  = (!\motor1|PWM1|counter [12] & !\motor1|PWM1|counter [13])
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\motor1|Left|counter [12]),
-	.datad(\motor1|Left|counter [13]),
+	.datac(\motor1|PWM1|counter [12]),
+	.datad(\motor1|PWM1|counter [13]),
 	.cin(gnd),
-	.combout(\motor1|Right|Equal0~0_combout ),
+	.combout(\motor1|PWM2|Equal0~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|Equal0~0 .lut_mask = 16'h000F;
-defparam \motor1|Right|Equal0~0 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|Equal0~0 .lut_mask = 16'h000F;
+defparam \motor1|PWM2|Equal0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N16
-cycloneive_lcell_comb \motor1|Left|Add0~0 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~0 (
 // Equation(s):
-// \motor1|Left|Add0~0_combout  = \motor1|Left|counter [0] $ (VCC)
-// \motor1|Left|Add0~1  = CARRY(\motor1|Left|counter [0])
+// \motor1|PWM1|Add0~0_combout  = \motor1|PWM1|counter [0] $ (VCC)
+// \motor1|PWM1|Add0~1  = CARRY(\motor1|PWM1|counter [0])
 
-	.dataa(\motor1|Left|counter [0]),
+	.dataa(\motor1|PWM1|counter [0]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(gnd),
-	.combout(\motor1|Left|Add0~0_combout ),
-	.cout(\motor1|Left|Add0~1 ));
+	.combout(\motor1|PWM1|Add0~0_combout ),
+	.cout(\motor1|PWM1|Add0~1 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~0 .lut_mask = 16'h55AA;
-defparam \motor1|Left|Add0~0 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|Add0~0 .lut_mask = 16'h55AA;
+defparam \motor1|PWM1|Add0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N10
-cycloneive_lcell_comb \motor1|Left|counter~6 (
+cycloneive_lcell_comb \motor1|PWM1|counter~6 (
 // Equation(s):
-// \motor1|Left|counter~6_combout  = (\motor1|Left|Add0~0_combout  & !\motor1|Right|Equal0~5_combout )
+// \motor1|PWM1|counter~6_combout  = (\motor1|PWM1|Add0~0_combout  & !\motor1|PWM2|Equal0~5_combout )
 
 	.dataa(gnd),
-	.datab(\motor1|Left|Add0~0_combout ),
+	.datab(\motor1|PWM1|Add0~0_combout ),
 	.datac(gnd),
-	.datad(\motor1|Right|Equal0~5_combout ),
+	.datad(\motor1|PWM2|Equal0~5_combout ),
 	.cin(gnd),
-	.combout(\motor1|Left|counter~6_combout ),
+	.combout(\motor1|PWM1|counter~6_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|counter~6 .lut_mask = 16'h00CC;
-defparam \motor1|Left|counter~6 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|counter~6 .lut_mask = 16'h00CC;
+defparam \motor1|PWM1|counter~6 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N11
-dffeas \motor1|Left|counter[0] (
+dffeas \motor1|PWM1|counter[0] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|counter~6_combout ),
+	.d(\motor1|PWM1|counter~6_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15306,35 +15306,35 @@ dffeas \motor1|Left|counter[0] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [0]),
+	.q(\motor1|PWM1|counter [0]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[0] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[0] .power_up = "low";
+defparam \motor1|PWM1|counter[0] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[0] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N18
-cycloneive_lcell_comb \motor1|Left|Add0~2 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~2 (
 // Equation(s):
-// \motor1|Left|Add0~2_combout  = (\motor1|Left|counter [1] & (!\motor1|Left|Add0~1 )) # (!\motor1|Left|counter [1] & ((\motor1|Left|Add0~1 ) # (GND)))
-// \motor1|Left|Add0~3  = CARRY((!\motor1|Left|Add0~1 ) # (!\motor1|Left|counter [1]))
+// \motor1|PWM1|Add0~2_combout  = (\motor1|PWM1|counter [1] & (!\motor1|PWM1|Add0~1 )) # (!\motor1|PWM1|counter [1] & ((\motor1|PWM1|Add0~1 ) # (GND)))
+// \motor1|PWM1|Add0~3  = CARRY((!\motor1|PWM1|Add0~1 ) # (!\motor1|PWM1|counter [1]))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [1]),
+	.datab(\motor1|PWM1|counter [1]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~1 ),
-	.combout(\motor1|Left|Add0~2_combout ),
-	.cout(\motor1|Left|Add0~3 ));
+	.cin(\motor1|PWM1|Add0~1 ),
+	.combout(\motor1|PWM1|Add0~2_combout ),
+	.cout(\motor1|PWM1|Add0~3 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~2 .lut_mask = 16'h3C3F;
-defparam \motor1|Left|Add0~2 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~2 .lut_mask = 16'h3C3F;
+defparam \motor1|PWM1|Add0~2 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N19
-dffeas \motor1|Left|counter[1] (
+dffeas \motor1|PWM1|counter[1] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~2_combout ),
+	.d(\motor1|PWM1|Add0~2_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15343,35 +15343,35 @@ dffeas \motor1|Left|counter[1] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [1]),
+	.q(\motor1|PWM1|counter [1]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[1] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[1] .power_up = "low";
+defparam \motor1|PWM1|counter[1] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N20
-cycloneive_lcell_comb \motor1|Left|Add0~4 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~4 (
 // Equation(s):
-// \motor1|Left|Add0~4_combout  = (\motor1|Left|counter [2] & (\motor1|Left|Add0~3  $ (GND))) # (!\motor1|Left|counter [2] & (!\motor1|Left|Add0~3  & VCC))
-// \motor1|Left|Add0~5  = CARRY((\motor1|Left|counter [2] & !\motor1|Left|Add0~3 ))
+// \motor1|PWM1|Add0~4_combout  = (\motor1|PWM1|counter [2] & (\motor1|PWM1|Add0~3  $ (GND))) # (!\motor1|PWM1|counter [2] & (!\motor1|PWM1|Add0~3  & VCC))
+// \motor1|PWM1|Add0~5  = CARRY((\motor1|PWM1|counter [2] & !\motor1|PWM1|Add0~3 ))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [2]),
+	.datab(\motor1|PWM1|counter [2]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~3 ),
-	.combout(\motor1|Left|Add0~4_combout ),
-	.cout(\motor1|Left|Add0~5 ));
+	.cin(\motor1|PWM1|Add0~3 ),
+	.combout(\motor1|PWM1|Add0~4_combout ),
+	.cout(\motor1|PWM1|Add0~5 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~4 .lut_mask = 16'hC30C;
-defparam \motor1|Left|Add0~4 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~4 .lut_mask = 16'hC30C;
+defparam \motor1|PWM1|Add0~4 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N21
-dffeas \motor1|Left|counter[2] (
+dffeas \motor1|PWM1|counter[2] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~4_combout ),
+	.d(\motor1|PWM1|Add0~4_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15380,35 +15380,35 @@ dffeas \motor1|Left|counter[2] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [2]),
+	.q(\motor1|PWM1|counter [2]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[2] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[2] .power_up = "low";
+defparam \motor1|PWM1|counter[2] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[2] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N22
-cycloneive_lcell_comb \motor1|Left|Add0~6 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~6 (
 // Equation(s):
-// \motor1|Left|Add0~6_combout  = (\motor1|Left|counter [3] & (!\motor1|Left|Add0~5 )) # (!\motor1|Left|counter [3] & ((\motor1|Left|Add0~5 ) # (GND)))
-// \motor1|Left|Add0~7  = CARRY((!\motor1|Left|Add0~5 ) # (!\motor1|Left|counter [3]))
+// \motor1|PWM1|Add0~6_combout  = (\motor1|PWM1|counter [3] & (!\motor1|PWM1|Add0~5 )) # (!\motor1|PWM1|counter [3] & ((\motor1|PWM1|Add0~5 ) # (GND)))
+// \motor1|PWM1|Add0~7  = CARRY((!\motor1|PWM1|Add0~5 ) # (!\motor1|PWM1|counter [3]))
 
-	.dataa(\motor1|Left|counter [3]),
+	.dataa(\motor1|PWM1|counter [3]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~5 ),
-	.combout(\motor1|Left|Add0~6_combout ),
-	.cout(\motor1|Left|Add0~7 ));
+	.cin(\motor1|PWM1|Add0~5 ),
+	.combout(\motor1|PWM1|Add0~6_combout ),
+	.cout(\motor1|PWM1|Add0~7 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~6 .lut_mask = 16'h5A5F;
-defparam \motor1|Left|Add0~6 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~6 .lut_mask = 16'h5A5F;
+defparam \motor1|PWM1|Add0~6 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N23
-dffeas \motor1|Left|counter[3] (
+dffeas \motor1|PWM1|counter[3] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~6_combout ),
+	.d(\motor1|PWM1|Add0~6_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15417,35 +15417,35 @@ dffeas \motor1|Left|counter[3] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [3]),
+	.q(\motor1|PWM1|counter [3]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[3] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[3] .power_up = "low";
+defparam \motor1|PWM1|counter[3] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[3] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N24
-cycloneive_lcell_comb \motor1|Left|Add0~8 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~8 (
 // Equation(s):
-// \motor1|Left|Add0~8_combout  = (\motor1|Left|counter [4] & (\motor1|Left|Add0~7  $ (GND))) # (!\motor1|Left|counter [4] & (!\motor1|Left|Add0~7  & VCC))
-// \motor1|Left|Add0~9  = CARRY((\motor1|Left|counter [4] & !\motor1|Left|Add0~7 ))
+// \motor1|PWM1|Add0~8_combout  = (\motor1|PWM1|counter [4] & (\motor1|PWM1|Add0~7  $ (GND))) # (!\motor1|PWM1|counter [4] & (!\motor1|PWM1|Add0~7  & VCC))
+// \motor1|PWM1|Add0~9  = CARRY((\motor1|PWM1|counter [4] & !\motor1|PWM1|Add0~7 ))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [4]),
+	.datab(\motor1|PWM1|counter [4]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~7 ),
-	.combout(\motor1|Left|Add0~8_combout ),
-	.cout(\motor1|Left|Add0~9 ));
+	.cin(\motor1|PWM1|Add0~7 ),
+	.combout(\motor1|PWM1|Add0~8_combout ),
+	.cout(\motor1|PWM1|Add0~9 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~8 .lut_mask = 16'hC30C;
-defparam \motor1|Left|Add0~8 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~8 .lut_mask = 16'hC30C;
+defparam \motor1|PWM1|Add0~8 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N25
-dffeas \motor1|Left|counter[4] (
+dffeas \motor1|PWM1|counter[4] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~8_combout ),
+	.d(\motor1|PWM1|Add0~8_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15454,52 +15454,52 @@ dffeas \motor1|Left|counter[4] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [4]),
+	.q(\motor1|PWM1|counter [4]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[4] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[4] .power_up = "low";
+defparam \motor1|PWM1|counter[4] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[4] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N26
-cycloneive_lcell_comb \motor1|Left|Add0~10 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~10 (
 // Equation(s):
-// \motor1|Left|Add0~10_combout  = (\motor1|Left|counter [5] & (!\motor1|Left|Add0~9 )) # (!\motor1|Left|counter [5] & ((\motor1|Left|Add0~9 ) # (GND)))
-// \motor1|Left|Add0~11  = CARRY((!\motor1|Left|Add0~9 ) # (!\motor1|Left|counter [5]))
+// \motor1|PWM1|Add0~10_combout  = (\motor1|PWM1|counter [5] & (!\motor1|PWM1|Add0~9 )) # (!\motor1|PWM1|counter [5] & ((\motor1|PWM1|Add0~9 ) # (GND)))
+// \motor1|PWM1|Add0~11  = CARRY((!\motor1|PWM1|Add0~9 ) # (!\motor1|PWM1|counter [5]))
 
-	.dataa(\motor1|Left|counter [5]),
+	.dataa(\motor1|PWM1|counter [5]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~9 ),
-	.combout(\motor1|Left|Add0~10_combout ),
-	.cout(\motor1|Left|Add0~11 ));
+	.cin(\motor1|PWM1|Add0~9 ),
+	.combout(\motor1|PWM1|Add0~10_combout ),
+	.cout(\motor1|PWM1|Add0~11 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~10 .lut_mask = 16'h5A5F;
-defparam \motor1|Left|Add0~10 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~10 .lut_mask = 16'h5A5F;
+defparam \motor1|PWM1|Add0~10 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N12
-cycloneive_lcell_comb \motor1|Left|counter~2 (
+cycloneive_lcell_comb \motor1|PWM1|counter~2 (
 // Equation(s):
-// \motor1|Left|counter~2_combout  = (\motor1|Left|Add0~10_combout  & !\motor1|Right|Equal0~5_combout )
+// \motor1|PWM1|counter~2_combout  = (\motor1|PWM1|Add0~10_combout  & !\motor1|PWM2|Equal0~5_combout )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\motor1|Left|Add0~10_combout ),
-	.datad(\motor1|Right|Equal0~5_combout ),
+	.datac(\motor1|PWM1|Add0~10_combout ),
+	.datad(\motor1|PWM2|Equal0~5_combout ),
 	.cin(gnd),
-	.combout(\motor1|Left|counter~2_combout ),
+	.combout(\motor1|PWM1|counter~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|counter~2 .lut_mask = 16'h00F0;
-defparam \motor1|Left|counter~2 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|counter~2 .lut_mask = 16'h00F0;
+defparam \motor1|PWM1|counter~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N13
-dffeas \motor1|Left|counter[5] (
+dffeas \motor1|PWM1|counter[5] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|counter~2_combout ),
+	.d(\motor1|PWM1|counter~2_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15508,35 +15508,35 @@ dffeas \motor1|Left|counter[5] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [5]),
+	.q(\motor1|PWM1|counter [5]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[5] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[5] .power_up = "low";
+defparam \motor1|PWM1|counter[5] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[5] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N28
-cycloneive_lcell_comb \motor1|Left|Add0~12 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~12 (
 // Equation(s):
-// \motor1|Left|Add0~12_combout  = (\motor1|Left|counter [6] & (\motor1|Left|Add0~11  $ (GND))) # (!\motor1|Left|counter [6] & (!\motor1|Left|Add0~11  & VCC))
-// \motor1|Left|Add0~13  = CARRY((\motor1|Left|counter [6] & !\motor1|Left|Add0~11 ))
+// \motor1|PWM1|Add0~12_combout  = (\motor1|PWM1|counter [6] & (\motor1|PWM1|Add0~11  $ (GND))) # (!\motor1|PWM1|counter [6] & (!\motor1|PWM1|Add0~11  & VCC))
+// \motor1|PWM1|Add0~13  = CARRY((\motor1|PWM1|counter [6] & !\motor1|PWM1|Add0~11 ))
 
-	.dataa(\motor1|Left|counter [6]),
+	.dataa(\motor1|PWM1|counter [6]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~11 ),
-	.combout(\motor1|Left|Add0~12_combout ),
-	.cout(\motor1|Left|Add0~13 ));
+	.cin(\motor1|PWM1|Add0~11 ),
+	.combout(\motor1|PWM1|Add0~12_combout ),
+	.cout(\motor1|PWM1|Add0~13 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~12 .lut_mask = 16'hA50A;
-defparam \motor1|Left|Add0~12 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~12 .lut_mask = 16'hA50A;
+defparam \motor1|PWM1|Add0~12 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N29
-dffeas \motor1|Left|counter[6] (
+dffeas \motor1|PWM1|counter[6] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~12_combout ),
+	.d(\motor1|PWM1|Add0~12_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15545,52 +15545,52 @@ dffeas \motor1|Left|counter[6] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [6]),
+	.q(\motor1|PWM1|counter [6]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[6] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[6] .power_up = "low";
+defparam \motor1|PWM1|counter[6] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[6] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N30
-cycloneive_lcell_comb \motor1|Left|Add0~14 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~14 (
 // Equation(s):
-// \motor1|Left|Add0~14_combout  = (\motor1|Left|counter [7] & (!\motor1|Left|Add0~13 )) # (!\motor1|Left|counter [7] & ((\motor1|Left|Add0~13 ) # (GND)))
-// \motor1|Left|Add0~15  = CARRY((!\motor1|Left|Add0~13 ) # (!\motor1|Left|counter [7]))
+// \motor1|PWM1|Add0~14_combout  = (\motor1|PWM1|counter [7] & (!\motor1|PWM1|Add0~13 )) # (!\motor1|PWM1|counter [7] & ((\motor1|PWM1|Add0~13 ) # (GND)))
+// \motor1|PWM1|Add0~15  = CARRY((!\motor1|PWM1|Add0~13 ) # (!\motor1|PWM1|counter [7]))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [7]),
+	.datab(\motor1|PWM1|counter [7]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~13 ),
-	.combout(\motor1|Left|Add0~14_combout ),
-	.cout(\motor1|Left|Add0~15 ));
+	.cin(\motor1|PWM1|Add0~13 ),
+	.combout(\motor1|PWM1|Add0~14_combout ),
+	.cout(\motor1|PWM1|Add0~15 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~14 .lut_mask = 16'h3C3F;
-defparam \motor1|Left|Add0~14 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~14 .lut_mask = 16'h3C3F;
+defparam \motor1|PWM1|Add0~14 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N14
-cycloneive_lcell_comb \motor1|Left|counter~3 (
+cycloneive_lcell_comb \motor1|PWM1|counter~3 (
 // Equation(s):
-// \motor1|Left|counter~3_combout  = (\motor1|Left|Add0~14_combout  & !\motor1|Right|Equal0~5_combout )
+// \motor1|PWM1|counter~3_combout  = (\motor1|PWM1|Add0~14_combout  & !\motor1|PWM2|Equal0~5_combout )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\motor1|Left|Add0~14_combout ),
-	.datad(\motor1|Right|Equal0~5_combout ),
+	.datac(\motor1|PWM1|Add0~14_combout ),
+	.datad(\motor1|PWM2|Equal0~5_combout ),
 	.cin(gnd),
-	.combout(\motor1|Left|counter~3_combout ),
+	.combout(\motor1|PWM1|counter~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|counter~3 .lut_mask = 16'h00F0;
-defparam \motor1|Left|counter~3 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|counter~3 .lut_mask = 16'h00F0;
+defparam \motor1|PWM1|counter~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y3_N15
-dffeas \motor1|Left|counter[7] (
+dffeas \motor1|PWM1|counter[7] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|counter~3_combout ),
+	.d(\motor1|PWM1|counter~3_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15599,35 +15599,35 @@ dffeas \motor1|Left|counter[7] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [7]),
+	.q(\motor1|PWM1|counter [7]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[7] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[7] .power_up = "low";
+defparam \motor1|PWM1|counter[7] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[7] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N0
-cycloneive_lcell_comb \motor1|Left|Add0~16 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~16 (
 // Equation(s):
-// \motor1|Left|Add0~16_combout  = (\motor1|Left|counter [8] & (\motor1|Left|Add0~15  $ (GND))) # (!\motor1|Left|counter [8] & (!\motor1|Left|Add0~15  & VCC))
-// \motor1|Left|Add0~17  = CARRY((\motor1|Left|counter [8] & !\motor1|Left|Add0~15 ))
+// \motor1|PWM1|Add0~16_combout  = (\motor1|PWM1|counter [8] & (\motor1|PWM1|Add0~15  $ (GND))) # (!\motor1|PWM1|counter [8] & (!\motor1|PWM1|Add0~15  & VCC))
+// \motor1|PWM1|Add0~17  = CARRY((\motor1|PWM1|counter [8] & !\motor1|PWM1|Add0~15 ))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [8]),
+	.datab(\motor1|PWM1|counter [8]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~15 ),
-	.combout(\motor1|Left|Add0~16_combout ),
-	.cout(\motor1|Left|Add0~17 ));
+	.cin(\motor1|PWM1|Add0~15 ),
+	.combout(\motor1|PWM1|Add0~16_combout ),
+	.cout(\motor1|PWM1|Add0~17 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~16 .lut_mask = 16'hC30C;
-defparam \motor1|Left|Add0~16 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~16 .lut_mask = 16'hC30C;
+defparam \motor1|PWM1|Add0~16 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N1
-dffeas \motor1|Left|counter[8] (
+dffeas \motor1|PWM1|counter[8] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~16_combout ),
+	.d(\motor1|PWM1|Add0~16_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15636,137 +15636,137 @@ dffeas \motor1|Left|counter[8] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [8]),
+	.q(\motor1|PWM1|counter [8]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[8] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[8] .power_up = "low";
+defparam \motor1|PWM1|counter[8] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[8] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N0
-cycloneive_lcell_comb \motor1|Right|Equal0~1 (
+cycloneive_lcell_comb \motor1|PWM2|Equal0~1 (
 // Equation(s):
-// \motor1|Right|Equal0~1_combout  = (!\motor1|Left|counter [6] & (\motor1|Left|counter [9] & (\motor1|Left|counter [10] & !\motor1|Left|counter [8])))
+// \motor1|PWM2|Equal0~1_combout  = (!\motor1|PWM1|counter [6] & (\motor1|PWM1|counter [9] & (\motor1|PWM1|counter [10] & !\motor1|PWM1|counter [8])))
 
-	.dataa(\motor1|Left|counter [6]),
-	.datab(\motor1|Left|counter [9]),
-	.datac(\motor1|Left|counter [10]),
-	.datad(\motor1|Left|counter [8]),
+	.dataa(\motor1|PWM1|counter [6]),
+	.datab(\motor1|PWM1|counter [9]),
+	.datac(\motor1|PWM1|counter [10]),
+	.datad(\motor1|PWM1|counter [8]),
 	.cin(gnd),
-	.combout(\motor1|Right|Equal0~1_combout ),
+	.combout(\motor1|PWM2|Equal0~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|Equal0~1 .lut_mask = 16'h0040;
-defparam \motor1|Right|Equal0~1 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|Equal0~1 .lut_mask = 16'h0040;
+defparam \motor1|PWM2|Equal0~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N2
-cycloneive_lcell_comb \motor1|Right|Equal0~2 (
+cycloneive_lcell_comb \motor1|PWM2|Equal0~2 (
 // Equation(s):
-// \motor1|Right|Equal0~2_combout  = (\motor1|Right|Equal0~0_combout  & (!\motor1|Left|counter [4] & (!\motor1|Left|counter [3] & \motor1|Right|Equal0~1_combout )))
+// \motor1|PWM2|Equal0~2_combout  = (\motor1|PWM2|Equal0~0_combout  & (!\motor1|PWM1|counter [4] & (!\motor1|PWM1|counter [3] & \motor1|PWM2|Equal0~1_combout )))
 
-	.dataa(\motor1|Right|Equal0~0_combout ),
-	.datab(\motor1|Left|counter [4]),
-	.datac(\motor1|Left|counter [3]),
-	.datad(\motor1|Right|Equal0~1_combout ),
+	.dataa(\motor1|PWM2|Equal0~0_combout ),
+	.datab(\motor1|PWM1|counter [4]),
+	.datac(\motor1|PWM1|counter [3]),
+	.datad(\motor1|PWM2|Equal0~1_combout ),
 	.cin(gnd),
-	.combout(\motor1|Right|Equal0~2_combout ),
+	.combout(\motor1|PWM2|Equal0~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|Equal0~2 .lut_mask = 16'h0200;
-defparam \motor1|Right|Equal0~2 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|Equal0~2 .lut_mask = 16'h0200;
+defparam \motor1|PWM2|Equal0~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N8
-cycloneive_lcell_comb \motor1|Right|Equal0~3 (
+cycloneive_lcell_comb \motor1|PWM2|Equal0~3 (
 // Equation(s):
-// \motor1|Right|Equal0~3_combout  = (\motor1|Left|counter [5] & (!\motor1|Left|counter [1] & (!\motor1|Left|counter [0] & !\motor1|Left|counter [2])))
+// \motor1|PWM2|Equal0~3_combout  = (\motor1|PWM1|counter [5] & (!\motor1|PWM1|counter [1] & (!\motor1|PWM1|counter [0] & !\motor1|PWM1|counter [2])))
 
-	.dataa(\motor1|Left|counter [5]),
-	.datab(\motor1|Left|counter [1]),
-	.datac(\motor1|Left|counter [0]),
-	.datad(\motor1|Left|counter [2]),
+	.dataa(\motor1|PWM1|counter [5]),
+	.datab(\motor1|PWM1|counter [1]),
+	.datac(\motor1|PWM1|counter [0]),
+	.datad(\motor1|PWM1|counter [2]),
 	.cin(gnd),
-	.combout(\motor1|Right|Equal0~3_combout ),
+	.combout(\motor1|PWM2|Equal0~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|Equal0~3 .lut_mask = 16'h0002;
-defparam \motor1|Right|Equal0~3 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|Equal0~3 .lut_mask = 16'h0002;
+defparam \motor1|PWM2|Equal0~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X57_Y2_N30
-cycloneive_lcell_comb \motor1|Right|Equal0~4 (
+cycloneive_lcell_comb \motor1|PWM2|Equal0~4 (
 // Equation(s):
-// \motor1|Right|Equal0~4_combout  = (!\motor1|Left|counter [11] & (!\motor1|Left|counter [14] & (\motor1|Left|counter [15] & \motor1|Left|counter [7])))
+// \motor1|PWM2|Equal0~4_combout  = (!\motor1|PWM1|counter [11] & (!\motor1|PWM1|counter [14] & (\motor1|PWM1|counter [15] & \motor1|PWM1|counter [7])))
 
-	.dataa(\motor1|Left|counter [11]),
-	.datab(\motor1|Left|counter [14]),
-	.datac(\motor1|Left|counter [15]),
-	.datad(\motor1|Left|counter [7]),
+	.dataa(\motor1|PWM1|counter [11]),
+	.datab(\motor1|PWM1|counter [14]),
+	.datac(\motor1|PWM1|counter [15]),
+	.datad(\motor1|PWM1|counter [7]),
 	.cin(gnd),
-	.combout(\motor1|Right|Equal0~4_combout ),
+	.combout(\motor1|PWM2|Equal0~4_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|Equal0~4 .lut_mask = 16'h1000;
-defparam \motor1|Right|Equal0~4 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|Equal0~4 .lut_mask = 16'h1000;
+defparam \motor1|PWM2|Equal0~4 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N6
-cycloneive_lcell_comb \motor1|Right|Equal0~5 (
+cycloneive_lcell_comb \motor1|PWM2|Equal0~5 (
 // Equation(s):
-// \motor1|Right|Equal0~5_combout  = (\motor1|Left|counter [16] & (\motor1|Right|Equal0~2_combout  & (\motor1|Right|Equal0~3_combout  & \motor1|Right|Equal0~4_combout )))
+// \motor1|PWM2|Equal0~5_combout  = (\motor1|PWM1|counter [16] & (\motor1|PWM2|Equal0~2_combout  & (\motor1|PWM2|Equal0~3_combout  & \motor1|PWM2|Equal0~4_combout )))
 
-	.dataa(\motor1|Left|counter [16]),
-	.datab(\motor1|Right|Equal0~2_combout ),
-	.datac(\motor1|Right|Equal0~3_combout ),
-	.datad(\motor1|Right|Equal0~4_combout ),
+	.dataa(\motor1|PWM1|counter [16]),
+	.datab(\motor1|PWM2|Equal0~2_combout ),
+	.datac(\motor1|PWM2|Equal0~3_combout ),
+	.datad(\motor1|PWM2|Equal0~4_combout ),
 	.cin(gnd),
-	.combout(\motor1|Right|Equal0~5_combout ),
+	.combout(\motor1|PWM2|Equal0~5_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|Equal0~5 .lut_mask = 16'h8000;
-defparam \motor1|Right|Equal0~5 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|Equal0~5 .lut_mask = 16'h8000;
+defparam \motor1|PWM2|Equal0~5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N2
-cycloneive_lcell_comb \motor1|Left|Add0~18 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~18 (
 // Equation(s):
-// \motor1|Left|Add0~18_combout  = (\motor1|Left|counter [9] & (!\motor1|Left|Add0~17 )) # (!\motor1|Left|counter [9] & ((\motor1|Left|Add0~17 ) # (GND)))
-// \motor1|Left|Add0~19  = CARRY((!\motor1|Left|Add0~17 ) # (!\motor1|Left|counter [9]))
+// \motor1|PWM1|Add0~18_combout  = (\motor1|PWM1|counter [9] & (!\motor1|PWM1|Add0~17 )) # (!\motor1|PWM1|counter [9] & ((\motor1|PWM1|Add0~17 ) # (GND)))
+// \motor1|PWM1|Add0~19  = CARRY((!\motor1|PWM1|Add0~17 ) # (!\motor1|PWM1|counter [9]))
 
-	.dataa(\motor1|Left|counter [9]),
+	.dataa(\motor1|PWM1|counter [9]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~17 ),
-	.combout(\motor1|Left|Add0~18_combout ),
-	.cout(\motor1|Left|Add0~19 ));
+	.cin(\motor1|PWM1|Add0~17 ),
+	.combout(\motor1|PWM1|Add0~18_combout ),
+	.cout(\motor1|PWM1|Add0~19 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~18 .lut_mask = 16'h5A5F;
-defparam \motor1|Left|Add0~18 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~18 .lut_mask = 16'h5A5F;
+defparam \motor1|PWM1|Add0~18 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N22
-cycloneive_lcell_comb \motor1|Left|counter~4 (
+cycloneive_lcell_comb \motor1|PWM1|counter~4 (
 // Equation(s):
-// \motor1|Left|counter~4_combout  = (!\motor1|Right|Equal0~5_combout  & \motor1|Left|Add0~18_combout )
+// \motor1|PWM1|counter~4_combout  = (!\motor1|PWM2|Equal0~5_combout  & \motor1|PWM1|Add0~18_combout )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\motor1|Right|Equal0~5_combout ),
-	.datad(\motor1|Left|Add0~18_combout ),
+	.datac(\motor1|PWM2|Equal0~5_combout ),
+	.datad(\motor1|PWM1|Add0~18_combout ),
 	.cin(gnd),
-	.combout(\motor1|Left|counter~4_combout ),
+	.combout(\motor1|PWM1|counter~4_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|counter~4 .lut_mask = 16'h0F00;
-defparam \motor1|Left|counter~4 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|counter~4 .lut_mask = 16'h0F00;
+defparam \motor1|PWM1|counter~4 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N23
-dffeas \motor1|Left|counter[9] (
+dffeas \motor1|PWM1|counter[9] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|counter~4_combout ),
+	.d(\motor1|PWM1|counter~4_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15775,52 +15775,52 @@ dffeas \motor1|Left|counter[9] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [9]),
+	.q(\motor1|PWM1|counter [9]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[9] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[9] .power_up = "low";
+defparam \motor1|PWM1|counter[9] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[9] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N4
-cycloneive_lcell_comb \motor1|Left|Add0~20 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~20 (
 // Equation(s):
-// \motor1|Left|Add0~20_combout  = (\motor1|Left|counter [10] & (\motor1|Left|Add0~19  $ (GND))) # (!\motor1|Left|counter [10] & (!\motor1|Left|Add0~19  & VCC))
-// \motor1|Left|Add0~21  = CARRY((\motor1|Left|counter [10] & !\motor1|Left|Add0~19 ))
+// \motor1|PWM1|Add0~20_combout  = (\motor1|PWM1|counter [10] & (\motor1|PWM1|Add0~19  $ (GND))) # (!\motor1|PWM1|counter [10] & (!\motor1|PWM1|Add0~19  & VCC))
+// \motor1|PWM1|Add0~21  = CARRY((\motor1|PWM1|counter [10] & !\motor1|PWM1|Add0~19 ))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [10]),
+	.datab(\motor1|PWM1|counter [10]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~19 ),
-	.combout(\motor1|Left|Add0~20_combout ),
-	.cout(\motor1|Left|Add0~21 ));
+	.cin(\motor1|PWM1|Add0~19 ),
+	.combout(\motor1|PWM1|Add0~20_combout ),
+	.cout(\motor1|PWM1|Add0~21 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~20 .lut_mask = 16'hC30C;
-defparam \motor1|Left|Add0~20 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~20 .lut_mask = 16'hC30C;
+defparam \motor1|PWM1|Add0~20 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N28
-cycloneive_lcell_comb \motor1|Left|counter~5 (
+cycloneive_lcell_comb \motor1|PWM1|counter~5 (
 // Equation(s):
-// \motor1|Left|counter~5_combout  = (\motor1|Left|Add0~20_combout  & !\motor1|Right|Equal0~5_combout )
+// \motor1|PWM1|counter~5_combout  = (\motor1|PWM1|Add0~20_combout  & !\motor1|PWM2|Equal0~5_combout )
 
 	.dataa(gnd),
-	.datab(\motor1|Left|Add0~20_combout ),
-	.datac(\motor1|Right|Equal0~5_combout ),
+	.datab(\motor1|PWM1|Add0~20_combout ),
+	.datac(\motor1|PWM2|Equal0~5_combout ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\motor1|Left|counter~5_combout ),
+	.combout(\motor1|PWM1|counter~5_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|counter~5 .lut_mask = 16'h0C0C;
-defparam \motor1|Left|counter~5 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|counter~5 .lut_mask = 16'h0C0C;
+defparam \motor1|PWM1|counter~5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N29
-dffeas \motor1|Left|counter[10] (
+dffeas \motor1|PWM1|counter[10] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|counter~5_combout ),
+	.d(\motor1|PWM1|counter~5_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15829,35 +15829,35 @@ dffeas \motor1|Left|counter[10] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [10]),
+	.q(\motor1|PWM1|counter [10]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[10] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[10] .power_up = "low";
+defparam \motor1|PWM1|counter[10] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[10] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N6
-cycloneive_lcell_comb \motor1|Left|Add0~22 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~22 (
 // Equation(s):
-// \motor1|Left|Add0~22_combout  = (\motor1|Left|counter [11] & (!\motor1|Left|Add0~21 )) # (!\motor1|Left|counter [11] & ((\motor1|Left|Add0~21 ) # (GND)))
-// \motor1|Left|Add0~23  = CARRY((!\motor1|Left|Add0~21 ) # (!\motor1|Left|counter [11]))
+// \motor1|PWM1|Add0~22_combout  = (\motor1|PWM1|counter [11] & (!\motor1|PWM1|Add0~21 )) # (!\motor1|PWM1|counter [11] & ((\motor1|PWM1|Add0~21 ) # (GND)))
+// \motor1|PWM1|Add0~23  = CARRY((!\motor1|PWM1|Add0~21 ) # (!\motor1|PWM1|counter [11]))
 
-	.dataa(\motor1|Left|counter [11]),
+	.dataa(\motor1|PWM1|counter [11]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~21 ),
-	.combout(\motor1|Left|Add0~22_combout ),
-	.cout(\motor1|Left|Add0~23 ));
+	.cin(\motor1|PWM1|Add0~21 ),
+	.combout(\motor1|PWM1|Add0~22_combout ),
+	.cout(\motor1|PWM1|Add0~23 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~22 .lut_mask = 16'h5A5F;
-defparam \motor1|Left|Add0~22 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~22 .lut_mask = 16'h5A5F;
+defparam \motor1|PWM1|Add0~22 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N7
-dffeas \motor1|Left|counter[11] (
+dffeas \motor1|PWM1|counter[11] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~22_combout ),
+	.d(\motor1|PWM1|Add0~22_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15866,35 +15866,35 @@ dffeas \motor1|Left|counter[11] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [11]),
+	.q(\motor1|PWM1|counter [11]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[11] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[11] .power_up = "low";
+defparam \motor1|PWM1|counter[11] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[11] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N8
-cycloneive_lcell_comb \motor1|Left|Add0~24 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~24 (
 // Equation(s):
-// \motor1|Left|Add0~24_combout  = (\motor1|Left|counter [12] & (\motor1|Left|Add0~23  $ (GND))) # (!\motor1|Left|counter [12] & (!\motor1|Left|Add0~23  & VCC))
-// \motor1|Left|Add0~25  = CARRY((\motor1|Left|counter [12] & !\motor1|Left|Add0~23 ))
+// \motor1|PWM1|Add0~24_combout  = (\motor1|PWM1|counter [12] & (\motor1|PWM1|Add0~23  $ (GND))) # (!\motor1|PWM1|counter [12] & (!\motor1|PWM1|Add0~23  & VCC))
+// \motor1|PWM1|Add0~25  = CARRY((\motor1|PWM1|counter [12] & !\motor1|PWM1|Add0~23 ))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [12]),
+	.datab(\motor1|PWM1|counter [12]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~23 ),
-	.combout(\motor1|Left|Add0~24_combout ),
-	.cout(\motor1|Left|Add0~25 ));
+	.cin(\motor1|PWM1|Add0~23 ),
+	.combout(\motor1|PWM1|Add0~24_combout ),
+	.cout(\motor1|PWM1|Add0~25 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~24 .lut_mask = 16'hC30C;
-defparam \motor1|Left|Add0~24 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~24 .lut_mask = 16'hC30C;
+defparam \motor1|PWM1|Add0~24 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N9
-dffeas \motor1|Left|counter[12] (
+dffeas \motor1|PWM1|counter[12] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~24_combout ),
+	.d(\motor1|PWM1|Add0~24_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15903,35 +15903,35 @@ dffeas \motor1|Left|counter[12] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [12]),
+	.q(\motor1|PWM1|counter [12]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[12] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[12] .power_up = "low";
+defparam \motor1|PWM1|counter[12] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[12] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N10
-cycloneive_lcell_comb \motor1|Left|Add0~26 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~26 (
 // Equation(s):
-// \motor1|Left|Add0~26_combout  = (\motor1|Left|counter [13] & (!\motor1|Left|Add0~25 )) # (!\motor1|Left|counter [13] & ((\motor1|Left|Add0~25 ) # (GND)))
-// \motor1|Left|Add0~27  = CARRY((!\motor1|Left|Add0~25 ) # (!\motor1|Left|counter [13]))
+// \motor1|PWM1|Add0~26_combout  = (\motor1|PWM1|counter [13] & (!\motor1|PWM1|Add0~25 )) # (!\motor1|PWM1|counter [13] & ((\motor1|PWM1|Add0~25 ) # (GND)))
+// \motor1|PWM1|Add0~27  = CARRY((!\motor1|PWM1|Add0~25 ) # (!\motor1|PWM1|counter [13]))
 
-	.dataa(\motor1|Left|counter [13]),
+	.dataa(\motor1|PWM1|counter [13]),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~25 ),
-	.combout(\motor1|Left|Add0~26_combout ),
-	.cout(\motor1|Left|Add0~27 ));
+	.cin(\motor1|PWM1|Add0~25 ),
+	.combout(\motor1|PWM1|Add0~26_combout ),
+	.cout(\motor1|PWM1|Add0~27 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~26 .lut_mask = 16'h5A5F;
-defparam \motor1|Left|Add0~26 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~26 .lut_mask = 16'h5A5F;
+defparam \motor1|PWM1|Add0~26 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N11
-dffeas \motor1|Left|counter[13] (
+dffeas \motor1|PWM1|counter[13] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~26_combout ),
+	.d(\motor1|PWM1|Add0~26_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15940,35 +15940,35 @@ dffeas \motor1|Left|counter[13] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [13]),
+	.q(\motor1|PWM1|counter [13]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[13] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[13] .power_up = "low";
+defparam \motor1|PWM1|counter[13] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[13] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N12
-cycloneive_lcell_comb \motor1|Left|Add0~28 (
+cycloneive_lcell_comb \motor1|PWM1|Add0~28 (
 // Equation(s):
-// \motor1|Left|Add0~28_combout  = (\motor1|Left|counter [14] & (\motor1|Left|Add0~27  $ (GND))) # (!\motor1|Left|counter [14] & (!\motor1|Left|Add0~27  & VCC))
-// \motor1|Left|Add0~29  = CARRY((\motor1|Left|counter [14] & !\motor1|Left|Add0~27 ))
+// \motor1|PWM1|Add0~28_combout  = (\motor1|PWM1|counter [14] & (\motor1|PWM1|Add0~27  $ (GND))) # (!\motor1|PWM1|counter [14] & (!\motor1|PWM1|Add0~27  & VCC))
+// \motor1|PWM1|Add0~29  = CARRY((\motor1|PWM1|counter [14] & !\motor1|PWM1|Add0~27 ))
 
 	.dataa(gnd),
-	.datab(\motor1|Left|counter [14]),
+	.datab(\motor1|PWM1|counter [14]),
 	.datac(gnd),
 	.datad(vcc),
-	.cin(\motor1|Left|Add0~27 ),
-	.combout(\motor1|Left|Add0~28_combout ),
-	.cout(\motor1|Left|Add0~29 ));
+	.cin(\motor1|PWM1|Add0~27 ),
+	.combout(\motor1|PWM1|Add0~28_combout ),
+	.cout(\motor1|PWM1|Add0~29 ));
 // synopsys translate_off
-defparam \motor1|Left|Add0~28 .lut_mask = 16'hC30C;
-defparam \motor1|Left|Add0~28 .sum_lutc_input = "cin";
+defparam \motor1|PWM1|Add0~28 .lut_mask = 16'hC30C;
+defparam \motor1|PWM1|Add0~28 .sum_lutc_input = "cin";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N13
-dffeas \motor1|Left|counter[14] (
+dffeas \motor1|PWM1|counter[14] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|Add0~28_combout ),
+	.d(\motor1|PWM1|Add0~28_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -15977,34 +15977,34 @@ dffeas \motor1|Left|counter[14] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [14]),
+	.q(\motor1|PWM1|counter [14]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[14] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[14] .power_up = "low";
+defparam \motor1|PWM1|counter[14] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[14] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N20
-cycloneive_lcell_comb \motor1|Left|counter~0 (
+cycloneive_lcell_comb \motor1|PWM1|counter~0 (
 // Equation(s):
-// \motor1|Left|counter~0_combout  = (\motor1|Left|Add0~30_combout  & !\motor1|Right|Equal0~5_combout )
+// \motor1|PWM1|counter~0_combout  = (\motor1|PWM1|Add0~30_combout  & !\motor1|PWM2|Equal0~5_combout )
 
 	.dataa(gnd),
-	.datab(\motor1|Left|Add0~30_combout ),
-	.datac(\motor1|Right|Equal0~5_combout ),
+	.datab(\motor1|PWM1|Add0~30_combout ),
+	.datac(\motor1|PWM2|Equal0~5_combout ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\motor1|Left|counter~0_combout ),
+	.combout(\motor1|PWM1|counter~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Left|counter~0 .lut_mask = 16'h0C0C;
-defparam \motor1|Left|counter~0 .sum_lutc_input = "datac";
+defparam \motor1|PWM1|counter~0 .lut_mask = 16'h0C0C;
+defparam \motor1|PWM1|counter~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N21
-dffeas \motor1|Left|counter[15] (
+dffeas \motor1|PWM1|counter[15] (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Left|counter~0_combout ),
+	.d(\motor1|PWM1|counter~0_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -16013,102 +16013,102 @@ dffeas \motor1|Left|counter[15] (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|counter [15]),
+	.q(\motor1|PWM1|counter [15]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|counter[15] .is_wysiwyg = "true";
-defparam \motor1|Left|counter[15] .power_up = "low";
+defparam \motor1|PWM1|counter[15] .is_wysiwyg = "true";
+defparam \motor1|PWM1|counter[15] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X57_Y2_N12
-cycloneive_lcell_comb \motor1|Right|LessThan0~0 (
+cycloneive_lcell_comb \motor1|PWM2|LessThan0~0 (
 // Equation(s):
-// \motor1|Right|LessThan0~0_combout  = (!\motor1|Left|counter [15] & !\motor1|Left|counter [16])
+// \motor1|PWM2|LessThan0~0_combout  = (!\motor1|PWM1|counter [15] & !\motor1|PWM1|counter [16])
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\motor1|Left|counter [15]),
-	.datad(\motor1|Left|counter [16]),
+	.datac(\motor1|PWM1|counter [15]),
+	.datad(\motor1|PWM1|counter [16]),
 	.cin(gnd),
-	.combout(\motor1|Right|LessThan0~0_combout ),
+	.combout(\motor1|PWM2|LessThan0~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|LessThan0~0 .lut_mask = 16'h000F;
-defparam \motor1|Right|LessThan0~0 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|LessThan0~0 .lut_mask = 16'h000F;
+defparam \motor1|PWM2|LessThan0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y3_N4
-cycloneive_lcell_comb \motor1|Right|LessThan0~1 (
+cycloneive_lcell_comb \motor1|PWM2|LessThan0~1 (
 // Equation(s):
-// \motor1|Right|LessThan0~1_combout  = (!\motor1|Left|counter [6] & (!\motor1|Left|counter [8] & (!\motor1|Left|counter [7] & !\motor1|Left|counter [5])))
+// \motor1|PWM2|LessThan0~1_combout  = (!\motor1|PWM1|counter [6] & (!\motor1|PWM1|counter [8] & (!\motor1|PWM1|counter [7] & !\motor1|PWM1|counter [5])))
 
-	.dataa(\motor1|Left|counter [6]),
-	.datab(\motor1|Left|counter [8]),
-	.datac(\motor1|Left|counter [7]),
-	.datad(\motor1|Left|counter [5]),
+	.dataa(\motor1|PWM1|counter [6]),
+	.datab(\motor1|PWM1|counter [8]),
+	.datac(\motor1|PWM1|counter [7]),
+	.datad(\motor1|PWM1|counter [5]),
 	.cin(gnd),
-	.combout(\motor1|Right|LessThan0~1_combout ),
+	.combout(\motor1|PWM2|LessThan0~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|LessThan0~1 .lut_mask = 16'h0001;
-defparam \motor1|Right|LessThan0~1 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|LessThan0~1 .lut_mask = 16'h0001;
+defparam \motor1|PWM2|LessThan0~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N26
-cycloneive_lcell_comb \motor1|Right|LessThan0~2 (
+cycloneive_lcell_comb \motor1|PWM2|LessThan0~2 (
 // Equation(s):
-// \motor1|Right|LessThan0~2_combout  = (((\motor1|Right|LessThan0~1_combout ) # (!\motor1|Left|counter [9])) # (!\motor1|Left|counter [10])) # (!\motor1|Left|counter [11])
+// \motor1|PWM2|LessThan0~2_combout  = (((\motor1|PWM2|LessThan0~1_combout ) # (!\motor1|PWM1|counter [9])) # (!\motor1|PWM1|counter [10])) # (!\motor1|PWM1|counter [11])
 
-	.dataa(\motor1|Left|counter [11]),
-	.datab(\motor1|Left|counter [10]),
-	.datac(\motor1|Left|counter [9]),
-	.datad(\motor1|Right|LessThan0~1_combout ),
+	.dataa(\motor1|PWM1|counter [11]),
+	.datab(\motor1|PWM1|counter [10]),
+	.datac(\motor1|PWM1|counter [9]),
+	.datad(\motor1|PWM2|LessThan0~1_combout ),
 	.cin(gnd),
-	.combout(\motor1|Right|LessThan0~2_combout ),
+	.combout(\motor1|PWM2|LessThan0~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|LessThan0~2 .lut_mask = 16'hFF7F;
-defparam \motor1|Right|LessThan0~2 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|LessThan0~2 .lut_mask = 16'hFF7F;
+defparam \motor1|PWM2|LessThan0~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y2_N30
-cycloneive_lcell_comb \motor1|Right|LessThan0~3 (
+cycloneive_lcell_comb \motor1|PWM2|LessThan0~3 (
 // Equation(s):
-// \motor1|Right|LessThan0~3_combout  = (\motor1|Right|LessThan0~0_combout  & (((\motor1|Right|LessThan0~2_combout  & \motor1|Right|Equal0~0_combout )) # (!\motor1|Left|counter [14])))
+// \motor1|PWM2|LessThan0~3_combout  = (\motor1|PWM2|LessThan0~0_combout  & (((\motor1|PWM2|LessThan0~2_combout  & \motor1|PWM2|Equal0~0_combout )) # (!\motor1|PWM1|counter [14])))
 
-	.dataa(\motor1|Right|LessThan0~0_combout ),
-	.datab(\motor1|Left|counter [14]),
-	.datac(\motor1|Right|LessThan0~2_combout ),
-	.datad(\motor1|Right|Equal0~0_combout ),
+	.dataa(\motor1|PWM2|LessThan0~0_combout ),
+	.datab(\motor1|PWM1|counter [14]),
+	.datac(\motor1|PWM2|LessThan0~2_combout ),
+	.datad(\motor1|PWM2|Equal0~0_combout ),
 	.cin(gnd),
-	.combout(\motor1|Right|LessThan0~3_combout ),
+	.combout(\motor1|PWM2|LessThan0~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|LessThan0~3 .lut_mask = 16'hA222;
-defparam \motor1|Right|LessThan0~3 .sum_lutc_input = "datac";
+defparam \motor1|PWM2|LessThan0~3 .lut_mask = 16'hA222;
+defparam \motor1|PWM2|LessThan0~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X59_Y2_N16
-cycloneive_lcell_comb \motor1|Right|pwm_out~feeder (
+cycloneive_lcell_comb \motor1|PWM2|pwm_out~feeder (
 // Equation(s):
-// \motor1|Right|pwm_out~feeder_combout  = \motor1|Right|LessThan0~3_combout 
+// \motor1|PWM2|pwm_out~feeder_combout  = \motor1|PWM2|LessThan0~3_combout 
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(\motor1|Right|LessThan0~3_combout ),
+	.datad(\motor1|PWM2|LessThan0~3_combout ),
 	.cin(gnd),
-	.combout(\motor1|Right|pwm_out~feeder_combout ),
+	.combout(\motor1|PWM2|pwm_out~feeder_combout ),
 	.cout());
 // synopsys translate_off
-defparam \motor1|Right|pwm_out~feeder .lut_mask = 16'hFF00;
-defparam \motor1|Right|pwm_out~feeder .sum_lutc_input = "datac";
+defparam \motor1|PWM2|pwm_out~feeder .lut_mask = 16'hFF00;
+defparam \motor1|PWM2|pwm_out~feeder .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X59_Y2_N17
-dffeas \motor1|Right|pwm_out (
+dffeas \motor1|PWM2|pwm_out (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Right|pwm_out~feeder_combout ),
+	.d(\motor1|PWM2|pwm_out~feeder_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -16117,17 +16117,17 @@ dffeas \motor1|Right|pwm_out (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Right|pwm_out~q ),
+	.q(\motor1|PWM2|pwm_out~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Right|pwm_out .is_wysiwyg = "true";
-defparam \motor1|Right|pwm_out .power_up = "low";
+defparam \motor1|PWM2|pwm_out .is_wysiwyg = "true";
+defparam \motor1|PWM2|pwm_out .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X58_Y2_N31
-dffeas \motor1|Left|pwm_out (
+dffeas \motor1|PWM1|pwm_out (
 	.clk(\CLOCK_50~inputclkctrl_outclk ),
-	.d(\motor1|Right|LessThan0~3_combout ),
+	.d(\motor1|PWM2|LessThan0~3_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -16136,11 +16136,11 @@ dffeas \motor1|Left|pwm_out (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\motor1|Left|pwm_out~q ),
+	.q(\motor1|PWM1|pwm_out~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \motor1|Left|pwm_out .is_wysiwyg = "true";
-defparam \motor1|Left|pwm_out .power_up = "low";
+defparam \motor1|PWM1|pwm_out .is_wysiwyg = "true";
+defparam \motor1|PWM1|pwm_out .power_up = "low";
 // synopsys translate_on
 
 // Location: IOIBUF_X115_Y17_N1

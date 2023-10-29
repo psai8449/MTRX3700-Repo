@@ -1,5 +1,5 @@
 Fitter report for Robot
-Sun Oct 29 17:13:32 2023
+Sun Oct 29 17:30:14 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -74,7 +74,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 29 17:13:32 2023       ;
+; Fitter Status                      ; Successful - Sun Oct 29 17:30:14 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Robot                                       ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -166,7 +166,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
+;     Processor 2            ;   0.5%      ;
 ;     Processors 3-4         ;   0.5%      ;
 +----------------------------+-------------+
 
@@ -2362,8 +2362,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; |top_level                            ; 461 (17)    ; 305 (0)                   ; 0 (0)         ; 0           ; 0    ; 4            ; 0       ; 2         ; 94   ; 0            ; 156 (12)     ; 32 (0)            ; 273 (41)         ; |top_level                                                                        ; top_level         ; work         ;
 ;    |IR_RECEIVE:u1|                    ; 214 (214)   ; 163 (163)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 51 (51)      ; 30 (30)           ; 133 (133)        ; |top_level|IR_RECEIVE:u1                                                          ; IR_RECEIVE        ; work         ;
 ;    |Motor_ctrl_redone:motor1|         ; 43 (8)      ; 19 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 24 (8)       ; 1 (0)             ; 18 (0)           ; |top_level|Motor_ctrl_redone:motor1                                               ; Motor_ctrl_redone ; work         ;
-;       |pwm:Left|                      ; 25 (25)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 18 (18)          ; |top_level|Motor_ctrl_redone:motor1|pwm:Left                                      ; pwm               ; work         ;
-;       |pwm:Right|                     ; 11 (11)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 1 (1)             ; 1 (1)            ; |top_level|Motor_ctrl_redone:motor1|pwm:Right                                     ; pwm               ; work         ;
+;       |pwm:PWM1|                      ; 25 (25)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 18 (18)          ; |top_level|Motor_ctrl_redone:motor1|pwm:PWM1                                      ; pwm               ; work         ;
+;       |pwm:PWM2|                      ; 11 (11)     ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 1 (1)             ; 1 (1)            ; |top_level|Motor_ctrl_redone:motor1|pwm:PWM2                                      ; pwm               ; work         ;
 ;    |pll1:u0|                          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0                                                                ; pll1              ; work         ;
 ;       |altpll:altpll_component|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0|altpll:altpll_component                                        ; altpll            ; work         ;
 ;          |pll1_altpll:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_level|pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated             ; pll1_altpll       ; work         ;
@@ -3204,7 +3204,7 @@ Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176353): Automatically promoted node pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 77
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node Equal0~12  File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 87
+Info (176353): Automatically promoted node Equal0~12  File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 94
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -3655,7 +3655,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.35 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3755,9 +3755,9 @@ Warning (169064): Following 43 pins have no output enable or a GND or VCC output
 Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 440 warnings
     Info: Peak virtual memory: 5708 megabytes
-    Info: Processing ended: Sun Oct 29 17:13:32 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Processing ended: Sun Oct 29 17:30:14 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+

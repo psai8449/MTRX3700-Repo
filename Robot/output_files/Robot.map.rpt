@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Robot
-Sun Oct 29 17:13:19 2023
+Sun Oct 29 17:30:01 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -32,12 +32,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  24. Port Connectivity Checks: "uart_tx:u3"
  25. Port Connectivity Checks: "IR_RECEIVE:u1"
  26. Port Connectivity Checks: "pll1:u0"
- 27. Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:Right"
- 28. Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:Left"
+ 27. Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:PWM2"
+ 28. Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:PWM1"
  29. Port Connectivity Checks: "Motor_ctrl_redone:motor1"
  30. Post-Synthesis Netlist Statistics for Top Partition
  31. Elapsed Time Per Partition
  32. Analysis & Synthesis Messages
+ 33. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -63,7 +64,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 29 17:13:19 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 29 17:30:00 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Robot                                       ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -255,8 +256,8 @@ refer to the applicable agreement for further details.
 ; |top_level                            ; 407 (53)            ; 305 (0)                   ; 0           ; 4            ; 0       ; 2         ; 94   ; 0            ; |top_level                                                                        ; top_level         ; work         ;
 ;    |IR_RECEIVE:u1|                    ; 150 (150)           ; 163 (163)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|IR_RECEIVE:u1                                                          ; IR_RECEIVE        ; work         ;
 ;    |Motor_ctrl_redone:motor1|         ; 42 (8)              ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1                                               ; Motor_ctrl_redone ; work         ;
-;       |pwm:Left|                      ; 24 (24)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1|pwm:Left                                      ; pwm               ; work         ;
-;       |pwm:Right|                     ; 10 (10)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1|pwm:Right                                     ; pwm               ; work         ;
+;       |pwm:PWM1|                      ; 24 (24)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1|pwm:PWM1                                      ; pwm               ; work         ;
+;       |pwm:PWM2|                      ; 10 (10)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1|pwm:PWM2                                      ; pwm               ; work         ;
 ;    |pll1:u0|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|pll1:u0                                                                ; pll1              ; work         ;
 ;       |altpll:altpll_component|       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|pll1:u0|altpll:altpll_component                                        ; altpll            ; work         ;
 ;          |pll1_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated             ; pll1_altpll       ; work         ;
@@ -359,23 +360,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Register name                                            ; Reason for Removal                                        ;
 +----------------------------------------------------------+-----------------------------------------------------------+
 ; uart_tx:u3|data_to_send_temp[0]                          ; Stuck at VCC due to stuck port data_in                    ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[16]           ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[16] ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[15]           ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[15] ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[14]           ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[14] ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[13]           ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[13] ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[12]           ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[12] ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[11]           ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[11] ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[10]           ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[10] ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[9]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[9]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[8]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[8]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[7]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[7]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[6]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[6]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[5]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[5]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[4]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[4]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[3]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[3]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[2]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[2]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[1]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[1]  ;
-; Motor_ctrl_redone:motor1|pwm:Right|counter[0]            ; Merged with Motor_ctrl_redone:motor1|pwm:Left|counter[0]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[16]            ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[16] ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[15]            ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[15] ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[14]            ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[14] ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[13]            ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[13] ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[12]            ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[12] ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[11]            ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[11] ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[10]            ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[10] ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[9]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[9]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[8]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[8]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[7]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[7]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[6]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[6]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[5]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[5]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[4]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[4]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[3]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[3]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[2]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[2]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[1]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[1]  ;
+; Motor_ctrl_redone:motor1|pwm:PWM2|counter[0]             ; Merged with Motor_ctrl_redone:motor1|pwm:PWM1|counter[0]  ;
 ; proximity:u100|sensor_driver:u0|distanceRAW_in_cm[24,25] ; Lost fanout                                               ;
 ; proximity:u100|sensor_driver:u0|state~4                  ; Lost fanout                                               ;
 ; proximity:u100|sensor_driver:u0|state~5                  ; Lost fanout                                               ;
@@ -937,43 +938,43 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:Right"                                                                                                                           ;
-+------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port             ; Type  ; Severity ; Details                                                                                                                                            ;
-+------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; DUTY_CYCLE       ; Input ; Warning  ; Input port expression (5 bits) is smaller than the input port (7 bits) it drives.  Extra input bit(s) "DUTY_CYCLE[6..5]" will be connected to GND. ;
-; DUTY_CYCLE[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                       ;
-; DUTY_CYCLE[6]    ; Input ; Info     ; Stuck at VCC                                                                                                                                       ;
-; DUTY_CYCLE[5]    ; Input ; Info     ; Stuck at GND                                                                                                                                       ;
-; DUTY_CYCLE[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                       ;
-; rst              ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-+------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:PWM2"                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:Left"                                                                                                                            ;
-+------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port             ; Type  ; Severity ; Details                                                                                                                                            ;
-+------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; DUTY_CYCLE       ; Input ; Warning  ; Input port expression (5 bits) is smaller than the input port (7 bits) it drives.  Extra input bit(s) "DUTY_CYCLE[6..5]" will be connected to GND. ;
-; DUTY_CYCLE[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                       ;
-; DUTY_CYCLE[6]    ; Input ; Info     ; Stuck at VCC                                                                                                                                       ;
-; DUTY_CYCLE[5]    ; Input ; Info     ; Stuck at GND                                                                                                                                       ;
-; DUTY_CYCLE[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                       ;
-; rst              ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-+------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:PWM1"                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
 ; Port Connectivity Checks: "Motor_ctrl_redone:motor1" ;
-+-------------+-------+----------+---------------------+
-; Port        ; Type  ; Severity ; Details             ;
-+-------------+-------+----------+---------------------+
-; IR_input[6] ; Input ; Info     ; Stuck at GND        ;
-; IR_input[2] ; Input ; Info     ; Stuck at GND        ;
-; IR_input[0] ; Input ; Info     ; Stuck at GND        ;
-+-------------+-------+----------+---------------------+
++--------------------+-------+----------+--------------+
+; Port               ; Type  ; Severity ; Details      ;
++--------------------+-------+----------+--------------+
+; IR_input[6]        ; Input ; Info     ; Stuck at GND ;
+; IR_input[2]        ; Input ; Info     ; Stuck at GND ;
+; IR_input[0]        ; Input ; Info     ; Stuck at GND ;
+; duty_cycle_1[6..5] ; Input ; Info     ; Stuck at GND ;
+; duty_cycle_1[1..0] ; Input ; Info     ; Stuck at GND ;
+; duty_cycle_1[4]    ; Input ; Info     ; Stuck at VCC ;
+; duty_cycle_1[3]    ; Input ; Info     ; Stuck at GND ;
+; duty_cycle_1[2]    ; Input ; Info     ; Stuck at VCC ;
+; duty_cycle_2[6..5] ; Input ; Info     ; Stuck at GND ;
+; duty_cycle_2[1..0] ; Input ; Info     ; Stuck at GND ;
+; duty_cycle_2[4]    ; Input ; Info     ; Stuck at VCC ;
+; duty_cycle_2[3]    ; Input ; Info     ; Stuck at GND ;
+; duty_cycle_2[2]    ; Input ; Info     ; Stuck at VCC ;
++--------------------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -1015,7 +1016,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1025,7 +1026,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 29 17:13:09 2023
+    Info: Processing started: Sun Oct 29 17:29:50 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Robot -c Robot
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1045,8 +1046,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file bram_ip
     Info (12023): Found entity 1: BRAM_IP File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/BRAM_IP.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
     Info (12023): Found entity 1: fsm File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/fsm.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file motor_ctrl.sv
-    Info (12023): Found entity 1: Motor_ctrl File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/Motor_ctrl.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file motor_ctrl_redone.sv
     Info (12023): Found entity 1: Motor_ctrl_redone File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/Motor_ctrl_redone.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file proximity.sv
@@ -1054,39 +1053,39 @@ Info (12021): Found 1 design units, including 1 entities, in source file proximi
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/sensor_driver.sv
     Info (12023): Found entity 1: sensor_driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/sensor_driver.sv Line: 3
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(87): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 87
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(87): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 87
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(88): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 88
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(115): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 115
-Warning (10230): Verilog HDL assignment warning at top_level.sv(115): truncated value with size 32 to match size of target (12) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 115
-Warning (10240): Verilog HDL Always Construct warning at top_level.sv(85): inferring latch(es) for variable "send", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Warning (10240): Verilog HDL Always Construct warning at top_level.sv(85): inferring latch(es) for variable "prev_data", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (10235): Verilog HDL Always Construct warning at top_level.sv(94): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 94
+Warning (10235): Verilog HDL Always Construct warning at top_level.sv(94): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 94
+Warning (10235): Verilog HDL Always Construct warning at top_level.sv(95): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 95
+Warning (10235): Verilog HDL Always Construct warning at top_level.sv(122): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 122
+Warning (10230): Verilog HDL assignment warning at top_level.sv(122): truncated value with size 32 to match size of target (12) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 122
+Warning (10240): Verilog HDL Always Construct warning at top_level.sv(92): inferring latch(es) for variable "send", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Warning (10240): Verilog HDL Always Construct warning at top_level.sv(92): inferring latch(es) for variable "prev_data", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
 Warning (10034): Output port "LEDR[17..4]" at top_level.sv(14) has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 14
-Info (10041): Inferred latch for "prev_data[0]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[1]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[2]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[3]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[4]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[5]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[6]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[7]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[8]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[9]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[10]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "prev_data[11]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[0]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[1]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[2]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[3]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[4]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[5]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[6]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (10041): Inferred latch for "send[7]" at top_level.sv(85) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
-Info (12128): Elaborating entity "Motor_ctrl_redone" for hierarchy "Motor_ctrl_redone:motor1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 47
-Info (10264): Verilog HDL Case Statement information at Motor_ctrl_redone.sv(35): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/Motor_ctrl_redone.sv Line: 35
-Info (12128): Elaborating entity "pwm" for hierarchy "Motor_ctrl_redone:motor1|pwm:Left" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/Motor_ctrl_redone.sv Line: 19
+Info (10041): Inferred latch for "prev_data[0]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[1]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[2]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[3]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[4]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[5]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[6]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[7]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[8]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[9]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[10]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "prev_data[11]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[0]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[1]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[2]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[3]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[4]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[5]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[6]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (10041): Inferred latch for "send[7]" at top_level.sv(92) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
+Info (12128): Elaborating entity "Motor_ctrl_redone" for hierarchy "Motor_ctrl_redone:motor1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 54
+Info (10264): Verilog HDL Case Statement information at Motor_ctrl_redone.sv(38): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/Motor_ctrl_redone.sv Line: 38
+Info (12128): Elaborating entity "pwm" for hierarchy "Motor_ctrl_redone:motor1|pwm:PWM1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/Motor_ctrl_redone.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at pwm.sv(22): truncated value with size 32 to match size of target (17) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/pwm.sv Line: 22
-Info (12128): Elaborating entity "pll1" for hierarchy "pll1:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 64
+Info (12128): Elaborating entity "pll1" for hierarchy "pll1:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 71
 Info (12128): Elaborating entity "altpll" for hierarchy "pll1:u0|altpll:altpll_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/pll1.v Line: 94
 Info (12130): Elaborated megafunction instantiation "pll1:u0|altpll:altpll_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/pll1.v Line: 94
 Info (12133): Instantiated megafunction "pll1:u0|altpll:altpll_component" with the following parameter: File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/pll1.v Line: 94
@@ -1151,11 +1150,11 @@ Info (12133): Instantiated megafunction "pll1:u0|altpll:altpll_component" with t
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll1_altpll.v
     Info (12023): Found entity 1: pll1_altpll File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 29
 Info (12128): Elaborating entity "pll1_altpll" for hierarchy "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "IR_RECEIVE" for hierarchy "IR_RECEIVE:u1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 79
-Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:u3" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 182
+Info (12128): Elaborating entity "IR_RECEIVE" for hierarchy "IR_RECEIVE:u1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 86
+Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:u3" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 189
 Warning (10230): Verilog HDL assignment warning at uart_tx.sv(47): truncated value with size 32 to match size of target (3) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/uart_tx.sv Line: 47
 Info (10264): Verilog HDL Case Statement information at uart_tx.sv(40): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/uart_tx.sv Line: 40
-Info (12128): Elaborating entity "proximity" for hierarchy "proximity:u100" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 194
+Info (12128): Elaborating entity "proximity" for hierarchy "proximity:u100" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 201
 Info (12128): Elaborating entity "sensor_driver" for hierarchy "proximity:u100|sensor_driver:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/proximity.sv Line: 31
 Info (278001): Inferred 1 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "proximity:u100|sensor_driver:u0|Mult0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/sensor_driver.sv Line: 91
@@ -1221,39 +1220,39 @@ Warning (13039): The following bidirectional pins have no drivers
 Warning (13032): The following tri-state nodes are fed by constants
     Warning (13033): The pin "GPIO[2]" is fed by VCC File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 10
     Warning (13033): The pin "GPIO[3]" is fed by VCC File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 10
-Warning (13012): Latch send[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch send[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch send[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch send[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch send[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch send[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[0] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[0] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[1] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[2] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[2] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[2] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[3] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[4] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[5] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[6] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[6] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[7] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[8] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[8] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[8] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[9] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[9] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[9] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[10] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[10] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[10] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[11] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 85
+Warning (13012): Latch prev_data[11] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[11] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/IR_RECEIVE_Terasic.v Line: 219
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "EX_IO[2]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 9
@@ -1287,6 +1286,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/top_level.sv Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 7 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15899): PLL "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/db/pll1_altpll.v Line: 43
@@ -1321,8 +1321,14 @@ Info (21057): Implemented 578 device resources after synthesis - the final resou
     Info (21062): Implemented 4 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 145 warnings
     Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Sun Oct 29 17:13:19 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Sun Oct 29 17:30:01 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:07
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Robot/output_files/Robot.map.smsg.
 
 

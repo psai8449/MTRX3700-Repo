@@ -29,21 +29,28 @@ logic [31:0] IR_input;
 //);
 
 //**************************** Motor Control ***************************
+logic [6:0] duty1, duty2;
 
+assign duty1 = 5'b10100;
+assign duty2 = 5'b10100;
 
-Motor_ctrl_redone motor1 (
+Motor_ctrl_redone  		motor1 (
+
     .clk			(CLOCK_50),                // System Clock  
     .IR_input	(send),
 	 
-	 .enable1	(GPIO[3]),
-	 .pwm1		(GPIO[9]),
-    .ina1		(GPIO[5]),
-	 .inb1		(GPIO[7]),
+	 .enable1		(GPIO[3]),
+	 .pwm1			(GPIO[9]),
+    .ina1			(GPIO[5]),
+	 .inb1			(GPIO[7]),
+	 .duty_cycle_1	(duty1),
 	 
-	 .enable2	(GPIO[2]),
-	 .pwm2		(GPIO[8]),
-	 .ina2		(GPIO[4]),
-	 .inb2		(GPIO[6])  // Direction controls for two motors
+	 .enable2		(GPIO[2]),
+	 .pwm2			(GPIO[8]),
+	 .ina2			(GPIO[4]),
+	 .inb2			(GPIO[6]),  // Direction controls for two motors
+	 .duty_cycle_2	(duty2)
+	 
 );
 
 //**********************************************************************

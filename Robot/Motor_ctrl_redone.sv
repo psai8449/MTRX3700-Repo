@@ -3,6 +3,9 @@
 module Motor_ctrl_redone (
     input logic clk,                // System Clock  
     input [7:0] IR_input,
+	 input [6:0] duty_cycle_1,
+	 input [6:0] duty_cycle_2,
+	 
 	 
     output logic pwm1,
 	 output logic pwm2,
@@ -10,18 +13,18 @@ module Motor_ctrl_redone (
     output logic ina1, inb1, ina2, inb2  // Direction controls for two motors
 );
 	
-	pwm Left (
+	pwm PWM1 (
 	
 		.clk_50			(clk), // 50MHz clock
-		.DUTY_CYCLE		(5'b10100),
+		.DUTY_CYCLE		(duty_cycle_1),					//	<-- duty_cycle_1
 		.pwm_out			(pwm1) // pwm output
 		
 	);
 	
-	pwm Right (
+	pwm PWM2 (
 	
 		.clk_50			(clk), // 50MHz clock
-		.DUTY_CYCLE		(5'b10100),
+		.DUTY_CYCLE		(duty_cycle_2),					//	<-- duty_cycle_2
 		.pwm_out			(pwm2) // pwm output
 		
 	);

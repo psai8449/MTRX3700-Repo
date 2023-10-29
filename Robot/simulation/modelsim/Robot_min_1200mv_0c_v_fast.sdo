@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "top_level")
-  (DATE "10/29/2023 17:13:40")
+  (DATE "10/29/2023 17:30:22")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition")
@@ -11030,7 +11030,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~30)
+    (INSTANCE motor1\|PWM1\|Add0\~30)
     (DELAY
       (ABSOLUTE
         (PORT datab (143:143:143) (191:191:191))
@@ -11044,7 +11044,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~32)
+    (INSTANCE motor1\|PWM1\|Add0\~32)
     (DELAY
       (ABSOLUTE
         (PORT datad (141:141:141) (178:178:178))
@@ -11055,7 +11055,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|counter\~1)
+    (INSTANCE motor1\|PWM1\|counter\~1)
     (DELAY
       (ABSOLUTE
         (PORT datac (339:339:339) (400:400:400))
@@ -11067,7 +11067,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[16\])
+    (INSTANCE motor1\|PWM1\|counter\[16\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11081,7 +11081,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|Equal0\~0)
+    (INSTANCE motor1\|PWM2\|Equal0\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (122:122:122) (165:165:165))
@@ -11093,7 +11093,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~0)
+    (INSTANCE motor1\|PWM1\|Add0\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (143:143:143) (194:194:194))
@@ -11105,7 +11105,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|counter\~6)
+    (INSTANCE motor1\|PWM1\|counter\~6)
     (DELAY
       (ABSOLUTE
         (PORT datab (104:104:104) (133:133:133))
@@ -11117,7 +11117,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[0\])
+    (INSTANCE motor1\|PWM1\|counter\[0\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11131,7 +11131,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~2)
+    (INSTANCE motor1\|PWM1\|Add0\~2)
     (DELAY
       (ABSOLUTE
         (PORT datab (134:134:134) (184:184:184))
@@ -11145,7 +11145,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[1\])
+    (INSTANCE motor1\|PWM1\|counter\[1\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11159,7 +11159,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~4)
+    (INSTANCE motor1\|PWM1\|Add0\~4)
     (DELAY
       (ABSOLUTE
         (PORT datab (134:134:134) (182:182:182))
@@ -11173,7 +11173,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[2\])
+    (INSTANCE motor1\|PWM1\|counter\[2\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11187,7 +11187,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~6)
+    (INSTANCE motor1\|PWM1\|Add0\~6)
     (DELAY
       (ABSOLUTE
         (PORT dataa (135:135:135) (186:186:186))
@@ -11201,7 +11201,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[3\])
+    (INSTANCE motor1\|PWM1\|counter\[3\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11215,7 +11215,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~8)
+    (INSTANCE motor1\|PWM1\|Add0\~8)
     (DELAY
       (ABSOLUTE
         (PORT datab (134:134:134) (183:183:183))
@@ -11229,7 +11229,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[4\])
+    (INSTANCE motor1\|PWM1\|counter\[4\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11243,7 +11243,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~10)
+    (INSTANCE motor1\|PWM1\|Add0\~10)
     (DELAY
       (ABSOLUTE
         (PORT dataa (141:141:141) (196:196:196))
@@ -11257,7 +11257,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|counter\~2)
+    (INSTANCE motor1\|PWM1\|counter\~2)
     (DELAY
       (ABSOLUTE
         (PORT datac (91:91:91) (113:113:113))
@@ -11269,7 +11269,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[5\])
+    (INSTANCE motor1\|PWM1\|counter\[5\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11283,7 +11283,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~12)
+    (INSTANCE motor1\|PWM1\|Add0\~12)
     (DELAY
       (ABSOLUTE
         (PORT dataa (238:238:238) (305:305:305))
@@ -11297,7 +11297,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[6\])
+    (INSTANCE motor1\|PWM1\|counter\[6\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11311,7 +11311,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~14)
+    (INSTANCE motor1\|PWM1\|Add0\~14)
     (DELAY
       (ABSOLUTE
         (PORT datab (148:148:148) (198:198:198))
@@ -11325,7 +11325,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|counter\~3)
+    (INSTANCE motor1\|PWM1\|counter\~3)
     (DELAY
       (ABSOLUTE
         (PORT datac (91:91:91) (114:114:114))
@@ -11337,7 +11337,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[7\])
+    (INSTANCE motor1\|PWM1\|counter\[7\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1201:1201:1201) (1213:1213:1213))
@@ -11351,7 +11351,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~16)
+    (INSTANCE motor1\|PWM1\|Add0\~16)
     (DELAY
       (ABSOLUTE
         (PORT datab (140:140:140) (188:188:188))
@@ -11365,7 +11365,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[8\])
+    (INSTANCE motor1\|PWM1\|counter\[8\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11379,7 +11379,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|Equal0\~1)
+    (INSTANCE motor1\|PWM2\|Equal0\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (245:245:245) (314:314:314))
@@ -11395,7 +11395,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|Equal0\~2)
+    (INSTANCE motor1\|PWM2\|Equal0\~2)
     (DELAY
       (ABSOLUTE
         (PORT dataa (362:362:362) (426:426:426))
@@ -11411,7 +11411,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|Equal0\~3)
+    (INSTANCE motor1\|PWM2\|Equal0\~3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (140:140:140) (194:194:194))
@@ -11427,7 +11427,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|Equal0\~4)
+    (INSTANCE motor1\|PWM2\|Equal0\~4)
     (DELAY
       (ABSOLUTE
         (PORT dataa (244:244:244) (311:311:311))
@@ -11443,7 +11443,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|Equal0\~5)
+    (INSTANCE motor1\|PWM2\|Equal0\~5)
     (DELAY
       (ABSOLUTE
         (PORT dataa (370:370:370) (448:448:448))
@@ -11459,7 +11459,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~18)
+    (INSTANCE motor1\|PWM1\|Add0\~18)
     (DELAY
       (ABSOLUTE
         (PORT dataa (150:150:150) (203:203:203))
@@ -11473,7 +11473,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|counter\~4)
+    (INSTANCE motor1\|PWM1\|counter\~4)
     (DELAY
       (ABSOLUTE
         (PORT datac (339:339:339) (399:399:399))
@@ -11485,7 +11485,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[9\])
+    (INSTANCE motor1\|PWM1\|counter\[9\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11499,7 +11499,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~20)
+    (INSTANCE motor1\|PWM1\|Add0\~20)
     (DELAY
       (ABSOLUTE
         (PORT datab (149:149:149) (200:200:200))
@@ -11513,7 +11513,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|counter\~5)
+    (INSTANCE motor1\|PWM1\|counter\~5)
     (DELAY
       (ABSOLUTE
         (PORT datab (106:106:106) (135:135:135))
@@ -11525,7 +11525,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[10\])
+    (INSTANCE motor1\|PWM1\|counter\[10\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11539,7 +11539,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~22)
+    (INSTANCE motor1\|PWM1\|Add0\~22)
     (DELAY
       (ABSOLUTE
         (PORT dataa (147:147:147) (200:200:200))
@@ -11553,7 +11553,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[11\])
+    (INSTANCE motor1\|PWM1\|counter\[11\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11567,7 +11567,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~24)
+    (INSTANCE motor1\|PWM1\|Add0\~24)
     (DELAY
       (ABSOLUTE
         (PORT datab (135:135:135) (184:184:184))
@@ -11581,7 +11581,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[12\])
+    (INSTANCE motor1\|PWM1\|counter\[12\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11595,7 +11595,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~26)
+    (INSTANCE motor1\|PWM1\|Add0\~26)
     (DELAY
       (ABSOLUTE
         (PORT dataa (135:135:135) (186:186:186))
@@ -11609,7 +11609,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[13\])
+    (INSTANCE motor1\|PWM1\|counter\[13\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11623,7 +11623,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|Add0\~28)
+    (INSTANCE motor1\|PWM1\|Add0\~28)
     (DELAY
       (ABSOLUTE
         (PORT datab (217:217:217) (275:275:275))
@@ -11637,7 +11637,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[14\])
+    (INSTANCE motor1\|PWM1\|counter\[14\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11651,7 +11651,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Left\|counter\~0)
+    (INSTANCE motor1\|PWM1\|counter\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (103:103:103) (132:132:132))
@@ -11663,7 +11663,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|counter\[15\])
+    (INSTANCE motor1\|PWM1\|counter\[15\])
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))
@@ -11677,7 +11677,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|LessThan0\~0)
+    (INSTANCE motor1\|PWM2\|LessThan0\~0)
     (DELAY
       (ABSOLUTE
         (PORT datac (232:232:232) (290:290:290))
@@ -11689,7 +11689,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|LessThan0\~1)
+    (INSTANCE motor1\|PWM2\|LessThan0\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (244:244:244) (312:312:312))
@@ -11705,7 +11705,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|LessThan0\~2)
+    (INSTANCE motor1\|PWM2\|LessThan0\~2)
     (DELAY
       (ABSOLUTE
         (PORT dataa (150:150:150) (204:204:204))
@@ -11721,7 +11721,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|LessThan0\~3)
+    (INSTANCE motor1\|PWM2\|LessThan0\~3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (219:219:219) (261:261:261))
@@ -11737,7 +11737,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE motor1\|Right\|pwm_out\~feeder)
+    (INSTANCE motor1\|PWM2\|pwm_out\~feeder)
     (DELAY
       (ABSOLUTE
         (PORT datad (157:157:157) (183:183:183))
@@ -11747,7 +11747,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Right\|pwm_out)
+    (INSTANCE motor1\|PWM2\|pwm_out)
     (DELAY
       (ABSOLUTE
         (PORT clk (1203:1203:1203) (1215:1215:1215))
@@ -11761,7 +11761,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE motor1\|Left\|pwm_out)
+    (INSTANCE motor1\|PWM1\|pwm_out)
     (DELAY
       (ABSOLUTE
         (PORT clk (1204:1204:1204) (1215:1215:1215))

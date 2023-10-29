@@ -1,5 +1,5 @@
 Timing Analyzer report for Robot
-Sun Oct 29 17:13:38 2023
+Sun Oct 29 17:30:20 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -115,9 +115,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   4.1%      ;
-;     Processor 3            ;   1.7%      ;
-;     Processor 4            ;   1.0%      ;
+;     Processor 2            ;   4.4%      ;
+;     Processor 3            ;   1.8%      ;
+;     Processor 4            ;   1.1%      ;
 +----------------------------+-------------+
 
 
@@ -591,20 +591,20 @@ No paths to report.
 ; 0.410 ; proximity:u100|measurement_trigger              ; proximity:u100|measurement_trigger                           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.674      ;
 ; 0.454 ; proximity:u100|sensor_driver:u0|state.COUNTECHO ; proximity:u100|sensor_driver:u0|state.DISPLAY_DISTANCE       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.718      ;
 ; 0.619 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|state.COUNTECHO              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.883      ;
-; 0.639 ; Motor_ctrl_redone:motor1|pwm:Left|counter[3]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[3]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.907      ;
+; 0.639 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[3]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[3]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.907      ;
 ; 0.639 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[10]~_Duplicate_1 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.903      ;
-; 0.640 ; Motor_ctrl_redone:motor1|pwm:Left|counter[13]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[13]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.907      ;
+; 0.640 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[13]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[13]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.907      ;
 ; 0.640 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[6]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.904      ;
 ; 0.640 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[5]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.904      ;
 ; 0.641 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[4]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.905      ;
 ; 0.641 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[1]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.905      ;
-; 0.642 ; Motor_ctrl_redone:motor1|pwm:Left|counter[1]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[1]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.910      ;
+; 0.642 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[1]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[1]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.910      ;
 ; 0.642 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[7]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.906      ;
 ; 0.643 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[0]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.907      ;
-; 0.644 ; Motor_ctrl_redone:motor1|pwm:Left|counter[4]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[4]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.912      ;
-; 0.644 ; Motor_ctrl_redone:motor1|pwm:Left|counter[2]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[2]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.912      ;
+; 0.644 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[4]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[4]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.912      ;
+; 0.644 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[2]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[2]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.912      ;
 ; 0.644 ; proximity:u100|sensor_driver:u0|counter[9]      ; proximity:u100|sensor_driver:u0|counter[9]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.908      ;
-; 0.646 ; Motor_ctrl_redone:motor1|pwm:Left|counter[12]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[12]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.913      ;
+; 0.646 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[12]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[12]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.913      ;
 ; 0.647 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[2]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.911      ;
 ; 0.647 ; proximity:u100|sensor_driver:u0|counter[3]      ; proximity:u100|sensor_driver:u0|counter[3]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.911      ;
 ; 0.647 ; proximity:u100|sensor_driver:u0|counter[1]      ; proximity:u100|sensor_driver:u0|counter[1]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.911      ;
@@ -643,7 +643,7 @@ No paths to report.
 ; 0.658 ; uart_tx:u3|count[25]                            ; uart_tx:u3|count[25]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.925      ;
 ; 0.658 ; proximity:u100|counter[17]                      ; proximity:u100|counter[17]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
 ; 0.658 ; proximity:u100|counter[27]                      ; proximity:u100|counter[27]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
-; 0.659 ; Motor_ctrl_redone:motor1|pwm:Left|counter[8]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[8]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
+; 0.659 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[8]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[8]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
 ; 0.659 ; uart_tx:u3|count[2]                             ; uart_tx:u3|count[2]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
 ; 0.659 ; uart_tx:u3|count[14]                            ; uart_tx:u3|count[14]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
 ; 0.659 ; uart_tx:u3|count[16]                            ; uart_tx:u3|count[16]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
@@ -667,7 +667,7 @@ No paths to report.
 ; 0.661 ; proximity:u100|counter[2]                       ; proximity:u100|counter[2]                                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.926      ;
 ; 0.661 ; proximity:u100|counter[14]                      ; proximity:u100|counter[14]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.926      ;
 ; 0.661 ; proximity:u100|counter[16]                      ; proximity:u100|counter[16]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.926      ;
-; 0.662 ; Motor_ctrl_redone:motor1|pwm:Left|counter[11]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[11]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.929      ;
+; 0.662 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[11]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[11]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.929      ;
 ; 0.662 ; proximity:u100|counter[20]                      ; proximity:u100|counter[20]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.927      ;
 ; 0.662 ; proximity:u100|counter[4]                       ; proximity:u100|counter[4]                                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.927      ;
 ; 0.662 ; proximity:u100|counter[8]                       ; proximity:u100|counter[8]                                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.927      ;
@@ -1364,14 +1364,14 @@ No paths to report.
 ; 0.580 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[4]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.821      ;
 ; 0.580 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[1]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.821      ;
 ; 0.581 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[0]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.822      ;
-; 0.583 ; Motor_ctrl_redone:motor1|pwm:Left|counter[13]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[13]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.828      ;
-; 0.584 ; Motor_ctrl_redone:motor1|pwm:Left|counter[3]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[3]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.828      ;
+; 0.583 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[13]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[13]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.828      ;
+; 0.584 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[3]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[3]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.828      ;
 ; 0.585 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[9]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.826      ;
 ; 0.585 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|distanceRAW[2]~_Duplicate_1  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.826      ;
-; 0.588 ; Motor_ctrl_redone:motor1|pwm:Left|counter[1]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[1]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.832      ;
-; 0.589 ; Motor_ctrl_redone:motor1|pwm:Left|counter[12]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[12]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.834      ;
-; 0.589 ; Motor_ctrl_redone:motor1|pwm:Left|counter[4]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[4]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.833      ;
-; 0.589 ; Motor_ctrl_redone:motor1|pwm:Left|counter[2]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[2]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.833      ;
+; 0.588 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[1]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[1]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.832      ;
+; 0.589 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[12]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[12]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.834      ;
+; 0.589 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[4]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[4]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.833      ;
+; 0.589 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[2]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[2]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.833      ;
 ; 0.590 ; proximity:u100|sensor_driver:u0|counter[9]      ; proximity:u100|sensor_driver:u0|counter[9]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.069      ; 0.830      ;
 ; 0.593 ; proximity:u100|sensor_driver:u0|counter[3]      ; proximity:u100|sensor_driver:u0|counter[3]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.069      ; 0.833      ;
 ; 0.593 ; proximity:u100|sensor_driver:u0|counter[1]      ; proximity:u100|sensor_driver:u0|counter[1]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.069      ; 0.833      ;
@@ -1396,7 +1396,7 @@ No paths to report.
 ; 0.600 ; proximity:u100|counter[19]                      ; proximity:u100|counter[19]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
 ; 0.600 ; proximity:u100|counter[21]                      ; proximity:u100|counter[21]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
 ; 0.600 ; proximity:u100|counter[29]                      ; proximity:u100|counter[29]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
-; 0.601 ; Motor_ctrl_redone:motor1|pwm:Left|counter[8]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[8]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.846      ;
+; 0.601 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[8]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[8]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.846      ;
 ; 0.601 ; uart_tx:u3|count[1]                             ; uart_tx:u3|count[1]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.844      ;
 ; 0.601 ; uart_tx:u3|count[17]                            ; uart_tx:u3|count[17]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.844      ;
 ; 0.601 ; uart_tx:u3|count[22]                            ; uart_tx:u3|count[22]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.844      ;
@@ -1416,7 +1416,7 @@ No paths to report.
 ; 0.603 ; uart_tx:u3|count[23]                            ; uart_tx:u3|count[23]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.846      ;
 ; 0.603 ; uart_tx:u3|count[25]                            ; uart_tx:u3|count[25]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.846      ;
 ; 0.603 ; proximity:u100|counter[1]                       ; proximity:u100|counter[1]                                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.844      ;
-; 0.604 ; Motor_ctrl_redone:motor1|pwm:Left|counter[11]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[11]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.849      ;
+; 0.604 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[11]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[11]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.849      ;
 ; 0.604 ; uart_tx:u3|count[4]                             ; uart_tx:u3|count[4]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.847      ;
 ; 0.604 ; uart_tx:u3|count[8]                             ; uart_tx:u3|count[8]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.847      ;
 ; 0.604 ; uart_tx:u3|count[10]                            ; uart_tx:u3|count[10]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.847      ;
@@ -2003,12 +2003,12 @@ No paths to report.
 ; 0.191 ; proximity:u100|measurement_trigger              ; proximity:u100|measurement_trigger                           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.314      ;
 ; 0.203 ; proximity:u100|sensor_driver:u0|state.COUNTECHO ; proximity:u100|sensor_driver:u0|state.DISPLAY_DISTANCE       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.325      ;
 ; 0.273 ; proximity:u100|sensor_driver:u0|state.WAIT      ; proximity:u100|sensor_driver:u0|state.COUNTECHO              ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.395      ;
-; 0.290 ; Motor_ctrl_redone:motor1|pwm:Left|counter[13]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[13]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.417      ;
-; 0.292 ; Motor_ctrl_redone:motor1|pwm:Left|counter[3]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[3]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.418      ;
-; 0.293 ; Motor_ctrl_redone:motor1|pwm:Left|counter[12]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[12]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.420      ;
-; 0.293 ; Motor_ctrl_redone:motor1|pwm:Left|counter[4]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[4]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.419      ;
-; 0.293 ; Motor_ctrl_redone:motor1|pwm:Left|counter[2]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[2]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.419      ;
-; 0.293 ; Motor_ctrl_redone:motor1|pwm:Left|counter[1]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[1]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.419      ;
+; 0.290 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[13]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[13]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.417      ;
+; 0.292 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[3]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[3]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.418      ;
+; 0.293 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[12]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[12]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.420      ;
+; 0.293 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[4]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[4]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.419      ;
+; 0.293 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[2]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[2]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.419      ;
+; 0.293 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[1]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[1]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.419      ;
 ; 0.295 ; proximity:u100|sensor_driver:u0|counter[9]      ; proximity:u100|sensor_driver:u0|counter[9]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.417      ;
 ; 0.297 ; uart_tx:u3|count[15]                            ; uart_tx:u3|count[15]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.423      ;
 ; 0.297 ; proximity:u100|sensor_driver:u0|counter[1]      ; proximity:u100|sensor_driver:u0|counter[1]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.419      ;
@@ -2016,7 +2016,7 @@ No paths to report.
 ; 0.298 ; uart_tx:u3|count[5]                             ; uart_tx:u3|count[5]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.424      ;
 ; 0.298 ; uart_tx:u3|count[13]                            ; uart_tx:u3|count[13]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.424      ;
 ; 0.298 ; proximity:u100|sensor_driver:u0|counter[3]      ; proximity:u100|sensor_driver:u0|counter[3]                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.038      ; 0.420      ;
-; 0.299 ; Motor_ctrl_redone:motor1|pwm:Left|counter[8]    ; Motor_ctrl_redone:motor1|pwm:Left|counter[8]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.426      ;
+; 0.299 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[8]    ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[8]                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.426      ;
 ; 0.299 ; uart_tx:u3|count[7]                             ; uart_tx:u3|count[7]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
 ; 0.299 ; uart_tx:u3|count[1]                             ; uart_tx:u3|count[1]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
 ; 0.299 ; uart_tx:u3|count[6]                             ; uart_tx:u3|count[6]                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
@@ -2046,7 +2046,7 @@ No paths to report.
 ; 0.301 ; proximity:u100|counter[5]                       ; proximity:u100|counter[5]                                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.424      ;
 ; 0.301 ; proximity:u100|counter[13]                      ; proximity:u100|counter[13]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.424      ;
 ; 0.301 ; proximity:u100|counter[31]                      ; proximity:u100|counter[31]                                   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.424      ;
-; 0.302 ; Motor_ctrl_redone:motor1|pwm:Left|counter[11]   ; Motor_ctrl_redone:motor1|pwm:Left|counter[11]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.429      ;
+; 0.302 ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[11]   ; Motor_ctrl_redone:motor1|pwm:PWM1|counter[11]                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.429      ;
 ; 0.302 ; uart_tx:u3|count[18]                            ; uart_tx:u3|count[18]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.427      ;
 ; 0.302 ; uart_tx:u3|count[20]                            ; uart_tx:u3|count[20]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.427      ;
 ; 0.302 ; uart_tx:u3|count[24]                            ; uart_tx:u3|count[24]                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.427      ;
@@ -2657,7 +2657,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 29 17:13:36 2023
+    Info: Processing started: Sun Oct 29 17:30:18 2023
 Info: Command: quartus_sta Robot -c Robot
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2765,7 +2765,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Sun Oct 29 17:13:38 2023
+    Info: Processing ended: Sun Oct 29 17:30:20 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
