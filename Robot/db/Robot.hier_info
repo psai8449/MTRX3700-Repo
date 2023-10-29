@@ -96,7 +96,7 @@ LEDR[17] << <GND>
 
 
 |top_level|Motor_ctrl_redone:motor1
-clk => ~NO_FANOUT~
+clk => clk.IN2
 IR_input[0] => Decoder0.IN7
 IR_input[1] => Decoder0.IN6
 IR_input[2] => Decoder0.IN5
@@ -105,14 +105,74 @@ IR_input[4] => Decoder0.IN3
 IR_input[5] => Decoder0.IN2
 IR_input[6] => Decoder0.IN1
 IR_input[7] => Decoder0.IN0
-pwm1 <= <VCC>
-pwm2 <= <VCC>
+pwm1 <= pwm:Left.pwm_out
+pwm2 <= pwm:Right.pwm_out
 enable1 <= <VCC>
 enable2 <= <VCC>
 ina1 <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 inb1 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 ina2 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 inb2 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_level|Motor_ctrl_redone:motor1|pwm:Left
+clk_50 => pwm_out~reg0.CLK
+clk_50 => counter[0].CLK
+clk_50 => counter[1].CLK
+clk_50 => counter[2].CLK
+clk_50 => counter[3].CLK
+clk_50 => counter[4].CLK
+clk_50 => counter[5].CLK
+clk_50 => counter[6].CLK
+clk_50 => counter[7].CLK
+clk_50 => counter[8].CLK
+clk_50 => counter[9].CLK
+clk_50 => counter[10].CLK
+clk_50 => counter[11].CLK
+clk_50 => counter[12].CLK
+clk_50 => counter[13].CLK
+clk_50 => counter[14].CLK
+clk_50 => counter[15].CLK
+clk_50 => counter[16].CLK
+rst => always0.IN1
+DUTY_CYCLE[0] => Mult0.IN16
+DUTY_CYCLE[1] => Mult0.IN15
+DUTY_CYCLE[2] => Mult0.IN14
+DUTY_CYCLE[3] => Mult0.IN13
+DUTY_CYCLE[4] => Mult0.IN12
+DUTY_CYCLE[5] => Mult0.IN11
+DUTY_CYCLE[6] => Mult0.IN10
+pwm_out <= pwm_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_level|Motor_ctrl_redone:motor1|pwm:Right
+clk_50 => pwm_out~reg0.CLK
+clk_50 => counter[0].CLK
+clk_50 => counter[1].CLK
+clk_50 => counter[2].CLK
+clk_50 => counter[3].CLK
+clk_50 => counter[4].CLK
+clk_50 => counter[5].CLK
+clk_50 => counter[6].CLK
+clk_50 => counter[7].CLK
+clk_50 => counter[8].CLK
+clk_50 => counter[9].CLK
+clk_50 => counter[10].CLK
+clk_50 => counter[11].CLK
+clk_50 => counter[12].CLK
+clk_50 => counter[13].CLK
+clk_50 => counter[14].CLK
+clk_50 => counter[15].CLK
+clk_50 => counter[16].CLK
+rst => always0.IN1
+DUTY_CYCLE[0] => Mult0.IN16
+DUTY_CYCLE[1] => Mult0.IN15
+DUTY_CYCLE[2] => Mult0.IN14
+DUTY_CYCLE[3] => Mult0.IN13
+DUTY_CYCLE[4] => Mult0.IN12
+DUTY_CYCLE[5] => Mult0.IN11
+DUTY_CYCLE[6] => Mult0.IN10
+pwm_out <= pwm_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_level|pll1:u0

@@ -9,9 +9,24 @@ module Motor_ctrl_redone (
 	 output logic enable1, enable2,
     output logic ina1, inb1, ina2, inb2  // Direction controls for two motors
 );
+	
+	pwm Left (
+	
+		.clk_50			(clk), // 50MHz clock
+		.DUTY_CYCLE		(5'b10100),
+		.pwm_out			(pwm1) // pwm output
+		
+	);
+	
+	pwm Right (
+	
+		.clk_50			(clk), // 50MHz clock
+		.DUTY_CYCLE		(5'b10100),
+		.pwm_out			(pwm2) // pwm output
+		
+	);
 
-	assign pwm1 = 1'b1;
-	assign pwm2 = 1'b1;
+
 	assign enable1 = 1'b1;
 	assign enable2 = 1'b1;
 

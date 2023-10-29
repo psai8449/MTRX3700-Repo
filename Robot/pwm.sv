@@ -1,35 +1,36 @@
 
 
-module pwm #(parameter DUTY_CYCLE) (
-    input logic clk, // 50MHz clock
-    input logic rst, // reset signal
+module pwm (
+    input logic clk_50, // 50MHz clock
+	 input logic rst,
+	 input logic [6:0] DUTY_CYCLE,
+	 
     output logic pwm_out // pwm output
 );
 
-    // parameters
-    localparam CNT_MAX = 5000; // counter max value for 10KHz frequency
-//    localparam DUTY_CYCLE = 50; // duty cycle percentage
-
-    // internal signals
-    logic [12:0] cnt; // counter
-    logic cmp; // compare flag
-
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst) begin
-            cnt <= 0;
-            cmp <= 0;
-        end else begin
-            if (cnt == CNT_MAX - 1) begin
-                cnt <= 0;
-                cmp <= ~cmp;
-            end else begin
-                cnt <= cnt + 1;
-            end
-        end
-    end
-
-    assign pwm_out = cmp ? (cnt < (DUTY_CYCLE * CNT_MAX / 100)) : (cnt > ((100 - DUTY_CYCLE) * CNT_MAX / 100));
-	 
+	logic [16:0] counter = 17'b0;
+	
+	always_ff @(posedge clk_50) begin
+	
+		
+		if (rst || counter == 100_000) begin
+			counter <= 17'b0;
+			pwm_out <= 1'b0;
+		end
+		
+		else begin
+			counter <= counter + 1;
+			if (counter < DUTY_CYCLE * 1000) begin
+				pwm_out <= 1'b1;
+			end
+			else begin
+				pwm_out <= 1'b0;
+			end
+			
+		end
+		
+	end
+		
 	 
  endmodule
  

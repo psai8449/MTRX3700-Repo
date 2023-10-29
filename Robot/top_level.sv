@@ -56,7 +56,7 @@ logic [11:0] prev_data;
 
 logic clk50;
 
-pll1 u0(
+pll1 u0(								// not sure what exactly this module does might want to delete it
 	.inclk0		(CLOCK_50),
 	//irda clock 50M 
 	.c0			(clk50)        
