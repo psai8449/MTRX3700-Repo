@@ -1,4 +1,3 @@
-
 module led_fft_view (
     input fast_clk,  // 50 MHz - for quickly flickering the LEDs
     input slow_clk,  // 18.432 MHz - for receiving the FFT data and counting the frequency bins.
