@@ -85,8 +85,6 @@ IR_RECEIVE u1(
 	.oDATA		(hex_data)        
 );
 
-//assign LEDR[11:0] = hex_data[27:16];
-//assign LEDG[7:0] = send[7:0];
 assign LEDG = send;
 
 always_ff @( CLOCK_50 ) begin
@@ -142,33 +140,44 @@ always @( * ) begin
 end
 
 
-	
-	
 //***********************************************************************
 
 //************************** UART stuff *********************************
 
-//logic [7:0] rx_byte;
-//logic rx_valid;         // handshake
-//logic rx_ready = 1'b1;  // handshake. We are always ready to receive.
-//logic [7:0] current_data;
-//
-//
-//uart_rx #(.CLKS_PER_BIT(50_000_000/9600)) uart_rx_u (
-//	.clk				(CLOCK_50), 
-//	.rx				(EX_IO[1]), 
-//	.valid			(rx_valid), 
-//	.ready			(rx_ready),
-//	.data_received	(rx_byte)
-//); // Receive on GPIO[7].
-
+logic [7:0] rx_byte;
 logic [7:0] tx_byte;
-logic tx_valid;
-logic tx_ready;
 
-assign tx_valid = 1'b1;
 
-assign LEDR[3:0] = prox_status;
+uart_rx #(.CLKS_PER_BIT(50_000_000/9600)) uart_rx_u (
+	.clk				(CLOCK_50), 
+	.rx				(EX_IO[1]), 
+	.valid			(rx_valid), 
+	.ready			(rx_ready),
+	.data_received	(rx_byte)
+); // Receive on GPIO[7].
+
+
+logic tx_valid;         // handshake
+logic tx_ready;         // handshake
+
+logic rx_valid;         // handshake
+logic rx_ready = 1'b1;  // handshake. We are always ready to receive.
+
+always_ff @(posedge CLOCK_50) begin
+	tx_valid <= (tx_valid && !tx_ready);  // tx_valid stays high if uart_rx is not ready yet, else go low (can be overriden to high by case 0x82 below).
+	if (rx_valid & rx_ready) begin        // Handshake: uart_rx has got data for us.
+//			case(rx_byte)
+//				7'b1000001: count <= count + 1; // Increment count if we receive 0x81.
+//				7'b1000010: tx_valid <= 1'b1;   // Set tx_valid high if we receive 0x82.
+//			endcase
+		tx_valid <= 1'b1;
+	end
+end
+
+assign LEDR[16:9] = rx_byte;
+assign LEDR[7:0] = tx_byte;
+
+
 
 logic [3:0] prox_status;
 
@@ -178,7 +187,6 @@ end
 
 assign tx_byte = {prox_status[3:0], motor_stat, 1'b1};
 
-//assign tx_byte = SW[7:0];
 
 uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) u3 (
 	.clk 				(CLOCK_50),
@@ -193,21 +201,17 @@ uart_tx #(.CLKS_PER_BIT(50_000_000/9600)) u3 (
 //************************ Proximity **************************************
 
 
-  proximity u100(
-  .CLOCK_50(CLOCK_50),
-  .GPIO_35(GPIO[35]),
-  .GPIO_34(GPIO[34]),
-  .LEDR(proximity_stat)
-  );
-  
-  
-  logic [7:0] proximity_stat;
+proximity u100(
+	.CLOCK_50		(CLOCK_50),
+	.GPIO_35			(GPIO[35]),
+	.GPIO_34			(GPIO[34]),
+	.LEDR				(proximity_stat)
+);
 
 
+logic [7:0] proximity_stat;
 
-
-  
-  //**************************************************************************
+//**************************************************************************
 
 
 endmodule
