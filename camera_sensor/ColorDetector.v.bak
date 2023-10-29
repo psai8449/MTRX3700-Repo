@@ -1,0 +1,27 @@
+module ColorDetector (
+  input wire [7:0] red,
+  input wire [7:0] green,
+  input wire [7:0] blue,
+  output wire tape_detected
+);
+
+  // Define the acceptable RGB range for yellow
+  parameter YELLOW_MIN_R = 180;
+  parameter YELLOW_MAX_R = 255;
+  parameter YELLOW_MIN_G = 180;
+  parameter YELLOW_MAX_G = 255;
+  parameter YELLOW_MIN_B = 0;
+  parameter YELLOW_MAX_B = 80;
+
+  wire is_yellow;
+
+  assign is_yellow = (
+    (red >= YELLOW_MIN_R) && (red <= YELLOW_MAX_R) &&
+    (green >= YELLOW_MIN_G) && (green <= YELLOW_MAX_G) &&
+    (blue >= YELLOW_MIN_B) && (blue <= YELLOW_MAX_B)
+  );
+
+  // Logic for tape detection (you can adjust criteria as needed)
+  assign tape_detected = is_yellow;
+
+endmodule
