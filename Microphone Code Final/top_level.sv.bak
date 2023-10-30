@@ -1,0 +1,50 @@
+module top_level (
+	input CLOCK_50,
+	output	I2C_SCLK,
+	inout		I2C_SDAT,
+	input		AUD_ADCDAT,
+	input   AUD_BCLK,
+	output   AUD_XCK,
+	input    AUD_ADCLRCK,
+	output  logic [17:0] LEDR
+);
+
+	logic adc_clk; adc_pll adc_pll_u (.areset(1'b0),.inclk0(CLOCK_50),.c0(adc_clk)); // generate 18.432 MHz clock
+	
+	set_audio_encoder set_codec_u (.CLOCK_50(CLOCK_50), .I2C_SCLK(I2C_SCLK), .I2C_SDAT(I2C_SDAT));
+		
+	logic rst;
+	integer reset_timer = 0;
+	always_ff @(posedge adc_clk) begin
+		reset_timer <= reset_timer < 1_843_000 ? reset_timer + 1 : reset_timer;
+	end
+	assign rst = reset_timer < 1_843_000; // Wait 0.1 second for i2c config to finish.
+	
+	dstream #(.N(16)) mic_fifo_out ();
+	dstream #(.N(16*2+1)) fft_out ();
+	
+	mic_load #(.N(16), .BUFF_DEPTH(480)) u_mic_load (
+    .rst(rst),
+    .adclrc(AUD_ADCLRCK),
+	 .bclk(AUD_BCLK),
+	 .adcdat(AUD_ADCDAT),
+    .fifo_out(mic_fifo_out)
+   );
+	
+	assign AUD_XCK = adc_clk;
+	
+	fft_stream #(.W(16)) fft_stream_u (
+    .clk(adc_clk),
+	 .reset(rst),
+    .x(mic_fifo_out),
+    .y(fft_out)
+	);
+	
+	 
+	 led_fft_view fft_view_u (.fast_clk(CLOCK_50), // 50 MHz
+									  .slow_clk(adc_clk), // 18.432 MHz
+									  .fft_out(fft_out),
+									  .LEDR(LEDR[15:0])
+    );
+
+endmodule

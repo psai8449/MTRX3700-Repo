@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Oct 09 05:38:52 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : fft
+Top-level Entity Name : top_level
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 15,880 / 114,480 ( 14 % )
+    Total combinational functions : 15,385 / 114,480 ( 13 % )
+    Dedicated logic registers : 3,960 / 114,480 ( 3 % )
+Total registers : 3960
+Total pins : 25 / 529 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 147,264 / 3,981,312 ( 4 % )
+Embedded Multiplier 9-bit elements : 144 / 532 ( 27 % )
+Total PLLs : 2 / 4 ( 50 % )

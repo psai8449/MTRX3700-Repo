@@ -1,0 +1,173 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -5.901
+TNS   : -146.636
+
+Type  : Slow 1200mV 85C Model Setup 'AUD_BCLK'
+Slack : -5.755
+TNS   : -226.694
+
+Type  : Slow 1200mV 85C Model Setup 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -5.358
+TNS   : -209.532
+
+Type  : Slow 1200mV 85C Model Setup 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 49995.863
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AUD_BCLK'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 45.038
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -3.000
+TNS   : -65.965
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 26.729
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24999.711
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -5.353
+TNS   : -135.274
+
+Type  : Slow 1200mV 0C Model Setup 'AUD_BCLK'
+Slack : -5.159
+TNS   : -204.459
+
+Type  : Slow 1200mV 0C Model Setup 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.925
+TNS   : -191.341
+
+Type  : Slow 1200mV 0C Model Setup 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 49996.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 45.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -3.000
+TNS   : -65.965
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.689
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 26.762
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24999.711
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.695
+TNS   : -67.990
+
+Type  : Fast 1200mV 0C Model Setup 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.474
+TNS   : -98.204
+
+Type  : Fast 1200mV 0C Model Setup 'AUD_BCLK'
+Slack : -2.267
+TNS   : -90.287
+
+Type  : Fast 1200mV 0C Model Setup 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 49997.961
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 49.408
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.698
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -3.000
+TNS   : -71.399
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.266
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 26.882
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24999.782
+TNS   : 0.000
+
+------------------------------------------------------------

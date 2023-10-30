@@ -1,0 +1,52 @@
+module led_fft_view (
+	input fast_clk, // 50 MHz
+	input slow_clk, // 18.432 MHz
+	dstream.in fft_out,
+	output logic [15:0] LEDR	
+);
+
+	localparam N = 1024;
+	localparam W = 64;
+	localparam W_SUM = $clog2(N/(2*16)) + W;
+
+	
+	logic [W_SUM-1:0] led_bins [0:15]; // 16 bins for 16 LEDRs --> N=1024, *real signal->512 actual points* so we have 512/16=32 frequencies represented per bin.
+	logic [W_SUM-1:0] led_pwm  [0:15]; // 16 bins for 16 LEDRs --> N=1024, so we have 512/16=32 frequencies represented per bin.
+	
+	always_ff @(posedge slow_clk) begin : bin_counting
+		if (fft_out.valid & fft_out.ready) begin
+			
+			if (~fft_out.index[9]) begin // Only use first half of frequency spectrum (512 points).
+				if (fft_out.index[4:0] == 0) led_bins[fft_out.index[8:5]] <= fft_out.data;
+				else led_bins[fft_out.index[8:5]] <= led_bins[fft_out.index[8:5]] + fft_out.data;
+			end
+
+			if (fft_out.index == 511) begin
+				for (integer k=0; k<16; k++) begin
+					led_pwm[k] <= led_bins[k];
+				end
+			end
+			
+		end
+	end
+	
+	assign fft_out.ready = 1'b1; // the LEDs are always ready.
+	
+	logic [12:0] pwm_count = 0;
+	logic [W_SUM-1:0] max_val_partition;
+	
+	always_ff @(posedge fast_clk) begin : led_pwm_logic
+		// 8192
+		if      (pwm_count == 0)      max_val_partition <= {(32){1'b1}};
+		else max_val_partition <= max_val_partition - 2**32/2**13;
+		
+		if (fft_out.index == 511) pwm_count <= 0;
+		else pwm_count <= pwm_count + 1;
+		
+		for (integer r=0; r<16; r++) begin
+			LEDR[r] <= led_pwm[r] >= max_val_partition;
+		end
+	end
+
+
+endmodule
