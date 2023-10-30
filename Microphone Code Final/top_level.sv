@@ -6,7 +6,7 @@ module top_level (
 	input   AUD_BCLK,
 	output   AUD_XCK,
 	input    AUD_ADCLRCK,
-	output  logic LEDR0
+	output  logic LEDR[0]
 );
 
 	logic adc_clk; adc_pll adc_pll_u (.areset(1'b0),.inclk0(CLOCK_50),.c0(adc_clk)); // generate 18.432 MHz clock
@@ -78,7 +78,7 @@ module top_level (
 	 led_fft_view fft_view_u (.fast_clk(CLOCK_50), // 50 MHz
 									  .slow_clk(adc_clk),  // 18.432 MHz
 									  .fft_out(fft_out),
-									  .frequency_output(LEDR0)
+				  .frequency_output(LEDR[0])
     );
 	 
 	
