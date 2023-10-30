@@ -6,7 +6,7 @@ module top_level (
 	input   AUD_BCLK,
 	output   AUD_XCK,
 	input    AUD_ADCLRCK,
-	output  logic LEDR[0]
+	output LEDR[0]
 );
 
 	logic adc_clk; adc_pll adc_pll_u (.areset(1'b0),.inclk0(CLOCK_50),.c0(adc_clk)); // generate 18.432 MHz clock
