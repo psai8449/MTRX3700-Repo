@@ -87,10 +87,48 @@ IR_RECEIVE u1(
 
 assign LEDG = send;
 
+{hex_data[27:24], hex_data[19:16]}
+
 always_ff @( CLOCK_50 ) begin
 	
-	if ( hex_data != prev_data ) begin
-		case(hex_data[27:16]) 
+	if ( rx_byte != prev_data ) begin
+		
+		case( rx_byte ) 
+		
+			8'b0110_0001: begin		// 2	Forwards
+				send[7:0] <= 8'b0000_0010;
+			end
+			
+			8'b0110_0010: begin		// 4	Left
+				send[7:0] <= 8'b0000_1000;
+			end
+			
+			8'b0110_0011: begin		// 5	Brake??
+				send[7:0] <= 8'b0001_0000;
+			end
+			
+			8'b0110_0100: begin		// 6	Right
+				send[7:0] <= 8'b0010_0000;
+			end
+			
+			8'b0110_0101: begin		// 8	Backwards
+				send[7:0] <= 8'b1000_0000;
+			end
+			
+			default: begin
+				send[7:0] <= 8'b0000_0000;
+			end
+				
+		endcase
+		
+		prev_data <= hex_data;
+
+	end
+	
+	else if ( {hex_data[27:24], hex_data[19:16]} != prev_data ) begin
+		
+		case( {hex_data[27:24], hex_data[19:16]} ) 
+		
 			12'b1101_0000_0010: begin		// 2	Forwards
 				send[7:0] <= 8'b0000_0010;
 			end
@@ -108,7 +146,7 @@ always_ff @( CLOCK_50 ) begin
 			end
 			
 			12'b0111_0000_1000: begin		// 8	Backwards
-				send[7:0] <= 8'11;
+				send[7:0] <= 8'b1000_0000;
 			end
 			
 			default: begin
@@ -120,7 +158,7 @@ always_ff @( CLOCK_50 ) begin
 		prev_data <= hex_data;
 		
 	end
-	
+
 	
 end
 
@@ -166,11 +204,9 @@ logic rx_ready = 1'b1;  // handshake. We are always ready to receive.
 always_ff @(posedge CLOCK_50) begin
 	tx_valid <= (tx_valid && !tx_ready);  // tx_valid stays high if uart_rx is not ready yet, else go low (can be overriden to high by case 0x82 below).
 	if (rx_valid & rx_ready) begin        // Handshake: uart_rx has got data for us.
-//			case(rx_byte)
-//				7'b1000001: count <= count + 1; // Increment count if we receive 0x81.
-//				7'b1000010: tx_valid <= 1'b1;   // Set tx_valid high if we receive 0x82.
-//			endcase
+
 		tx_valid <= 1'b1;
+
 	end
 end
 

@@ -1,0 +1,69 @@
+//main fsm
+
+module FSM (
+	input logic clk,
+	input logic [3:0] prox_stat,
+	input logic [31:0] hex_data,
+	
+	output logic [4:0] duty,
+	output logic [7:0] send,
+	output logic [2:0] motor_stat
+	
+);
+
+logic [7:0] prev_data;
+
+always_ff @( clk ) begin
+	
+	if ( hex_data != prev_data ) begin
+		case(hex_data[27:16]) 
+			12'b1101_0000_0010: begin		// 2	Forwards
+				send[7:0] <= 8'b0000_0010;
+			end
+			
+			12'b1011_0000_0100: begin		// 4	Left
+				send[7:0] <= 8'b0000_1000;
+			end
+			
+			12'b1010_0000_0101: begin		// 5	Brake??
+				send[7:0] <= 8'b0001_0000;
+			end
+			
+			12'b1001_0000_0110: begin		// 6	Right
+				send[7:0] <= 8'b0010_0000;
+			end
+			
+			12'b0111_0000_1000: begin		// 8	Backwards
+				send[7:0] <= 8'11;
+			end
+			
+			default: begin
+				send[7:0] <= 8'b0000_0000;
+			end
+				
+		endcase
+		
+		prev_data <= hex_data;
+		
+	end
+	
+	
+end
+
+
+always @( * ) begin
+  case (send)
+    8'b0000_0000: motor_stat = 3'b000;		// default
+    8'b0000_0010: motor_stat = 3'b001;		// forwards	
+    8'b0000_1000: motor_stat = 3'b010;		// left
+    8'b0001_0000: motor_stat = 3'b011;		// brake
+    8'b0010_0000: motor_stat = 3'b100;		// right
+    8'b1000_0000: motor_stat = 3'b101;		// backwards
+    default: motor_stat = 3'b111; // Default case, you can choose any value
+  endcase
+end
+
+
+
+endmodule
+

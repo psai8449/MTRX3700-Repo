@@ -1,0 +1,53 @@
+
+State Machine - |top_level|proximity:u100|sensor_driver:u0|state
+Name state.DISPLAY_DISTANCE state.COUNTECHO state.WAIT state.TRIGGER state.IDLE 
+state.IDLE 0 0 0 0 0 
+state.TRIGGER 0 0 0 1 1 
+state.WAIT 0 0 1 0 1 
+state.COUNTECHO 0 1 0 0 1 
+state.DISPLAY_DISTANCE 1 0 0 0 1 
+
+State Machine - |top_level|uart_tx:u3|state
+Name state.STOP state.DATA state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.DATA 0 1 0 1 
+state.STOP 1 0 0 1 
+
+State Machine - |top_level|uart_rx:uart_rx_u|state
+Name state.CLEANUP state.STOP_BIT state.DATA_BITS state.WAIT state.START_BIT state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.START_BIT 0 0 0 0 1 1 
+state.WAIT 0 0 0 1 0 1 
+state.DATA_BITS 0 0 1 0 0 1 
+state.STOP_BIT 0 1 0 0 0 1 
+state.CLEANUP 1 0 0 0 0 1 
+
+State Machine - |top_level|IR_RECEIVE:u1|state
+Name state.IDLE state.DATAREAD state.GUIDANCE 
+state.IDLE 0 0 0 
+state.GUIDANCE 1 0 1 
+state.DATAREAD 1 1 0 
+
+State Machine - |top_level|microphone:MIC|set_audio_encoder:set_codec_u|state
+Name state.LOAD state.NEXT state.WAIT 
+state.LOAD 0 0 0 
+state.WAIT 1 0 1 
+state.NEXT 1 1 0 
+
+State Machine - |top_level|microphone:MIC|set_audio_encoder:set_codec_u|i2c_master:u0|state
+Name state.STOP3 state.STOP2 state.STOP1 state.STOP0 state.ACK3 state.DATA1 state.DATA0 state.ACK2 state.SUB_ADDR1 state.SUB_ADDR0 state.ACK1 state.SLAVE_ADDR state.START0 state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.START0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.SLAVE_ADDR 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.ACK1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.SUB_ADDR0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.SUB_ADDR1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.ACK2 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.DATA0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.DATA1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.ACK3 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STOP0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STOP1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.STOP2 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STOP3 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
