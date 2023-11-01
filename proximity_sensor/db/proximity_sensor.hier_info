@@ -1,99 +1,17 @@
-|top_level
+|proximity
 CLOCK_50 => CLOCK_50.IN1
-GPIO[0] <> <UNC>
-GPIO[1] <> <UNC>
-GPIO[2] <> <UNC>
-GPIO[3] <> <UNC>
-GPIO[4] <> <UNC>
-GPIO[5] <> <UNC>
-GPIO[6] <> <UNC>
-GPIO[7] <> <UNC>
-GPIO[8] <> <UNC>
-GPIO[9] <> <UNC>
-GPIO[10] <> <UNC>
-GPIO[11] <> <UNC>
-GPIO[12] <> <UNC>
-GPIO[13] <> <UNC>
-GPIO[14] <> <UNC>
-GPIO[15] <> <UNC>
-GPIO[16] <> <UNC>
-GPIO[17] <> <UNC>
-GPIO[18] <> <UNC>
-GPIO[19] <> <UNC>
-GPIO[20] <> <UNC>
-GPIO[21] <> <UNC>
-GPIO[22] <> <UNC>
-GPIO[23] <> <UNC>
-GPIO[24] <> <UNC>
-GPIO[25] <> <UNC>
-GPIO[26] <> <UNC>
-GPIO[27] <> <UNC>
-GPIO[28] <> <UNC>
-GPIO[29] <> <UNC>
-GPIO[30] <> <UNC>
-GPIO[31] <> <UNC>
-GPIO[32] <> <UNC>
-GPIO[33] <> <UNC>
 GPIO[34] <> GPIO[34]
-KEY[0] => ~NO_FANOUT~
-KEY[1] => ~NO_FANOUT~
-KEY[2] => ~NO_FANOUT~
-KEY[3] => ~NO_FANOUT~
-LEDR[0] <= sensor_driver:u0.distance
-LEDR[1] <= sensor_driver:u0.distance
-LEDR[2] <= sensor_driver:u0.distance
-LEDR[3] <= sensor_driver:u0.distance
-LEDR[4] <= sensor_driver:u0.distance
-LEDR[5] <= sensor_driver:u0.distance
-LEDR[6] <= sensor_driver:u0.distance
-LEDR[7] <= sensor_driver:u0.distance
-<<<<<<< HEAD
-=======
+LEDR[0] << sensor_driver:u0.distance
+LEDR[1] << sensor_driver:u0.distance
+LEDR[2] << sensor_driver:u0.distance
+LEDR[3] << sensor_driver:u0.distance
+LEDR[4] << sensor_driver:u0.distance
+LEDR[5] << sensor_driver:u0.distance
+LEDR[6] << sensor_driver:u0.distance
+LEDR[7] << sensor_driver:u0.distance
 
 
-|top_level|debounce:reset_edge
-clk => button_q0.CLK
-clk => button_pressed.CLK
-clk => count[0].CLK
-clk => count[1].CLK
-clk => count[2].CLK
-clk => count[3].CLK
-clk => count[4].CLK
-clk => count[5].CLK
-clk => count[6].CLK
-clk => count[7].CLK
-clk => count[8].CLK
-clk => count[9].CLK
-clk => count[10].CLK
-clk => count[11].CLK
-clk => count[12].CLK
-clk => count[13].CLK
-clk => count[14].CLK
-clk => count[15].CLK
-clk => count[16].CLK
-clk => count[17].CLK
-clk => count[18].CLK
-clk => count[19].CLK
-clk => count[20].CLK
-clk => count[21].CLK
-clk => count[22].CLK
-clk => count[23].CLK
-clk => count[24].CLK
-clk => count[25].CLK
-clk => count[26].CLK
-clk => count[27].CLK
-clk => count[28].CLK
-clk => count[29].CLK
-clk => count[30].CLK
-clk => count[31].CLK
-clk => new_button_pressed.CLK
-button => always0.IN1
-button => new_button_pressed.DATAIN
-button_edge <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
->>>>>>> 18fa4aa4e7e0c8e3d1105167c1f712f1e9cb29b2
-
-
-|top_level|sensor_driver:u0
+|proximity|sensor_driver:u0
 clk => distanceRAW_in_cm[24].CLK
 clk => distanceRAW_in_cm[25].CLK
 clk => distanceRAW_in_cm[26].CLK

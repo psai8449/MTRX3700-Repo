@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pwm_test
-Sun Oct 29 00:08:19 2023
+Wed Nov 01 12:54:14 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,14 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "pwm:u1"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +36,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 29 00:08:19 2023       ;
+; Analysis & Synthesis Status        ; Failed - Wed Nov 01 12:54:14 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pwm_test                                    ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 28                                          ;
-;     Total combinational functions  ; 28                                          ;
-;     Dedicated logic registers      ; 14                                          ;
-; Total registers                    ; 14                                          ;
-; Total pins                         ; 10                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -151,125 +144,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                           ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; pwm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/pwm.sv       ;         ;
-; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 28             ;
-;                                             ;                ;
-; Total combinational functions               ; 28             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 11             ;
-;     -- 3 input functions                    ; 3              ;
-;     -- <=2 input functions                  ; 14             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 16             ;
-;     -- arithmetic mode                      ; 12             ;
-;                                             ;                ;
-; Total registers                             ; 14             ;
-;     -- Dedicated logic registers            ; 14             ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 10             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 14             ;
-; Total fan-out                               ; 119            ;
-; Average fan-out                             ; 1.92           ;
-+---------------------------------------------+----------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |top_level                 ; 28 (0)              ; 14 (0)                    ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |top_level          ; top_level   ; work         ;
-;    |pwm:u1|                ; 28 (28)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|pwm:u1   ; pwm         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 14    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pwm:u1"                                                                                                                                     ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; rst  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 14                          ;
-;     plain             ; 14                          ;
-; cycloneiii_lcell_comb ; 29                          ;
-;     arith             ; 12                          ;
-;         2 data inputs ; 12                          ;
-;     normal            ; 17                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 11                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.20                        ;
-; Average LUT depth     ; 2.66                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -278,39 +161,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 29 00:08:08 2023
+    Info: Processing started: Wed Nov 01 12:54:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pwm_test -c pwm_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file pwm.sv
-    Info (12023): Found entity 1: pwm File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/pwm.sv Line: 3
+    Info (12023): Found entity 1: pwm File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/pwm.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file top_level.sv
-    Info (12023): Found entity 1: top_level File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 3
-Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10034): Output port "LEDG[8..1]" at top_level.sv(9) has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-Info (12128): Elaborating entity "pwm" for hierarchy "pwm:u1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 15
-Warning (10230): Verilog HDL assignment warning at pwm.sv(24): truncated value with size 32 to match size of target (13) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/pwm.sv Line: 24
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/pwm_test/top_level.sv Line: 9
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 28 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Sun Oct 29 00:08:19 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:06
+    Info (12023): Found entity 1: top_level File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/top_level.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_top_level.sv
+    Info (12023): Found entity 1: tb_proximity File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 3
+Error (10206): Verilog HDL Module Declaration error at tb_top_level.sv(4): top module port "CLOCK_50" is not found in the port list File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 4
+Error (10206): Verilog HDL Module Declaration error at tb_top_level.sv(5): top module port "LEDG" is not found in the port list File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 5
+Error (10231): Verilog HDL error at tb_top_level.sv(12): value cannot be assigned to input "CLOCK_50" File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 12
+Error (10231): Verilog HDL error at tb_top_level.sv(21): value cannot be assigned to input "CLOCK_50" File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 21
+Error (10161): Verilog HDL error at tb_top_level.sv(22): object "GPIO" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 22
+Error (10161): Verilog HDL error at tb_top_level.sv(27): object "GPIO" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 27
+Error (10161): Verilog HDL error at tb_top_level.sv(32): object "GPIO" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 32
+Error (10161): Verilog HDL error at tb_top_level.sv(33): object "GPIO" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Prithik/Documents/MTRX3700-Repo/pwm_test/tb_top_level.sv Line: 33
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 1 warning
+    Error: Peak virtual memory: 4703 megabytes
+    Error: Processing ended: Wed Nov 01 12:54:14 2023
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:19
 
 

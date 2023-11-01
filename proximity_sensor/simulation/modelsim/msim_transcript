@@ -1,0 +1,59 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do proximity_sensor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor {C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:49 on Nov 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor" C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv 
+# -- Compiling module sensor_driver
+# 
+# Top level modules:
+# 	sensor_driver
+# End time: 12:25:49 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor {C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/proximity.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:49 on Nov 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor" C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/proximity.sv 
+# -- Compiling module proximity
+# 
+# Top level modules:
+# 	proximity
+# End time: 12:25:49 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor {C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/tb_proximity.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:25:49 on Nov 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor" C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/tb_proximity.sv 
+# End time: 12:25:49 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_proximity
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_proximity 
+# Start time: 12:25:49 on Nov 01,2023
+# ** Error: (vsim-3170) Could not find 'tb_proximity'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/cycloneive
+#             C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/simulation/modelsim/rtl_work
+#             C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./proximity_sensor_run_msim_rtl_verilog.do PAUSED at line 13
+# End time: 12:27:39 on Nov 01,2023, Elapsed time: 0:01:50
+# Errors: 1, Warnings: 0

@@ -20,6 +20,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDG[6]",
+					"strict" : false
+				},
+				{
 					"name" : "LEDG[7]",
 					"strict" : false
 				},
