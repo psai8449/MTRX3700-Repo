@@ -14,25 +14,32 @@ module top_level (
 );
 
 logic data_ready;
-logic [31:0] IR_input;
 
 
 
-//
-//BRAM_IP ram1 (
-//	.clock 		( CLOCK_50 ),
-//	.data			(  ),
-//	.rdaddress	(  ),
-//	.wraddess	(  ),
-//	.wren			(  ),
-//	.q				(  )
-//);
+//**************************** FSM *************************************
+
+assign LEDG = send;
+logic [2:0] motor_stat;
+
+
+FSM u2(
+
+	.CLK				(CLOCK_50),
+	.PROX_STAT		(prox_status),
+	.HEX_DATA		(hex_data),
+	.RX_BYTE			(rx_byte),
+	
+	.DUTY				(duty),
+	.SEND				(send),
+	.MOTOR_STAT		(motor_stat)
+	
+);
+
+//**********************************************************************
 
 //**************************** Motor Control ***************************
-logic [6:0] duty1, duty2;
-
-assign duty1 = 5'b10100;
-assign duty2 = 5'b10100;
+logic [6:0] duty;
 
 Motor_ctrl_redone  		motor1 (
 
@@ -43,13 +50,13 @@ Motor_ctrl_redone  		motor1 (
 	 .pwm1			(GPIO[9]),
     .ina1			(GPIO[5]),
 	 .inb1			(GPIO[7]),
-	 .duty_cycle_1	(duty1),
+	 .duty_cycle_1	(duty),
 	 
 	 .enable2		(GPIO[2]),
 	 .pwm2			(GPIO[8]),
 	 .ina2			(GPIO[4]),
 	 .inb2			(GPIO[6]),  // Direction controls for two motors
-	 .duty_cycle_2	(duty2)
+	 .duty_cycle_2	(duty)
 	 
 );
 
@@ -85,102 +92,7 @@ IR_RECEIVE u1(
 	.oDATA		(hex_data)        
 );
 
-assign LEDG = send;
 
-<<<<<<< HEAD
-module FSM (
-
-	.CLK				(CLOCK_50),
-	.PROX_STAT		(prox_status),
-	.HEX_DATA		(hex_data),
-	
-	.DUTY				(),
-	.SEND				(send),
-	.MOTOR_STAT		()
-	
-);
-
-always_ff @( CLOCK_50 ) begin
-	
-	if ( hex_data != prev_data ) begin
-		case(hex_data[27:16]) 
-			12'b1101_0000_0010: begin		// 2	Forwards
-				send[7:0] <= 8'b0000_0010;
-			end
-			
-			12'b1011_0000_0100: begin		// 4	Left
-				send[7:0] <= 8'b0000_1000;
-			end
-			
-			12'b1010_0000_0101: begin		// 5	Brake??
-				send[7:0] <= 8'b0001_0000;
-			end
-			
-			12'b1001_0000_0110: begin		// 6	Right
-				send[7:0] <= 8'b0010_0000;
-			end
-			
-			12'b0111_0000_1000: begin		// 8	Backwards
-				send[7:0] <= 8'b1000_0000; // needs change
-			end
-			
-			default: begin
-				send[7:0] <= 8'b0000_0000;
-			end
-				
-		endcase
-		
-		prev_data <= hex_data;
-		
-	end
-	else if ( rx_byte != prev_data) begin
-		case(rx_byte) 
-			8'b0111_0111: begin		// 2	Forwards - w
-				send[7:0] <= 8'b0000_0010;
-			end
-			
-			8'b0110_0001: begin		// 4	Left - a
-				send[7:0] <= 8'b0000_1000;
-			end
-			
-			8'b0010_0000: begin		// 5	Brake - space
-				send[7:0] <= 8'b0001_0000;
-			end
-			
-			8'b0110_0100: begin		// 6	Right - d
-				send[7:0] <= 8'b0010_0000;
-			end
-			
-			8'b0111_0011: begin		// 8	Backwards - s
-				send[7:0] <= 8'b1100_0000; // needs change
-			end
-			
-			default: begin
-				send[7:0] <= 8'b0000_0000;
-			end
-		endcase
-		
-		prev_data <= rx_byte;
-		
-	end
-end
-
-
-logic [2:0] motor_stat;
-
-always @( * ) begin
-  case (send)
-    8'b0000_0000: motor_stat = 3'b000;		// default
-    8'b0000_0010: motor_stat = 3'b001;		// forwards	
-    8'b0000_1000: motor_stat = 3'b010;		// left
-    8'b0001_0000: motor_stat = 3'b011;		// brake
-    8'b0010_0000: motor_stat = 3'b100;		// right
-    8'b1000_0000: motor_stat = 3'b101;		// backwards
-    default: motor_stat = 3'b111; // Default case, you can choose any value
-  endcase
-end
-
->>>>>>> f8908b927555044237cde1e9510192f733452f25
 
 //***********************************************************************
 
@@ -223,8 +135,6 @@ always_comb begin
 	prox_status = ( proximity_stat > 4'b1111) ? 4'b1111 : ( (proximity_stat < 3'b100) ? 4'b0000 : proximity_stat[5:2] ); 
 end
 
-logic [2:0] motor_stat;
-
 assign tx_byte = {prox_status[3:0], motor_stat, 1'b1};
 
 
@@ -255,4 +165,5 @@ logic [7:0] proximity_stat;
 
 
 endmodule
+
 

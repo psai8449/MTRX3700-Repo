@@ -5,6 +5,7 @@ module FSM (
 	input logic CLK,
 	input logic [3:0] PROX_STAT,
 	input logic [31:0] HEX_DATA,
+	input logic [7:0] RX_BYTE,
 	
 	output logic [6:0] DUTY,
 	output logic [7:0] SEND,
@@ -24,71 +25,71 @@ logic [7:0] prev_data;
 
 always_ff @( CLK ) begin
 	
-	if ( {hex_data[27:24], hex_data[19:16]} != prev_data ) begin
+	if ( {HEX_DATA[27:24], HEX_DATA[19:16]} != prev_data ) begin
 		
-		case( {hex_data[27:24], hex_data[19:16]} ) 
+		case( {HEX_DATA[27:24], HEX_DATA[19:16]} ) 
 		
 			12'b1101_0000_0010: begin		// 2	Forwards
-				send[7:0] <= 8'b0000_0010;
+				SEND[7:0] <= 8'b0000_0010;
 			end
 			
 			12'b1011_0000_0100: begin		// 4	Left
-				send[7:0] <= 8'b0000_1000;
+				SEND[7:0] <= 8'b0000_1000;
 			end
 			
 			12'b1010_0000_0101: begin		// 5	Brake??
-				send[7:0] <= 8'b0001_0000;
+				SEND[7:0] <= 8'b0001_0000;
 			end
 			
 			12'b1001_0000_0110: begin		// 6	Right
-				send[7:0] <= 8'b0010_0000;
+				SEND[7:0] <= 8'b0010_0000;
 			end
 			
 			12'b0111_0000_1000: begin		// 8	Backwards
-				send[7:0] <= 8'b1000_0000;
+				SEND[7:0] <= 8'b1000_0000;
 			end
 			
 			default: begin
-				send[7:0] <= 8'b0000_0000;
+				SEND[7:0] <= 8'b0000_0000;
 			end
 				
 		endcase
 		
-		prev_data <= hex_data;
+		prev_data <= HEX_DATA;
 		
 	end
 	
-	else if ( rx_byte != prev_data ) begin
+	else if ( RX_BYTE != prev_data ) begin
 		
-		case( rx_byte ) 
+		case( RX_BYTE ) 
 		
 			8'b0110_0001: begin		// 2	Forwards
-				send[7:0] <= 8'b0000_0010;
+				SEND[7:0] <= 8'b0000_0010;
 			end
 			
 			8'b0110_0010: begin		// 4	Left
-				send[7:0] <= 8'b0000_1000;
+				SEND[7:0] <= 8'b0000_1000;
 			end
 			
 			8'b0110_0011: begin		// 5	Brake??
-				send[7:0] <= 8'b0001_0000;
+				SEND[7:0] <= 8'b0001_0000;
 			end
 			
 			8'b0110_0100: begin		// 6	Right
-				send[7:0] <= 8'b0010_0000;
+				SEND[7:0] <= 8'b0010_0000;
 			end
 			
 			8'b0110_0101: begin		// 8	Backwards
-				send[7:0] <= 8'b1000_0000;
+				SEND[7:0] <= 8'b1000_0000;
 			end
 			
 			default: begin
-				send[7:0] <= 8'b0000_0000;
+				SEND[7:0] <= 8'b0000_0000;
 			end
 				
 		endcase
 		
-		prev_data <= rx_byte;
+		prev_data <= RX_BYTE;
 
 	end
 	

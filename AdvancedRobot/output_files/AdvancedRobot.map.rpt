@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AdvancedRobot
-Wed Nov 01 10:48:43 2023
+Wed Nov 01 19:19:04 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,11 +37,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  29. Port Connectivity Checks: "pll1:u0"
  30. Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:PWM2"
  31. Port Connectivity Checks: "Motor_ctrl_redone:motor1|pwm:PWM1"
- 32. Port Connectivity Checks: "Motor_ctrl_redone:motor1"
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
- 36. Analysis & Synthesis Suppressed Messages
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
+ 35. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -67,15 +66,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 01 10:48:43 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 01 19:19:04 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; AdvancedRobot                               ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 584                                         ;
-;     Total combinational functions  ; 517                                         ;
-;     Dedicated logic registers      ; 355                                         ;
-; Total registers                    ; 355                                         ;
+; Total logic elements               ; 514                                         ;
+;     Total combinational functions  ; 479                                         ;
+;     Dedicated logic registers      ; 315                                         ;
+; Total registers                    ; 315                                         ;
 ; Total pins                         ; 94                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -175,45 +174,46 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
-; uart_tx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_tx.sv           ;         ;
-; uart_rx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_rx.sv           ;         ;
-; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv         ;         ;
-; sensor_driver.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv     ;         ;
-; pwm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pwm.sv               ;         ;
-; proximity.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/proximity.sv         ;         ;
-; Motor_ctrl_redone.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv ;         ;
-; pll1.v                           ; yes             ; User Wizard-Generated File   ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pll1.v               ;         ;
-; IR_RECEIVE_Terasic.v             ; yes             ; User Verilog HDL File        ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf           ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc       ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_pll.inc      ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratixii_pll.inc    ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc    ;         ;
-; db/pll1_altpll.v                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/db/pll1_altpll.v     ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf         ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc      ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc         ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc         ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc         ;         ;
-; db/mult_ngt.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/db/mult_ngt.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; FSM.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv               ;         ;
+; uart_tx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_tx.sv           ;         ;
+; uart_rx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv           ;         ;
+; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv         ;         ;
+; sensor_driver.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv     ;         ;
+; pwm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pwm.sv               ;         ;
+; proximity.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/proximity.sv         ;         ;
+; Motor_ctrl_redone.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv ;         ;
+; pll1.v                           ; yes             ; User Wizard-Generated File   ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pll1.v               ;         ;
+; IR_RECEIVE_Terasic.v             ; yes             ; User Verilog HDL File        ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf                                                                   ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                               ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_pll.inc                                                              ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratixii_pll.inc                                                            ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                                            ;         ;
+; db/pll1_altpll.v                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/db/pll1_altpll.v     ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                                 ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                              ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc                                                                 ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                                 ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                                 ;         ;
+; db/mult_ngt.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/db/mult_ngt.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -221,20 +221,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 584            ;
+; Estimated Total logic elements              ; 514            ;
 ;                                             ;                ;
-; Total combinational functions               ; 517            ;
+; Total combinational functions               ; 479            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 189            ;
-;     -- 3 input functions                    ; 81             ;
-;     -- <=2 input functions                  ; 247            ;
+;     -- 4 input functions                    ; 171            ;
+;     -- 3 input functions                    ; 62             ;
+;     -- <=2 input functions                  ; 246            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 309            ;
+;     -- normal mode                          ; 271            ;
 ;     -- arithmetic mode                      ; 208            ;
 ;                                             ;                ;
-; Total registers                             ; 355            ;
-;     -- Dedicated logic registers            ; 355            ;
+; Total registers                             ; 315            ;
+;     -- Dedicated logic registers            ; 315            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 94             ;
@@ -246,8 +246,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 193            ;
-; Total fan-out                               ; 2848           ;
-; Average fan-out                             ; 2.57           ;
+; Total fan-out                               ; 2572           ;
+; Average fan-out                             ; 2.50           ;
 +---------------------------------------------+----------------+
 
 
@@ -256,11 +256,12 @@ refer to the applicable agreement for further details.
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name       ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------+--------------+
-; |top_level                            ; 517 (82)            ; 355 (1)                   ; 0           ; 4            ; 0       ; 2         ; 94   ; 0            ; |top_level                                                                        ; top_level         ; work         ;
-;    |IR_RECEIVE:u1|                    ; 150 (150)           ; 163 (163)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|IR_RECEIVE:u1                                                          ; IR_RECEIVE        ; work         ;
-;    |Motor_ctrl_redone:motor1|         ; 42 (8)              ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1                                               ; Motor_ctrl_redone ; work         ;
+; |top_level                            ; 479 (4)             ; 315 (1)                   ; 0           ; 4            ; 0       ; 2         ; 94   ; 0            ; |top_level                                                                        ; top_level         ; work         ;
+;    |FSM:u2|                           ; 49 (49)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|FSM:u2                                                                 ; FSM               ; work         ;
+;    |IR_RECEIVE:u1|                    ; 140 (140)           ; 123 (123)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|IR_RECEIVE:u1                                                          ; IR_RECEIVE        ; work         ;
+;    |Motor_ctrl_redone:motor1|         ; 41 (8)              ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1                                               ; Motor_ctrl_redone ; work         ;
 ;       |pwm:PWM1|                      ; 24 (24)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1|pwm:PWM1                                      ; pwm               ; work         ;
-;       |pwm:PWM2|                      ; 10 (10)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1|pwm:PWM2                                      ; pwm               ; work         ;
+;       |pwm:PWM2|                      ; 9 (9)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1|pwm:PWM2                                      ; pwm               ; work         ;
 ;    |pll1:u0|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|pll1:u0                                                                ; pll1              ; work         ;
 ;       |altpll:altpll_component|       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|pll1:u0|altpll:altpll_component                                        ; altpll            ; work         ;
 ;          |pll1_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated             ; pll1_altpll       ; work         ;
@@ -268,7 +269,7 @@ refer to the applicable agreement for further details.
 ;       |sensor_driver:u0|              ; 57 (57)             ; 43 (43)                   ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_level|proximity:u100|sensor_driver:u0                                        ; sensor_driver     ; work         ;
 ;          |lpm_mult:Mult0|             ; 0 (0)               ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_level|proximity:u100|sensor_driver:u0|lpm_mult:Mult0                         ; lpm_mult          ; work         ;
 ;             |mult_ngt:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |top_level|proximity:u100|sensor_driver:u0|lpm_mult:Mult0|mult_ngt:auto_generated ; mult_ngt          ; work         ;
-;    |uart_rx:uart_rx_u|                ; 77 (77)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|uart_rx:uart_rx_u                                                      ; uart_rx           ; work         ;
+;    |uart_rx:uart_rx_u|                ; 79 (79)             ; 50 (50)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|uart_rx:uart_rx_u                                                      ; uart_rx           ; work         ;
 ;    |uart_tx:u3|                       ; 64 (64)             ; 45 (45)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|uart_tx:u3                                                             ; uart_tx           ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -351,25 +352,20 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; send[1]                                             ; send[7]             ; yes                    ;
-; send[3]                                             ; send[7]             ; yes                    ;
-; send[4]                                             ; send[7]             ; yes                    ;
-; send[5]                                             ; send[7]             ; yes                    ;
-; send[6]                                             ; send[7]             ; yes                    ;
-; send[7]                                             ; send[7]             ; yes                    ;
-; prev_data[0]                                        ; send[7]             ; yes                    ;
-; prev_data[1]                                        ; send[7]             ; yes                    ;
-; prev_data[2]                                        ; send[7]             ; yes                    ;
-; prev_data[3]                                        ; send[7]             ; yes                    ;
-; prev_data[4]                                        ; send[7]             ; yes                    ;
-; prev_data[5]                                        ; send[7]             ; yes                    ;
-; prev_data[6]                                        ; send[7]             ; yes                    ;
-; prev_data[7]                                        ; send[7]             ; yes                    ;
-; prev_data[8]                                        ; send[7]             ; yes                    ;
-; prev_data[9]                                        ; send[7]             ; yes                    ;
-; prev_data[10]                                       ; send[7]             ; yes                    ;
-; prev_data[11]                                       ; send[7]             ; yes                    ;
-; Number of user-specified and inferred latches = 18  ;                     ;                        ;
+; FSM:u2|SEND[1]                                      ; FSM:u2|Equal1       ; yes                    ;
+; FSM:u2|SEND[3]                                      ; FSM:u2|Equal1       ; yes                    ;
+; FSM:u2|SEND[4]                                      ; FSM:u2|Equal1       ; yes                    ;
+; FSM:u2|SEND[5]                                      ; FSM:u2|Equal1       ; yes                    ;
+; FSM:u2|SEND[7]                                      ; FSM:u2|Equal1       ; yes                    ;
+; FSM:u2|prev_data[0]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; FSM:u2|prev_data[1]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; FSM:u2|prev_data[2]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; FSM:u2|prev_data[3]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; FSM:u2|prev_data[4]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; FSM:u2|prev_data[5]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; FSM:u2|prev_data[6]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; FSM:u2|prev_data[7]                                 ; FSM:u2|SEND[6]      ; yes                    ;
+; Number of user-specified and inferred latches = 13  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -416,12 +412,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 355   ;
-; Number of registers using Synchronous Clear  ; 220   ;
+; Total registers                              ; 315   ;
+; Number of registers using Synchronous Clear  ; 212   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 131   ;
+; Number of registers using Asynchronous Clear ; 107   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 114   ;
+; Number of registers using Clock Enable       ; 82    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -431,12 +427,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|uart_tx:u3|count[19]        ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|IR_RECEIVE:u1|bitcount[5]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|proximity:u100|counter[15]  ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |top_level|uart_rx:uart_rx_u|count[29] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|tx_byte[4]                  ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top_level|IR_RECEIVE:u1|Selector1     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|uart_tx:u3|count[9]         ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|IR_RECEIVE:u1|bitcount[2]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|proximity:u100|counter[24]  ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |top_level|uart_rx:uart_rx_u|count[28] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|prox_status[2]              ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top_level|IR_RECEIVE:u1|Selector0     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
@@ -999,58 +995,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "Motor_ctrl_redone:motor1" ;
-+--------------------+-------+----------+--------------+
-; Port               ; Type  ; Severity ; Details      ;
-+--------------------+-------+----------+--------------+
-; IR_input[2]        ; Input ; Info     ; Stuck at GND ;
-; IR_input[0]        ; Input ; Info     ; Stuck at GND ;
-; duty_cycle_1[6..5] ; Input ; Info     ; Stuck at GND ;
-; duty_cycle_1[1..0] ; Input ; Info     ; Stuck at GND ;
-; duty_cycle_1[4]    ; Input ; Info     ; Stuck at VCC ;
-; duty_cycle_1[3]    ; Input ; Info     ; Stuck at GND ;
-; duty_cycle_1[2]    ; Input ; Info     ; Stuck at VCC ;
-; duty_cycle_2[6..5] ; Input ; Info     ; Stuck at GND ;
-; duty_cycle_2[1..0] ; Input ; Info     ; Stuck at GND ;
-; duty_cycle_2[4]    ; Input ; Info     ; Stuck at VCC ;
-; duty_cycle_2[3]    ; Input ; Info     ; Stuck at GND ;
-; duty_cycle_2[2]    ; Input ; Info     ; Stuck at VCC ;
-+--------------------+-------+----------+--------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 94                          ;
-; cycloneiii_ff         ; 355                         ;
+; cycloneiii_ff         ; 315                         ;
 ;     CLR               ; 7                           ;
-;     CLR SCLR          ; 86                          ;
-;     ENA               ; 44                          ;
-;     ENA CLR           ; 32                          ;
+;     CLR SCLR          ; 78                          ;
+;     ENA               ; 28                          ;
+;     ENA CLR           ; 16                          ;
 ;     ENA CLR SCLR      ; 6                           ;
 ;     ENA SCLR          ; 32                          ;
 ;     SCLR              ; 96                          ;
 ;     plain             ; 52                          ;
 ; cycloneiii_io_obuf    ; 43                          ;
-; cycloneiii_lcell_comb ; 520                         ;
+; cycloneiii_lcell_comb ; 482                         ;
 ;     arith             ; 208                         ;
 ;         2 data inputs ; 193                         ;
 ;         3 data inputs ; 15                          ;
-;     normal            ; 312                         ;
+;     normal            ; 274                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 13                          ;
-;         2 data inputs ; 42                          ;
-;         3 data inputs ; 66                          ;
-;         4 data inputs ; 189                         ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 47                          ;
+;         4 data inputs ; 171                         ;
 ; cycloneiii_mac_mult   ; 2                           ;
 ; cycloneiii_mac_out    ; 2                           ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 2.97                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 2.90                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1059,7 +1035,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1069,75 +1045,77 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 01 10:48:22 2023
+    Info: Processing started: Wed Nov 01 19:18:53 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AdvancedRobot -c AdvancedRobot
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 3
+    Info (12023): Found entity 1: FSM File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file uart_tx.sv
-    Info (12023): Found entity 1: uart_tx File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_tx.sv Line: 4
+    Info (12023): Found entity 1: uart_tx File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_tx.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.sv
-    Info (12023): Found entity 1: uart_rx File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 1
+    Info (12023): Found entity 1: uart_rx File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top_level.sv
-    Info (12023): Found entity 1: top_level File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 3
+    Info (12023): Found entity 1: top_level File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file sensor_driver.sv
-    Info (12023): Found entity 1: sensor_driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 1
+    Info (12023): Found entity 1: sensor_driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pwm.sv
-    Info (12023): Found entity 1: pwm File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pwm.sv Line: 3
+    Info (12023): Found entity 1: pwm File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pwm.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file proximity.sv
-    Info (12023): Found entity 1: proximity File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/proximity.sv Line: 1
+    Info (12023): Found entity 1: proximity File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/proximity.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file motor_ctrl_redone.sv
-    Info (12023): Found entity 1: Motor_ctrl_redone File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv Line: 3
+    Info (12023): Found entity 1: Motor_ctrl_redone File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv Line: 3
 Info (12021): Found 0 design units, including 0 entities, in source file debounce.sv
 Info (12021): Found 1 design units, including 1 entities, in source file pll1.v
-    Info (12023): Found entity 1: pll1 File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 39
+    Info (12023): Found entity 1: pll1 File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file ir_receive_terasic.v
-    Info (12023): Found entity 1: IR_RECEIVE File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 48
+    Info (12023): Found entity 1: IR_RECEIVE File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 48
 Info (12021): Found 1 design units, including 1 entities, in source file bram_ip.v
-    Info (12023): Found entity 1: BRAM_IP File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/BRAM_IP.v Line: 39
+    Info (12023): Found entity 1: BRAM_IP File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/BRAM_IP.v Line: 39
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(92): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 92
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(92): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 92
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(93): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 93
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(120): variable "hex_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 120
-Warning (10230): Verilog HDL assignment warning at top_level.sv(120): truncated value with size 32 to match size of target (12) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 120
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(123): variable "rx_byte" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 123
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(123): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 123
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(124): variable "rx_byte" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 124
-Warning (10235): Verilog HDL Always Construct warning at top_level.sv(150): variable "rx_byte" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 150
-Warning (10240): Verilog HDL Always Construct warning at top_level.sv(90): inferring latch(es) for variable "send", which holds its previous value in one or more paths through the always construct File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Warning (10240): Verilog HDL Always Construct warning at top_level.sv(90): inferring latch(es) for variable "prev_data", which holds its previous value in one or more paths through the always construct File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Warning (10034): Output port "LEDR[17]" at top_level.sv(14) has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
-Warning (10034): Output port "LEDR[8]" at top_level.sv(14) has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
-Info (10041): Inferred latch for "prev_data[0]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[1]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[2]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[3]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[4]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[5]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[6]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[7]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[8]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[9]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[10]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "prev_data[11]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[0]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[1]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[2]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[3]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[4]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[5]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[6]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (10041): Inferred latch for "send[7]" at top_level.sv(90) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Info (12128): Elaborating entity "Motor_ctrl_redone" for hierarchy "Motor_ctrl_redone:motor1" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 54
-Info (10264): Verilog HDL Case Statement information at Motor_ctrl_redone.sv(38): all case item expressions in this case statement are onehot File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv Line: 38
-Info (12128): Elaborating entity "pwm" for hierarchy "Motor_ctrl_redone:motor1|pwm:PWM1" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv Line: 22
-Warning (10230): Verilog HDL assignment warning at pwm.sv(22): truncated value with size 32 to match size of target (17) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pwm.sv Line: 22
-Info (12128): Elaborating entity "pll1" for hierarchy "pll1:u0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 71
-Info (12128): Elaborating entity "altpll" for hierarchy "pll1:u0|altpll:altpll_component" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 94
-Info (12130): Elaborated megafunction instantiation "pll1:u0|altpll:altpll_component" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 94
-Info (12133): Instantiated megafunction "pll1:u0|altpll:altpll_component" with the following parameter: File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 94
+Warning (10034): Output port "LEDR[17]" at top_level.sv(14) has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
+Warning (10034): Output port "LEDR[8]" at top_level.sv(14) has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:u2" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 37
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(28): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 28
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(28): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 28
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(30): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 30
+Warning (10199): Verilog HDL Case Statement warning at FSM.sv(32): case item expression never matches the case expression File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 32
+Warning (10199): Verilog HDL Case Statement warning at FSM.sv(36): case item expression never matches the case expression File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 36
+Warning (10199): Verilog HDL Case Statement warning at FSM.sv(40): case item expression never matches the case expression File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 40
+Warning (10199): Verilog HDL Case Statement warning at FSM.sv(44): case item expression never matches the case expression File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 44
+Warning (10199): Verilog HDL Case Statement warning at FSM.sv(48): case item expression never matches the case expression File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 48
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(58): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 58
+Warning (10230): Verilog HDL assignment warning at FSM.sv(58): truncated value with size 32 to match size of target (8) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 58
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(62): variable "RX_BYTE" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 62
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(62): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 62
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(64): variable "RX_BYTE" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 64
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(92): variable "RX_BYTE" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 92
+Warning (10240): Verilog HDL Always Construct warning at FSM.sv(26): inferring latch(es) for variable "SEND", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Warning (10240): Verilog HDL Always Construct warning at FSM.sv(26): inferring latch(es) for variable "prev_data", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[0]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[1]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[2]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[3]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[4]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[5]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[6]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[7]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[0]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[1]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[2]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[3]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[4]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[5]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[6]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[7]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Info (12128): Elaborating entity "Motor_ctrl_redone" for hierarchy "Motor_ctrl_redone:motor1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 61
+Info (10264): Verilog HDL Case Statement information at Motor_ctrl_redone.sv(38): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv Line: 38
+Info (12128): Elaborating entity "pwm" for hierarchy "Motor_ctrl_redone:motor1|pwm:PWM1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/Motor_ctrl_redone.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at pwm.sv(22): truncated value with size 32 to match size of target (17) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pwm.sv Line: 22
+Info (12128): Elaborating entity "pll1" for hierarchy "pll1:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 78
+Info (12128): Elaborating entity "altpll" for hierarchy "pll1:u0|altpll:altpll_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 94
+Info (12130): Elaborated megafunction instantiation "pll1:u0|altpll:altpll_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 94
+Info (12133): Instantiated megafunction "pll1:u0|altpll:altpll_component" with the following parameter: File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/pll1.v Line: 94
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1197,22 +1175,22 @@ Info (12133): Instantiated megafunction "pll1:u0|altpll:altpll_component" with t
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll1_altpll.v
-    Info (12023): Found entity 1: pll1_altpll File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/db/pll1_altpll.v Line: 29
+    Info (12023): Found entity 1: pll1_altpll File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/db/pll1_altpll.v Line: 29
 Info (12128): Elaborating entity "pll1_altpll" for hierarchy "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "IR_RECEIVE" for hierarchy "IR_RECEIVE:u1" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 86
-Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:uart_rx_u" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 185
-Warning (10036): Verilog HDL or VHDL warning at uart_rx.sv(12): object "rx_q1" assigned a value but never read File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 12
-Warning (10230): Verilog HDL assignment warning at uart_rx.sv(55): truncated value with size 32 to match size of target (3) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 55
-Info (10264): Verilog HDL Case Statement information at uart_rx.sv(43): all case item expressions in this case statement are onehot File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 43
-Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:u3" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 221
-Warning (10230): Verilog HDL assignment warning at uart_tx.sv(47): truncated value with size 32 to match size of target (3) File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_tx.sv Line: 47
-Info (10264): Verilog HDL Case Statement information at uart_tx.sv(40): all case item expressions in this case statement are onehot File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/uart_tx.sv Line: 40
-Info (12128): Elaborating entity "proximity" for hierarchy "proximity:u100" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 233
-Info (12128): Elaborating entity "sensor_driver" for hierarchy "proximity:u100|sensor_driver:u0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/proximity.sv Line: 31
+Info (12128): Elaborating entity "IR_RECEIVE" for hierarchy "IR_RECEIVE:u1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 93
+Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:uart_rx_u" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 111
+Warning (10036): Verilog HDL or VHDL warning at uart_rx.sv(12): object "rx_q1" assigned a value but never read File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 12
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(55): truncated value with size 32 to match size of target (3) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 55
+Info (10264): Verilog HDL Case Statement information at uart_rx.sv(43): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 43
+Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:u3" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 147
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(47): truncated value with size 32 to match size of target (3) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_tx.sv Line: 47
+Info (10264): Verilog HDL Case Statement information at uart_tx.sv(40): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_tx.sv Line: 40
+Info (12128): Elaborating entity "proximity" for hierarchy "proximity:u100" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 159
+Info (12128): Elaborating entity "sensor_driver" for hierarchy "proximity:u100|sensor_driver:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/proximity.sv Line: 31
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "proximity:u100|sensor_driver:u0|Mult0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 89
-Info (12130): Elaborated megafunction instantiation "proximity:u100|sensor_driver:u0|lpm_mult:Mult0" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 89
-Info (12133): Instantiated megafunction "proximity:u100|sensor_driver:u0|lpm_mult:Mult0" with the following parameter: File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 89
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "proximity:u100|sensor_driver:u0|Mult0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 89
+Info (12130): Elaborated megafunction instantiation "proximity:u100|sensor_driver:u0|lpm_mult:Mult0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 89
+Info (12133): Instantiated megafunction "proximity:u100|sensor_driver:u0|lpm_mult:Mult0" with the following parameter: File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/sensor_driver.sv Line: 89
     Info (12134): Parameter "LPM_WIDTHA" = "22"
     Info (12134): Parameter "LPM_WIDTHB" = "13"
     Info (12134): Parameter "LPM_WIDTHP" = "35"
@@ -1223,155 +1201,151 @@ Info (12133): Instantiated megafunction "proximity:u100|sensor_driver:u0|lpm_mul
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_ngt.tdf
-    Info (12023): Found entity 1: mult_ngt File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/db/mult_ngt.tdf Line: 30
+    Info (12023): Found entity 1: mult_ngt File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/db/mult_ngt.tdf Line: 30
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13014): Ignored 27 buffer(s)
     Info (13019): Ignored 27 SOFT buffer(s)
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "EX_IO[2]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[4]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[5]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[6]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[7]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[8]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[9]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[34]" and its non-tri-state driver. File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "EX_IO[2]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[4]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[5]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[6]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[7]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[8]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[9]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[34]" and its non-tri-state driver. File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "EX_IO[1]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "EX_IO[0]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13040): bidirectional pin "EX_IO[3]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13040): bidirectional pin "EX_IO[4]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13040): bidirectional pin "EX_IO[5]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13040): bidirectional pin "EX_IO[6]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "EX_IO[1]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "EX_IO[0]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13040): bidirectional pin "EX_IO[3]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13040): bidirectional pin "EX_IO[4]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13040): bidirectional pin "EX_IO[5]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13040): bidirectional pin "EX_IO[6]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
 Warning (13032): The following tri-state nodes are fed by constants
-    Warning (13033): The pin "GPIO[2]" is fed by VCC File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13033): The pin "GPIO[3]" is fed by VCC File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "send[7]" merged with LATCH primitive "send[6]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-Warning (13012): Latch send[1] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[3] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[4] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[5] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch send[6] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[0] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[0] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[1] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[1] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[2] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[2] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[3] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[3] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[4] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[4] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[5] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[5] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[6] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[6] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[7] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[7] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[8] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[8] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[9] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[9] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[10] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[10] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch prev_data[11] has unsafe behavior File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 90
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[11] File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/IR_RECEIVE_Terasic.v Line: 219
+    Warning (13033): The pin "GPIO[2]" is fed by VCC File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13033): The pin "GPIO[3]" is fed by VCC File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+Warning (13012): Latch FSM:u2|SEND[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal FSM:u2|prev_data[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Warning (13012): Latch FSM:u2|SEND[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal FSM:u2|prev_data[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Warning (13012): Latch FSM:u2|SEND[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal FSM:u2|prev_data[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Warning (13012): Latch FSM:u2|SEND[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal FSM:u2|prev_data[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Warning (13012): Latch FSM:u2|SEND[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal FSM:u2|prev_data[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+Warning (13012): Latch FSM:u2|prev_data[0] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:u2|prev_data[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[1] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:u2|prev_data[2] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[2] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:u2|prev_data[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[3] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:u2|prev_data[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[4] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:u2|prev_data[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[5] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:u2|prev_data[6] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:u2|prev_data[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[7] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/uart_rx.sv Line: 36
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "EX_IO[2]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
-    Warning (13010): Node "GPIO[2]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[3]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[4]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[5]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[6]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[7]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[8]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[9]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
-    Warning (13010): Node "GPIO[34]~synth" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "EX_IO[2]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 9
+    Warning (13010): Node "GPIO[2]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[3]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[4]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[5]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[6]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[7]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[8]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[9]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
+    Warning (13010): Node "GPIO[34]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 12
-    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 12
-    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 12
-    Warning (13410): Pin "LEDR[0]" is stuck at VCC File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
-    Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
+    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 12
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 12
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 12
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 12
+    Warning (13410): Pin "LEDR[0]" is stuck at VCC File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
+    Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 10 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/output_files/AdvancedRobot.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/output_files/AdvancedRobot.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15899): PLL "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/db/pll1_altpll.v Line: 43
+Warning (15899): PLL "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/db/pll1_altpll.v Line: 43
 Warning (21074): Design contains 21 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 5
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 5
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 5
-Info (21057): Implemented 690 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 4
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 5
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 5
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/top_level.sv Line: 5
+Info (21057): Implemented 620 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 27 output pins
     Info (21060): Implemented 43 bidirectional pins
-    Info (21061): Implemented 591 logic cells
+    Info (21061): Implemented 521 logic cells
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 140 warnings
-    Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Wed Nov 01 10:48:43 2023
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:42
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 143 warnings
+    Info: Peak virtual memory: 4779 megabytes
+    Info: Processing ended: Wed Nov 01 19:19:04 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Prithik/Documents/MTRX3700-Repo/AdvancedRobot/output_files/AdvancedRobot.map.smsg.
+The suppressed messages can be found in C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/AdvancedRobot/output_files/AdvancedRobot.map.smsg.
 
 

@@ -2,108 +2,132 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'IR_RECEIVE:u1|oDATA[0]'
-Slack : -12.933
-TNS   : -187.416
+Type  : Slow 1200mV 85C Model Setup 'FSM:u2|prev_data[0]'
+Slack : -12.882
+TNS   : -98.828
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -4.819
-TNS   : -13.530
+Slack : -3.753
+TNS   : -10.472
 
 Type  : Slow 1200mV 85C Model Setup 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 13.944
+Slack : 13.493
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'IR_RECEIVE:u1|oDATA[0]'
-Slack : -0.968
-TNS   : -2.801
-
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.061
+Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.403
+Slack : 0.402
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IR_RECEIVE:u1|oDATA[0]'
-Slack : 0.428
+Type  : Slow 1200mV 85C Model Hold 'FSM:u2|prev_data[0]'
+Slack : 0.561
 TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'FSM:u2|prev_data[0]'
+Slack : -12.018
+TNS   : -57.396
+
+Type  : Slow 1200mV 85C Model Removal 'FSM:u2|prev_data[0]'
+Slack : 2.523
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM:u2|prev_data[0]'
+Slack : -0.223
+TNS   : -6.408
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.419
+Slack : 9.422
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.707
+Slack : 9.710
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'IR_RECEIVE:u1|oDATA[0]'
-Slack : -11.819
-TNS   : -171.192
+Type  : Slow 1200mV 0C Model Setup 'FSM:u2|prev_data[0]'
+Slack : -11.801
+TNS   : -90.761
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -4.259
-TNS   : -11.949
+Slack : -3.365
+TNS   : -9.390
 
 Type  : Slow 1200mV 0C Model Setup 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 14.402
+Slack : 13.972
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'IR_RECEIVE:u1|oDATA[0]'
-Slack : -0.774
-TNS   : -2.187
-
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.043
+Slack : 0.354
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.355
+Slack : 0.354
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IR_RECEIVE:u1|oDATA[0]'
-Slack : 0.437
+Type  : Slow 1200mV 0C Model Hold 'FSM:u2|prev_data[0]'
+Slack : 0.460
 TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'FSM:u2|prev_data[0]'
+Slack : -11.018
+TNS   : -52.534
+
+Type  : Slow 1200mV 0C Model Removal 'FSM:u2|prev_data[0]'
+Slack : 2.251
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM:u2|prev_data[0]'
+Slack : -0.178
+TNS   : -4.320
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.443
+Slack : 9.446
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.709
+Slack : 9.710
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'IR_RECEIVE:u1|oDATA[0]'
-Slack : -6.618
-TNS   : -90.924
+Type  : Fast 1200mV 0C Model Setup 'FSM:u2|prev_data[0]'
+Slack : -6.574
+TNS   : -47.480
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.974
-TNS   : -5.493
+Slack : -1.347
+TNS   : -3.656
 
 Type  : Fast 1200mV 0C Model Setup 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 16.977
+Slack : 16.601
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'IR_RECEIVE:u1|oDATA[0]'
-Slack : -0.886
-TNS   : -2.521
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.097
-TNS   : -0.420
-
-Type  : Fast 1200mV 0C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.183
+Slack : 0.181
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IR_RECEIVE:u1|oDATA[0]'
-Slack : 0.380
+Type  : Fast 1200mV 0C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FSM:u2|prev_data[0]'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'FSM:u2|prev_data[0]'
+Slack : -6.128
+TNS   : -29.112
+
+Type  : Fast 1200mV 0C Model Removal 'FSM:u2|prev_data[0]'
+Slack : 1.050
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM:u2|prev_data[0]'
+Slack : 0.033
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.243
+Slack : 9.242
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u0|altpll_component|auto_generated|pll1|clk[0]'
