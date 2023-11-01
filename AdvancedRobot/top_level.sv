@@ -108,7 +108,7 @@ always_ff @( CLOCK_50 ) begin
 			end
 			
 			12'b0111_0000_1000: begin		// 8	Backwards
-				send[7:0] <= 8'b1100_0000; // needs change
+				send[7:0] <= 8'b1000_0000; // needs change
 			end
 			
 			default: begin
