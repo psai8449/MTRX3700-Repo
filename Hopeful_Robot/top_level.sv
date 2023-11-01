@@ -12,6 +12,7 @@ module top_level (
 	output logic [8:0] LEDG,
 	output logic [17:0] LEDR,
 	
+	
 	//**********for microphone *************
 	output	I2C_SCLK,
 	inout		I2C_SDAT,
@@ -74,8 +75,8 @@ assign LEDR[7:0] = tx_byte;
 
 Motor_ctrl_redone  		motor1 (
 
-    .clk			(CLOCK_50),                // System Clock  
-    .IR_input	(send),
+    .clk				(CLOCK_50),                // System Clock  
+    .IR_input		(send),
 	 
 	 .enable1		(GPIO[3]),
 	 .pwm1			(GPIO[9]),
@@ -97,7 +98,6 @@ Motor_ctrl_redone  		motor1 (
 
 logic [31:0] hex_data;
 logic [7:0] send;
-logic [11:0] prev_data;
 logic data_ready;
 logic clk50;
 

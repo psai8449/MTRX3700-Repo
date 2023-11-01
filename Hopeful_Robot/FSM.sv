@@ -13,6 +13,7 @@ module FSM (
 	
 );
 
+logic [7:0] prev_data;
 
 always_comb begin
 	
@@ -21,11 +22,10 @@ always_comb begin
 end
 
 
-logic [7:0] prev_data;
 
 always_ff @( CLK ) begin
 	
-	if ( HEX_DATA != prev_data ) begin
+	if ( {HEX_DATA[27:24], HEX_DATA[19:16]} != prev_data ) begin
 	
 		case( {HEX_DATA[27:24], HEX_DATA[19:16]} ) 
 			8'b1101_0010: begin		// 2	Forwards

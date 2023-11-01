@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Hopeful_Robot
-Wed Nov 01 09:59:48 2023
+Wed Nov 01 18:16:37 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -170,15 +170,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 01 09:59:48 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 01 18:16:36 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Hopeful_Robot                               ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 14,050                                      ;
-;     Total combinational functions  ; 13,802                                      ;
-;     Dedicated logic registers      ; 3,423                                       ;
-; Total registers                    ; 3423                                        ;
+; Total logic elements               ; 14,006                                      ;
+;     Total combinational functions  ; 13,790                                      ;
+;     Dedicated logic registers      ; 3,383                                       ;
+; Total registers                    ; 3383                                        ;
 ; Total pins                         ; 100                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 147,264                                     ;
@@ -407,20 +407,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                   ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 14,050                                                                                                  ;
+; Estimated Total logic elements              ; 14,006                                                                                                  ;
 ;                                             ;                                                                                                         ;
-; Total combinational functions               ; 13802                                                                                                   ;
+; Total combinational functions               ; 13790                                                                                                   ;
 ; Logic element usage by number of LUT inputs ;                                                                                                         ;
-;     -- 4 input functions                    ; 7174                                                                                                    ;
-;     -- 3 input functions                    ; 4501                                                                                                    ;
-;     -- <=2 input functions                  ; 2127                                                                                                    ;
+;     -- 4 input functions                    ; 7136                                                                                                    ;
+;     -- 3 input functions                    ; 4513                                                                                                    ;
+;     -- <=2 input functions                  ; 2141                                                                                                    ;
 ;                                             ;                                                                                                         ;
 ; Logic elements by mode                      ;                                                                                                         ;
-;     -- normal mode                          ; 9249                                                                                                    ;
+;     -- normal mode                          ; 9237                                                                                                    ;
 ;     -- arithmetic mode                      ; 4553                                                                                                    ;
 ;                                             ;                                                                                                         ;
-; Total registers                             ; 3423                                                                                                    ;
-;     -- Dedicated logic registers            ; 3423                                                                                                    ;
+; Total registers                             ; 3383                                                                                                    ;
+;     -- Dedicated logic registers            ; 3383                                                                                                    ;
 ;     -- I/O registers                        ; 0                                                                                                       ;
 ;                                             ;                                                                                                         ;
 ; I/O pins                                    ; 100                                                                                                     ;
@@ -432,8 +432,8 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 3                                                                                                       ;
 ;                                             ;                                                                                                         ;
 ; Maximum fan-out node                        ; microphone:MIC|adc_pll:adc_pll_u|altpll:altpll_component|adc_pll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 3524                                                                                                    ;
-; Total fan-out                               ; 64388                                                                                                   ;
+; Maximum fan-out                             ; 3522                                                                                                    ;
+; Total fan-out                               ; 64156                                                                                                   ;
 ; Average fan-out                             ; 3.54                                                                                                    ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
@@ -443,15 +443,15 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                               ; Entity Name       ; Library Name ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |top_level                                              ; 13802 (5)           ; 3423 (1)                  ; 147264      ; 148          ; 0       ; 74        ; 100  ; 0            ; |top_level                                                                                                                                                                        ; top_level         ; work         ;
-;    |FSM:main_fsm|                                       ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|FSM:main_fsm                                                                                                                                                           ; FSM               ; work         ;
-;    |IR_RECEIVE:u1|                                      ; 149 (149)           ; 163 (163)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|IR_RECEIVE:u1                                                                                                                                                          ; IR_RECEIVE        ; work         ;
+; |top_level                                              ; 13790 (5)           ; 3383 (1)                  ; 147264      ; 148          ; 0       ; 74        ; 100  ; 0            ; |top_level                                                                                                                                                                        ; top_level         ; work         ;
+;    |FSM:main_fsm|                                       ; 56 (56)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|FSM:main_fsm                                                                                                                                                           ; FSM               ; work         ;
+;    |IR_RECEIVE:u1|                                      ; 137 (137)           ; 123 (123)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|IR_RECEIVE:u1                                                                                                                                                          ; IR_RECEIVE        ; work         ;
 ;    |Motor_ctrl_redone:motor1|                           ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Motor_ctrl_redone:motor1                                                                                                                                               ; Motor_ctrl_redone ; work         ;
-;    |microphone:MIC|                                     ; 13360 (50)          ; 3088 (38)                 ; 147264      ; 144          ; 0       ; 72        ; 0    ; 0            ; |top_level|microphone:MIC                                                                                                                                                         ; microphone        ; work         ;
+;    |microphone:MIC|                                     ; 13345 (50)          ; 3088 (38)                 ; 147264      ; 144          ; 0       ; 72        ; 0    ; 0            ; |top_level|microphone:MIC                                                                                                                                                         ; microphone        ; work         ;
 ;       |adc_pll:adc_pll_u|                               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|adc_pll:adc_pll_u                                                                                                                                       ; adc_pll           ; work         ;
 ;          |altpll:altpll_component|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|adc_pll:adc_pll_u|altpll:altpll_component                                                                                                               ; altpll            ; work         ;
 ;             |adc_pll_altpll:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|adc_pll:adc_pll_u|altpll:altpll_component|adc_pll_altpll:auto_generated                                                                                 ; adc_pll_altpll    ; work         ;
-;       |audio_codec_data:u_audio_codec_data|             ; 158 (158)           ; 49 (49)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|audio_codec_data:u_audio_codec_data                                                                                                                     ; audio_codec_data  ; work         ;
+;       |audio_codec_data:u_audio_codec_data|             ; 157 (157)           ; 49 (49)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|audio_codec_data:u_audio_codec_data                                                                                                                     ; audio_codec_data  ; work         ;
 ;       |fft_stream:fft_stream_u|                         ; 10632 (286)         ; 1724 (100)                ; 147264      ; 144          ; 0       ; 72        ; 0    ; 0            ; |top_level|microphone:MIC|fft_stream:fft_stream_u                                                                                                                                 ; fft_stream        ; work         ;
 ;          |FFT:fft_ip_u|                                 ; 10077 (0)           ; 1525 (0)                  ; 47936       ; 128          ; 0       ; 64        ; 0    ; 0            ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u                                                                                                                    ; FFT               ; work         ;
 ;             |SdfUnit:SU1|                               ; 4911 (240)          ; 310 (229)                 ; 32576       ; 32           ; 0       ; 16        ; 0    ; 0            ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU1                                                                                                        ; SdfUnit           ; work         ;
@@ -586,7 +586,7 @@ refer to the applicable agreement for further details.
 ;             |mult_46t:auto_generated|                   ; 92 (92)             ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |top_level|microphone:MIC|fft_stream:fft_stream_u|lpm_mult:Mult0|mult_46t:auto_generated                                                                                          ; mult_46t          ; work         ;
 ;          |lpm_mult:Mult1|                               ; 92 (0)              ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |top_level|microphone:MIC|fft_stream:fft_stream_u|lpm_mult:Mult1                                                                                                                  ; lpm_mult          ; work         ;
 ;             |mult_46t:auto_generated|                   ; 92 (92)             ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |top_level|microphone:MIC|fft_stream:fft_stream_u|lpm_mult:Mult1|mult_46t:auto_generated                                                                                          ; mult_46t          ; work         ;
-;       |led_fft_view:fft_view_u|                         ; 2455 (2455)         ; 1237 (1237)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|led_fft_view:fft_view_u                                                                                                                                 ; led_fft_view      ; work         ;
+;       |led_fft_view:fft_view_u|                         ; 2441 (2441)         ; 1237 (1237)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|led_fft_view:fft_view_u                                                                                                                                 ; led_fft_view      ; work         ;
 ;       |set_audio_encoder:set_codec_u|                   ; 65 (29)             ; 40 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|set_audio_encoder:set_codec_u                                                                                                                           ; set_audio_encoder ; work         ;
 ;          |i2c_master:u0|                                ; 36 (36)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|set_audio_encoder:set_codec_u|i2c_master:u0                                                                                                             ; i2c_master        ; work         ;
 ;          |i2c_pll:pll_u|                                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|microphone:MIC|set_audio_encoder:set_codec_u|i2c_pll:pll_u                                                                                                             ; i2c_pll           ; work         ;
@@ -730,26 +730,26 @@ Encoding Type:  One-Hot
 +------------------+-------------+-------------+-------------+-------------+------------+-------------+-------------+------------+-----------------+-----------------+------------+------------------+--------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; FSM:main_fsm|SEND[1]                                ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|SEND[3]                                ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|SEND[4]                                ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|SEND[5]                                ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|SEND[7]                                ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[0]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[1]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[2]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[3]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[4]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[5]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[6]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; FSM:main_fsm|prev_data[7]                           ; FSM:main_fsm|Equal0 ; yes                    ;
-; Number of user-specified and inferred latches = 13  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
++-----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                 ;
++-----------------------------------------------------+----------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal  ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------+------------------------+
+; FSM:main_fsm|SEND[1]                                ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|SEND[3]                                ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|SEND[4]                                ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|SEND[5]                                ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|SEND[7]                                ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[0]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[1]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[2]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[3]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[4]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[5]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[6]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; FSM:main_fsm|prev_data[7]                           ; FSM:main_fsm|SEND[7] ; yes                    ;
+; Number of user-specified and inferred latches = 13  ;                      ;                        ;
++-----------------------------------------------------+----------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -6293,12 +6293,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3423  ;
-; Number of registers using Synchronous Clear  ; 490   ;
+; Total registers                              ; 3383  ;
+; Number of registers using Synchronous Clear  ; 482   ;
 ; Number of registers using Synchronous Load   ; 1011  ;
-; Number of registers using Asynchronous Clear ; 300   ;
+; Number of registers using Asynchronous Clear ; 276   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 305   ;
+; Number of registers using Clock Enable       ; 273   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -6310,7 +6310,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------------------------------+---------+
 ; microphone:MIC|set_audio_encoder:set_codec_u|i2c_master:u0|SCLK_idle ; 2       ;
 ; microphone:MIC|set_audio_encoder:set_codec_u|i2c_master:u0|SDO       ; 2       ;
-; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[4]                ; 414     ;
+; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[4]                ; 400     ;
 ; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[0]                ; 4       ;
 ; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[1]                ; 3       ;
 ; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[2]                ; 3       ;
@@ -6342,7 +6342,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[29]               ; 3       ;
 ; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[30]               ; 3       ;
 ; microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[31]               ; 3       ;
-; microphone:MIC|fft_stream:fft_stream_u|initial_en                    ; 4       ;
+; microphone:MIC|fft_stream:fft_stream_u|initial_en                    ; 5       ;
 ; microphone:MIC|fft_stream:fft_stream_u|outbuf_flushed                ; 2       ;
 ; Total number of inverted registers = 36                              ;         ;
 +----------------------------------------------------------------------+---------+
@@ -6438,25 +6438,25 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|uart_tx:u3|count[31]                                                          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|IR_RECEIVE:u1|bitcount[0]                                                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|proximity:u100|counter[4]                                                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|i[0]                                   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU5|bf1_do_re[8]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU4|bf1_do_re[30] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU3|bf1_do_re[31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU2|bf1_do_re[17] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU1|bf1_do_im[30] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU1|bf1_do_re[3]  ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|fifo:fifo_u|wr_ptr[2]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|n[6]                                   ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|audio_codec_data:u_audio_codec_data|bit_index[26]              ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |top_level|uart_rx:uart_rx_u|count[9]                                                    ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[22]                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|uart_tx:u3|count[20]                                                          ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|IR_RECEIVE:u1|bitcount[2]                                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|proximity:u100|counter[27]                                                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|i[20]                                  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU5|bf1_do_re[1]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU4|bf1_do_re[5]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU3|bf1_do_re[27] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU2|bf1_do_re[19] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU1|bf1_do_im[1]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|FFT:fft_ip_u|SdfUnit:SU1|bf1_do_re[26] ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|fifo:fifo_u|wr_ptr[9]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|n[14]                                  ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|audio_codec_data:u_audio_codec_data|bit_index[10]              ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |top_level|uart_rx:uart_rx_u|count[1]                                                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_level|microphone:MIC|fft_stream:fft_stream_u|rd_addr_out[6]                         ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |top_level|microphone:MIC|fft_stream:fft_stream_u|fifo:fifo_u|rd_ptr                     ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|tx_byte[4]                                                                    ;
-; 16:1               ; 70 bits   ; 700 LEs       ; 700 LEs              ; 0 LEs                  ; No         ; |top_level|microphone:MIC|led_fft_view:fft_view_u|Mux12                                  ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top_level|IR_RECEIVE:u1|Selector2                                                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|tx_byte[3]                                                                    ;
+; 16:1               ; 70 bits   ; 700 LEs       ; 700 LEs              ; 0 LEs                  ; No         ; |top_level|microphone:MIC|led_fft_view:fft_view_u|Mux22                                  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top_level|IR_RECEIVE:u1|Selector1                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 
 
@@ -9747,34 +9747,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 100                         ;
-; cycloneiii_ff         ; 3423                        ;
+; cycloneiii_ff         ; 3383                        ;
 ;     CLR               ; 26                          ;
-;     CLR SCLR          ; 236                         ;
-;     ENA               ; 194                         ;
-;     ENA CLR           ; 32                          ;
+;     CLR SCLR          ; 228                         ;
+;     ENA               ; 178                         ;
+;     ENA CLR           ; 16                          ;
 ;     ENA CLR SCLR      ; 6                           ;
 ;     ENA SCLR          ; 73                          ;
 ;     SCLR              ; 175                         ;
 ;     SLD               ; 1011                        ;
 ;     plain             ; 1670                        ;
 ; cycloneiii_io_obuf    ; 44                          ;
-; cycloneiii_lcell_comb ; 13803                       ;
+; cycloneiii_lcell_comb ; 13791                       ;
 ;     arith             ; 4553                        ;
 ;         2 data inputs ; 1692                        ;
 ;         3 data inputs ; 2861                        ;
-;     normal            ; 9250                        ;
+;     normal            ; 9238                        ;
 ;         0 data inputs ; 16                          ;
 ;         1 data inputs ; 93                          ;
-;         2 data inputs ; 327                         ;
-;         3 data inputs ; 1640                        ;
-;         4 data inputs ; 7174                        ;
+;         2 data inputs ; 341                         ;
+;         3 data inputs ; 1652                        ;
+;         4 data inputs ; 7136                        ;
 ; cycloneiii_mac_mult   ; 74                          ;
 ; cycloneiii_mac_out    ; 74                          ;
 ; cycloneiii_pll        ; 3                           ;
 ; cycloneiii_ram_block  ; 577                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.90                       ;
-; Average LUT depth     ; 5.56                        ;
+; Average LUT depth     ; 5.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -9783,7 +9783,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:02:08     ;
+; Top            ; 00:01:39     ;
 +----------------+--------------+
 
 
@@ -9793,7 +9793,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 01 09:57:09 2023
+    Info: Processing started: Wed Nov 01 18:14:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Hopeful_Robot -c Hopeful_Robot
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -9860,37 +9860,41 @@ Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
     Info (12023): Found entity 1: FSM File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file microphone.sv
     Info (12023): Found entity 1: microphone File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/microphone.sv Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(33): created implicit net for "prox_stat" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 33
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(36): created implicit net for "DUTY" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 36
-Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(38): created implicit net for "motor_stat" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(34): created implicit net for "prox_stat" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(38): created implicit net for "DUTY" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at top_level.sv(40): created implicit net for "motor_stat" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 40
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
 Warning (10034): Output port "LEDR[17]" at top_level.sv(13) has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 13
 Warning (10034): Output port "LEDR[8]" at top_level.sv(13) has no driver File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 13
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:main_fsm" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 40
-Warning (10235): Verilog HDL Always Construct warning at FSM.sv(27): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 27
-Warning (10235): Verilog HDL Always Construct warning at FSM.sv(27): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 27
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:main_fsm" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 42
 Warning (10235): Verilog HDL Always Construct warning at FSM.sv(28): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 28
-Warning (10235): Verilog HDL Always Construct warning at FSM.sv(55): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 55
-Warning (10230): Verilog HDL assignment warning at FSM.sv(55): truncated value with size 32 to match size of target (8) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 55
-Warning (10240): Verilog HDL Always Construct warning at FSM.sv(25): inferring latch(es) for variable "SEND", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Warning (10240): Verilog HDL Always Construct warning at FSM.sv(25): inferring latch(es) for variable "prev_data", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[0]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[1]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[2]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[3]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[4]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[5]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[6]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "prev_data[7]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[0]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[1]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[2]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[3]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[4]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[5]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[6]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (10041): Inferred latch for "SEND[7]" at FSM.sv(25) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-Info (12128): Elaborating entity "microphone" for hierarchy "microphone:MIC" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 59
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(28): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 28
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(30): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 30
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(57): variable "HEX_DATA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at FSM.sv(57): truncated value with size 32 to match size of target (8) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 57
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(61): variable "RX_BYTE" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 61
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(61): variable "prev_data" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 61
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(63): variable "RX_BYTE" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 63
+Warning (10235): Verilog HDL Always Construct warning at FSM.sv(91): variable "RX_BYTE" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 91
+Warning (10240): Verilog HDL Always Construct warning at FSM.sv(26): inferring latch(es) for variable "SEND", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Warning (10240): Verilog HDL Always Construct warning at FSM.sv(26): inferring latch(es) for variable "prev_data", which holds its previous value in one or more paths through the always construct File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[0]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[1]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[2]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[3]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[4]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[5]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[6]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "prev_data[7]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[0]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[1]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[2]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[3]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[4]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[5]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[6]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (10041): Inferred latch for "SEND[7]" at FSM.sv(26) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+Info (12128): Elaborating entity "microphone" for hierarchy "microphone:MIC" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 61
 Warning (10230): Verilog HDL assignment warning at microphone.sv(44): truncated value with size 32 to match size of target (6) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/microphone.sv Line: 44
 Info (12128): Elaborating entity "adc_pll" for hierarchy "microphone:MIC|adc_pll:adc_pll_u" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/microphone.sv Line: 13
 Info (12128): Elaborating entity "altpll" for hierarchy "microphone:MIC|adc_pll:adc_pll_u|altpll:altpll_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/adc_pll.v Line: 103
@@ -10072,11 +10076,11 @@ Warning (10230): Verilog HDL assignment warning at fifo.sv(24): truncated value 
 Warning (10230): Verilog HDL assignment warning at fifo.sv(28): truncated value with size 32 to match size of target (11) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/fifo.sv Line: 28
 Info (12128): Elaborating entity "led_fft_view" for hierarchy "microphone:MIC|led_fft_view:fft_view_u" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/microphone.sv Line: 83
 Warning (10230): Verilog HDL assignment warning at led_fft_view.sv(40): truncated value with size 32 to match size of target (13) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/led_fft_view.sv Line: 40
-Info (12128): Elaborating entity "Motor_ctrl_redone" for hierarchy "Motor_ctrl_redone:motor1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 91
+Info (12128): Elaborating entity "Motor_ctrl_redone" for hierarchy "Motor_ctrl_redone:motor1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 93
 Info (10264): Verilog HDL Case Statement information at Motor_ctrl_redone.sv(38): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/Motor_ctrl_redone.sv Line: 38
 Info (12128): Elaborating entity "pwm" for hierarchy "Motor_ctrl_redone:motor1|pwm:PWM1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/Motor_ctrl_redone.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at pwm.sv(22): truncated value with size 32 to match size of target (17) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/pwm.sv Line: 22
-Info (12128): Elaborating entity "pll1" for hierarchy "pll1:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 108
+Info (12128): Elaborating entity "pll1" for hierarchy "pll1:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 109
 Info (12128): Elaborating entity "altpll" for hierarchy "pll1:u0|altpll:altpll_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/pll1.v Line: 94
 Info (12130): Elaborated megafunction instantiation "pll1:u0|altpll:altpll_component" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/pll1.v Line: 94
 Info (12133): Instantiated megafunction "pll1:u0|altpll:altpll_component" with the following parameter: File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/pll1.v Line: 94
@@ -10141,15 +10145,15 @@ Info (12133): Instantiated megafunction "pll1:u0|altpll:altpll_component" with t
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll1_altpll.v
     Info (12023): Found entity 1: pll1_altpll File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/db/pll1_altpll.v Line: 29
 Info (12128): Elaborating entity "pll1_altpll" for hierarchy "pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "IR_RECEIVE" for hierarchy "IR_RECEIVE:u1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 123
-Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:uart_rx_u" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 169
+Info (12128): Elaborating entity "IR_RECEIVE" for hierarchy "IR_RECEIVE:u1" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 124
+Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:uart_rx_u" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 170
 Warning (10036): Verilog HDL or VHDL warning at uart_rx.sv(12): object "rx_q1" assigned a value but never read File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 12
 Warning (10230): Verilog HDL assignment warning at uart_rx.sv(55): truncated value with size 32 to match size of target (3) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 55
 Info (10264): Verilog HDL Case Statement information at uart_rx.sv(43): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 43
-Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:u3" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 178
+Info (12128): Elaborating entity "uart_tx" for hierarchy "uart_tx:u3" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 179
 Warning (10230): Verilog HDL assignment warning at uart_tx.sv(47): truncated value with size 32 to match size of target (3) File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_tx.sv Line: 47
 Info (10264): Verilog HDL Case Statement information at uart_tx.sv(40): all case item expressions in this case statement are onehot File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_tx.sv Line: 40
-Info (12128): Elaborating entity "proximity" for hierarchy "proximity:u100" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 191
+Info (12128): Elaborating entity "proximity" for hierarchy "proximity:u100" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 192
 Info (12128): Elaborating entity "sensor_driver" for hierarchy "proximity:u100|sensor_driver:u0" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/proximity.sv Line: 31
 Warning (12161): Node "microphone:MIC|dstream:fft_in|dstream.index[9]" is stuck at GND because node is in wire loop and does not have a source File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/interfaces.sv Line: 1
 Warning (12161): Node "microphone:MIC|dstream:fft_in|dstream.index[8]" is stuck at GND because node is in wire loop and does not have a source File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/interfaces.sv Line: 1
@@ -10526,32 +10530,32 @@ Warning (13032): The following tri-state nodes are fed by constants
     Warning (13033): The pin "GPIO[3]" is fed by VCC File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 10
     Warning (13033): The pin "GPIO[8]" is fed by GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 10
     Warning (13033): The pin "GPIO[9]" is fed by GND File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 10
-Warning (13012): Latch FSM:main_fsm|SEND[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
+Warning (13012): Latch FSM:main_fsm|SEND[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|SEND[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
+Warning (13012): Latch FSM:main_fsm|SEND[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|SEND[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
+Warning (13012): Latch FSM:main_fsm|SEND[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|SEND[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
+Warning (13012): Latch FSM:main_fsm|SEND[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|SEND[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
+Warning (13012): Latch FSM:main_fsm|SEND[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[27] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[0] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[1] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[2] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[2] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[3] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[4] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[5] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[6] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
-Warning (13012): Latch FSM:main_fsm|prev_data[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 25
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR_RECEIVE:u1|oDATA[7] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/IR_RECEIVE_Terasic.v Line: 219
+Warning (13012): Latch FSM:main_fsm|prev_data[0] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[0] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:main_fsm|prev_data[1] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[1] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:main_fsm|prev_data[2] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[2] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:main_fsm|prev_data[3] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[3] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:main_fsm|prev_data[4] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[4] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:main_fsm|prev_data[5] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[5] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:main_fsm|prev_data[6] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[6] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
+Warning (13012): Latch FSM:main_fsm|prev_data[7] has unsafe behavior File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/FSM.sv Line: 26
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uart_rx:uart_rx_u|data_received[7] File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/uart_rx.sv Line: 36
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "EX_IO[2]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 9
     Warning (13010): Node "GPIO[2]~synth" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 10
@@ -10598,20 +10602,20 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 5
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 5
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 5
-    Warning (15610): No output dependent on input pin "AUD_ADCLRCK" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 25
-Info (21057): Implemented 14895 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "AUD_ADCLRCK" File: C:/Users/jesti/OneDrive/Documents/USYD/2023_S2C_MTRX3700/AAA_Major_Project/NEW_GIT/MTRX3700-Repo/Hopeful_Robot/top_level.sv Line: 26
+Info (21057): Implemented 14851 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 27 input pins
     Info (21059): Implemented 29 output pins
     Info (21060): Implemented 44 bidirectional pins
-    Info (21061): Implemented 14067 logic cells
+    Info (21061): Implemented 14023 logic cells
     Info (21064): Implemented 577 RAM segments
     Info (21065): Implemented 3 PLLs
     Info (21062): Implemented 148 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 170 warnings
-    Info: Peak virtual memory: 5195 megabytes
-    Info: Processing ended: Wed Nov 01 09:59:48 2023
-    Info: Elapsed time: 00:02:39
-    Info: Total CPU time (on all processors): 00:01:34
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 174 warnings
+    Info: Peak virtual memory: 5187 megabytes
+    Info: Processing ended: Wed Nov 01 18:16:37 2023
+    Info: Elapsed time: 00:01:59
+    Info: Total CPU time (on all processors): 00:01:01
 
 
 +------------------------------------------+

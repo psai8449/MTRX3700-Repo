@@ -1112,7 +1112,6 @@ set_global_assignment -name VERILOG_FILE pll1.v
 set_global_assignment -name VERILOG_FILE IR_RECEIVE_Terasic.v
 set_global_assignment -name SYSTEMVERILOG_FILE top_level.sv
 set_global_assignment -name QIP_FILE BRAM_IP.qip
-set_global_assignment -name SYSTEMVERILOG_FILE fsm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Motor_ctrl_redone.sv
 
 set_global_assignment -name SYSTEMVERILOG_FILE proximity.sv

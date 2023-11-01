@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Nov 01 10:02:27 2023
+Fitter Status : Successful - Wed Nov 01 18:17:54 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Hopeful_Robot
 Top-level Entity Name : top_level
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 14,379 / 114,480 ( 13 % )
-    Total combinational functions : 13,825 / 114,480 ( 12 % )
-    Dedicated logic registers : 3,212 / 114,480 ( 3 % )
-Total registers : 3212
+Total logic elements : 14,322 / 114,480 ( 13 % )
+    Total combinational functions : 13,813 / 114,480 ( 12 % )
+    Dedicated logic registers : 3,172 / 114,480 ( 3 % )
+Total registers : 3172
 Total pins : 100 / 529 ( 19 % )
 Total virtual pins : 0
 Total memory bits : 147,264 / 3,981,312 ( 4 % )

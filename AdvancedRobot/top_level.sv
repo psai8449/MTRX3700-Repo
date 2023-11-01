@@ -99,7 +99,7 @@ module FSM (
 	.MOTOR_STAT		()
 	
 );
-=======
+
 always_ff @( CLOCK_50 ) begin
 	
 	if ( hex_data != prev_data ) begin

@@ -2,48 +2,48 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'FSM:main_fsm|prev_data[0]'
+Slack : -9.786
+TNS   : -112.526
+
 Type  : Slow 1200mV 85C Model Setup 'AUD_BCLK'
-Slack : -10.406
-TNS   : -389.283
+Slack : -9.424
+TNS   : -337.915
 
 Type  : Slow 1200mV 85C Model Setup 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -5.935
-TNS   : -221.935
+Slack : -6.164
+TNS   : -224.706
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -3.845
-TNS   : -53.984
-
-Type  : Slow 1200mV 85C Model Setup 'FSM:main_fsm|prev_data[0]'
-Slack : -2.318
-TNS   : -12.198
+Slack : -3.902
+TNS   : -53.880
 
 Type  : Slow 1200mV 85C Model Setup 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 13.747
+Slack : 13.352
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 49995.445
+Slack : 49996.308
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'FSM:main_fsm|prev_data[0]'
-Slack : -3.479
-TNS   : -7.714
-
 Type  : Slow 1200mV 85C Model Hold 'AUD_BCLK'
-Slack : -2.634
-TNS   : -13.099
+Slack : -2.629
+TNS   : -13.036
+
+Type  : Slow 1200mV 85C Model Hold 'FSM:main_fsm|prev_data[0]'
+Slack : -1.705
+TNS   : -4.736
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : -0.901
-TNS   : -0.901
+Slack : -1.248
+TNS   : -1.248
 
 Type  : Slow 1200mV 85C Model Hold 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.364
+Slack : 0.362
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.402
+Slack : 0.401
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
@@ -51,11 +51,11 @@ Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 44.394
+Slack : 45.277
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 8.241
+Slack : 6.229
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUD_BCLK'
@@ -63,15 +63,15 @@ Slack : -3.000
 TNS   : -65.965
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM:main_fsm|prev_data[0]'
-Slack : 0.439
+Slack : 0.435
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.492
+Slack : 9.539
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.702
+Slack : 9.701
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
@@ -79,47 +79,47 @@ Slack : 26.730
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 24999.709
+Slack : 24999.708
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Setup 'FSM:main_fsm|prev_data[0]'
+Slack : -9.143
+TNS   : -104.928
+
 Type  : Slow 1200mV 0C Model Setup 'AUD_BCLK'
-Slack : -9.328
-TNS   : -353.431
+Slack : -8.580
+TNS   : -305.859
 
 Type  : Slow 1200mV 0C Model Setup 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -5.356
-TNS   : -197.956
+Slack : -5.568
+TNS   : -201.067
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -3.452
-TNS   : -51.104
-
-Type  : Slow 1200mV 0C Model Setup 'FSM:main_fsm|prev_data[0]'
-Slack : -2.144
-TNS   : -10.896
+Slack : -3.494
+TNS   : -50.973
 
 Type  : Slow 1200mV 0C Model Setup 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 14.319
+Slack : 13.969
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 49995.859
+Slack : 49996.606
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'FSM:main_fsm|prev_data[0]'
-Slack : -3.166
-TNS   : -7.139
-
 Type  : Slow 1200mV 0C Model Hold 'AUD_BCLK'
-Slack : -2.337
-TNS   : -11.619
+Slack : -2.335
+TNS   : -11.502
+
+Type  : Slow 1200mV 0C Model Hold 'FSM:main_fsm|prev_data[0]'
+Slack : -1.536
+TNS   : -4.337
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.779
-TNS   : -0.779
+Slack : -1.080
+TNS   : -1.080
 
 Type  : Slow 1200mV 0C Model Hold 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.340
+Slack : 0.337
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
@@ -127,15 +127,15 @@ Slack : 0.353
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.353
+Slack : 0.354
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 45.232
+Slack : 46.027
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 7.413
+Slack : 5.668
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUD_BCLK'
@@ -143,11 +143,11 @@ Slack : -3.000
 TNS   : -65.965
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM:main_fsm|prev_data[0]'
-Slack : 0.363
+Slack : 0.336
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.529
+Slack : 9.572
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u0|altpll_component|auto_generated|pll1|clk[0]'
@@ -155,83 +155,83 @@ Slack : 9.704
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 26.762
+Slack : 26.763
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 24999.709
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Setup 'FSM:main_fsm|prev_data[0]'
+Slack : -4.636
+TNS   : -53.216
+
 Type  : Fast 1200mV 0C Model Setup 'AUD_BCLK'
-Slack : -4.945
-TNS   : -169.884
+Slack : -4.322
+TNS   : -150.364
 
 Type  : Fast 1200mV 0C Model Setup 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -2.840
-TNS   : -108.485
+Slack : -2.973
+TNS   : -110.313
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -2.001
-TNS   : -25.644
-
-Type  : Fast 1200mV 0C Model Setup 'FSM:main_fsm|prev_data[0]'
-Slack : -0.814
-TNS   : -4.160
+Slack : -2.026
+TNS   : -25.836
 
 Type  : Fast 1200mV 0C Model Setup 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 16.879
+Slack : 16.754
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 49997.738
+Slack : 49998.177
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'FSM:main_fsm|prev_data[0]'
-Slack : -1.638
-TNS   : -2.994
 
 Type  : Fast 1200mV 0C Model Hold 'AUD_BCLK'
 Slack : -1.430
-TNS   : -7.118
+TNS   : -11.529
+
+Type  : Fast 1200mV 0C Model Hold 'FSM:main_fsm|prev_data[0]'
+Slack : -0.941
+TNS   : -2.779
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.608
-TNS   : -0.608
+Slack : -0.781
+TNS   : -0.781
 
 Type  : Fast 1200mV 0C Model Hold 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.152
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.180
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 0.181
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.181
-TNS   : 0.000
-
 Type  : Fast 1200mV 0C Model Recovery 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 49.079
+Slack : 49.611
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 4.114
+Slack : 3.117
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUD_BCLK'
 Slack : -3.000
-TNS   : -54.749
+TNS   : -54.733
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM:main_fsm|prev_data[0]'
-Slack : 0.283
+Slack : 0.369
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.411
+Slack : 9.417
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.775
+Slack : 9.774
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MIC|adc_pll_u|altpll_component|auto_generated|pll1|clk[0]'
@@ -239,7 +239,7 @@ Slack : 26.883
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MIC|set_codec_u|pll_u|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 24999.781
+Slack : 24999.779
 TNS   : 0.000
 
 ------------------------------------------------------------
