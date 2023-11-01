@@ -87,6 +87,19 @@ IR_RECEIVE u1(
 
 assign LEDG = send;
 
+<<<<<<< HEAD
+module FSM (
+
+	.CLK				(CLOCK_50),
+	.PROX_STAT		(prox_status),
+	.HEX_DATA		(hex_data),
+	
+	.DUTY				(),
+	.SEND				(send),
+	.MOTOR_STAT		()
+	
+);
+=======
 always_ff @( CLOCK_50 ) begin
 	
 	if ( hex_data != prev_data ) begin
@@ -167,6 +180,7 @@ always @( * ) begin
   endcase
 end
 
+>>>>>>> f8908b927555044237cde1e9510192f733452f25
 
 //***********************************************************************
 
@@ -208,6 +222,8 @@ logic [3:0] prox_status;
 always_comb begin
 	prox_status = ( proximity_stat > 4'b1111) ? 4'b1111 : ( (proximity_stat < 3'b100) ? 4'b0000 : proximity_stat[5:2] ); 
 end
+
+logic [2:0] motor_stat;
 
 assign tx_byte = {prox_status[3:0], motor_stat, 1'b1};
 

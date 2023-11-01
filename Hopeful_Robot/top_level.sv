@@ -16,7 +16,7 @@ module top_level (
 	output	I2C_SCLK,
 	inout		I2C_SDAT,
 	input		AUD_ADCDAT,
-	input   AUD_BCLK,
+	input   	AUD_BCLK,
 	output   AUD_XCK,
 	input    AUD_ADCLRCK
 	//**************************************
@@ -32,6 +32,7 @@ FSM main_fsm(
 	.CLK				(CLOCK_50),
 	.PROX_STAT		(prox_stat),
 	.HEX_DATA		(hex_data),
+	.RX_BYTE			(rx_byte),
 	
 	.DUTY				(DUTY),
 	.SEND				(send),

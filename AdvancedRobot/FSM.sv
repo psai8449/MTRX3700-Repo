@@ -24,36 +24,72 @@ logic [7:0] prev_data;
 
 always_ff @( CLK ) begin
 	
-	if ( HEX_DATA != prev_data ) begin
-		case(HEX_DATA[27:16]) 
+	if ( {hex_data[27:24], hex_data[19:16]} != prev_data ) begin
+		
+		case( {hex_data[27:24], hex_data[19:16]} ) 
+		
 			12'b1101_0000_0010: begin		// 2	Forwards
-				SEND[7:0] <= 8'b0000_0010;
+				send[7:0] <= 8'b0000_0010;
 			end
 			
 			12'b1011_0000_0100: begin		// 4	Left
-				SEND[7:0] <= 8'b0000_1000;
+				send[7:0] <= 8'b0000_1000;
 			end
 			
 			12'b1010_0000_0101: begin		// 5	Brake??
-				SEND[7:0] <= 8'b0001_0000;
+				send[7:0] <= 8'b0001_0000;
 			end
 			
 			12'b1001_0000_0110: begin		// 6	Right
-				SEND[7:0] <= 8'b0010_0000;
+				send[7:0] <= 8'b0010_0000;
 			end
 			
 			12'b0111_0000_1000: begin		// 8	Backwards
-				SEND[7:0] <= 8'b1000_0000;
+				send[7:0] <= 8'b1000_0000;
 			end
 			
 			default: begin
-				SEND[7:0] <= 8'b0000_0000;
+				send[7:0] <= 8'b0000_0000;
 			end
 				
 		endcase
 		
-		prev_data <= HEX_DATA;
+		prev_data <= hex_data;
 		
+	end
+	
+	else if ( rx_byte != prev_data ) begin
+		
+		case( rx_byte ) 
+		
+			8'b0110_0001: begin		// 2	Forwards
+				send[7:0] <= 8'b0000_0010;
+			end
+			
+			8'b0110_0010: begin		// 4	Left
+				send[7:0] <= 8'b0000_1000;
+			end
+			
+			8'b0110_0011: begin		// 5	Brake??
+				send[7:0] <= 8'b0001_0000;
+			end
+			
+			8'b0110_0100: begin		// 6	Right
+				send[7:0] <= 8'b0010_0000;
+			end
+			
+			8'b0110_0101: begin		// 8	Backwards
+				send[7:0] <= 8'b1000_0000;
+			end
+			
+			default: begin
+				send[7:0] <= 8'b0000_0000;
+			end
+				
+		endcase
+		
+		prev_data <= rx_byte;
+
 	end
 	
 	
