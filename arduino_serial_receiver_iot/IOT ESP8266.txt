@@ -1,24 +1,28 @@
-#include thingProperties.h
+#include "thingProperties.h"
+#include <SoftwareSerial.h>
+#include "stdio.h"
+
+SoftwareSerial HM10(2,4);
 
 byte receivedData;
 
-byte proximity, camera, state;
+byte proximity, microphone_num, state;
 int state_num;
 
 int j, v;
 
 void setup() {
-   Initialize serial and wait for port to open
-  pinMode(LED_BUILTIN, OUTPUT);       set LED pin as output
-  Serial.begin(9600);             initialize UART with baud rate of 9600
-   This delay gives the chance to wait for a Serial Monitor without blocking if none is found
+  // Initialize serial and wait for port to open:
+  pinMode(LED_BUILTIN, OUTPUT);      // set LED pin as output
+  Serial.begin(9600);            // initialize UART with baud rate of 9600
+  // This delay gives the chance to wait for a Serial Monitor without blocking if none is found
   delay(1500); 
   
   
-   Defined in thingProperties.h
+  // Defined in thingProperties.h
   initProperties();
 
-   Connect to Arduino IoT Cloud
+  // Connect to Arduino IoT Cloud
   ArduinoCloud.begin(ArduinoIoTPreferredConnection);
   setDebugMessageLevel(2);
   ArduinoCloud.printDebugInfo();
@@ -28,49 +32,49 @@ void loop() {
   ArduinoCloud.update();
   
   while (Serial.available()) {
-    receivedData = Serial.read();    Read one byte from the serial buffer and save it in receivedData
+    receivedData = Serial.read();   // Read one byte from the serial buffer and save it in receivedData
     
-     Extract bits [1-3] for 'state'
-    for (int i = 1; i  4; i++) {
+    // Extract bits [1-3] for 'state'
+    for (int i = 1; i < 4; i++) {
       bitWrite(state, i-1, bitRead(receivedData, i));
     }
 
-     Extract bits [4-7] for 'proximity'
-    for (int i = 4; i  8; i++) {
+    // Extract bits [4-7] for 'proximity'
+    for (int i = 4; i < 8; i++) {
       bitWrite(proximity, i - 4, bitRead(receivedData, i));
     }
     
-     Extract bit 0th for 'color'
-    bitWrite(camera, 0, bitRead(receivedData, 0));
+    // Extract bit 0th for 'color'
+    bitWrite(microphone_num, 0, bitRead(receivedData, 0));
 
-     Convert 'proximity' and 'state' to integers if needed
+    // Convert 'proximity' and 'state' to integers if needed
     
-    colour = int(camera);   
-    proximity_num = int(proximity)  4;
+    microphone = int(microphone_num);   
+    proximity_num = int(proximity) * 4;
     state_num = int(state);
     
-     Your switch statement for 'state'
+    // Your switch statement for 'state'
     switch(state_num) {
-      case 0 
-        state_wd = Idle;
+      case 0: 
+        state_wd = "Idle";
         break;
-      case 1 
-        state_wd = Forwards;
+      case 1: 
+        state_wd = "Forwards";
         break;
-      case 2 
-        state_wd = Left;
+      case 2: 
+        state_wd = "Left";
         break;
-      case 3 
-        state_wd = Brake;
+      case 3: 
+        state_wd = "Brake";
         break;
-      case 4 
-        state_wd = Right;
+      case 4: 
+        state_wd = "Right";
         break;
-      case 5 
-        state_wd = Backwards;
+      case 5: 
+        state_wd = "Backwards";
         break;
-      default 
-        state_wd = Idle;
+      default: 
+        state_wd = "Idle";
         break;
     }
   }
