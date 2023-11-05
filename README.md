@@ -25,7 +25,8 @@ arduino_serial_full_receiver: used to demonstrate that FPGA and arduinos are tra
 
 arduino_serial_transmitter_full: used to emulate HM_10 or FPGA to test bluetooth and IOT function
 
-arduino_serial_receiver_iot: Code on the ESP8266, receives and interpets the data it receives via UART from the FPGA
+arduino_serial_receiver_iot: Code on the ESP8266, receives and interpets the data it receives via UART from the FPGA. Final code for the ESP8266 internet module
+(arduino_serial_receiver_iot will only compile on the online arduino IDE)
 
 proximity_sensor: standalone project used to demonstrate the proximity sensor function
 
