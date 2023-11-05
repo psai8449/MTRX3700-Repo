@@ -20,3 +20,15 @@ Video of the microphone code working individually is available but we did not ge
 
 
 OUR DISCORD CHANNEL: https://discord.gg/hqdzHPeA
+
+arduino_serial_full_receiver: used to demonstrate that FPGA and arduinos are transmitting via UART correctly, display data on serial monitor
+
+arduino_serial_transmitter_full: used to emulate HM_10 or FPGA to test bluetooth and IOT function
+
+arduino_serial_receiver_iot: Code on the ESP8266, receives and interpets the data it receives via UART from the FPGA
+
+proximity_sensor: standalone project used to demonstrate the proximity sensor function
+
+microphone Code Final: standalone with microphone configured to project requirements used demonstrate and prepared to integrate
+
+DE2_115_IR: Provided standalone IR remote project, demonstrates IR remote function
