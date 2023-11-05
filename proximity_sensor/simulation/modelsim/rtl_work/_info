@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/simulation/modelsim
 vproximity
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1698801949
+Z2 !s110 1699166979
 !i10b 1
-!s100 JXh=a04?z:0g:_NCMalJi0
-ICQ1Xiah32j;Cj7d77RLM23
+!s100 10EnOC@R=JQ<_]VmiR2<:0
+IIA_5hlAcQKCBM]24KZ@iL0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 proximity_sv_unit
 S1
 R0
-w1698801404
+w1699163416
 8C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/proximity.sv
 FC:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/proximity.sv
 L0 1
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1698801949.000000
+Z5 !s108 1699166979.000000
 !s107 C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/proximity.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor|C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/proximity.sv|
 !i113 1
@@ -54,6 +54,31 @@ r1
 R5
 !s107 C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor|C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/sensor_driver.sv|
+!i113 1
+R6
+R7
+R8
+vtb_proximity
+R1
+R2
+!i10b 1
+!s100 Y9YgRIQ5fj]U?a1TT@iJe3
+IND@Q3:^lR3SYD4_<3cR4z2
+R3
+!s105 tb_proximity_sv_unit
+S1
+R0
+w1699166888
+8C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/tb_proximity.sv
+FC:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/tb_proximity.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/tb_proximity.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor|C:/Users/Prithik/Documents/MTRX3700-Repo/proximity_sensor/tb_proximity.sv|
 !i113 1
 R6
 R7

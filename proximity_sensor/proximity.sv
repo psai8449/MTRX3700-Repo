@@ -1,6 +1,6 @@
 module proximity(
   input CLOCK_50,
-  inout [35:34] GPIO,
+  inout [35:0] GPIO,
   output [7:0] LEDR
 );
 

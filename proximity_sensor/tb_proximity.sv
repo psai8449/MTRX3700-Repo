@@ -1,40 +1,93 @@
-`timescale 1ns/1ns
+module tb_proximity();
 
-module tb_proximity;
-  input CLOCK_50;
-  inout [35:34] GPIO;
-  output [7:0] LEDR;
+	parameter CLK_PERIOD = 20;
 
-proximity DUT (
-  .CLOCK_50 (CLOCK_50),
-  .GPIO (GPIO),
-  .LEDR (LEDR)
-);
+	logic clk;
+	logic echo;
+	logic trigger;
+	logic start;
+	logic reset;
+	logic [7:0] LEDR;
 
-  initial forever #10 CLOCK_50 = ~CLOCK_50;
 
-  initial begin
+	sensor_driver u0(
+		.clk(clk),
+		.echo(echo),
+		.measure(start),
+		.rst(reset),
+		.trig(trigger),
+		.distance(LEDR)
 
-    $dumpfile("waveform.vcd");
-    $dumpvars();
-    
-    $display("Initialise\n");
+	);
 
-    CLOCK_50 = 0;
-    GPIO[34] = 0;
-    
-    #(10);  // wait 1 clock cycle
-    $display("distance: %b", LEDR);
+	initial clk = 1'b0;
 
-    GPIO[34] = 1;
-    $display("distance: %b", LEDR);
+	always begin
+		 #10 clk = ~clk;
+	end
+  
+	initial begin
 
-    #(20);  // wait 1 clock cycle
+		#(1 * CLK_PERIOD)
+		reset = 1;
+		start = 0;
+		LEDR = 0;
+		
+		// test 1
 
-    GPIO[34] = 0;
-    GPIO[35] = 1;
-    $display("distance: %b", LEDR);
+		#(1 * CLK_PERIOD)
+		reset = 0; 
+		start = 1;
 
-  end
+		#(1 * CLK_PERIOD)
+		start = 0;
 
-endmodule
+		#(500 * CLK_PERIOD)
+		echo = 1;
+		#(1000000 * CLK_PERIOD)
+
+		#(1 * CLK_PERIOD)
+		echo = 0;
+
+		#(10 * CLK_PERIOD)
+		
+		// test 2
+
+		#(1 * CLK_PERIOD) 
+		start = 1;
+
+		#(1 * CLK_PERIOD)
+		start = 0;
+
+		#(500 * CLK_PERIOD)
+		echo = 1;
+		#(2000000 * CLK_PERIOD)
+
+		#(1 * CLK_PERIOD)
+		echo = 0;
+
+		#(10 * CLK_PERIOD)
+		
+		// test 3
+
+		#(1 * CLK_PERIOD) 
+		start = 1;
+
+		#(1 * CLK_PERIOD)
+		start = 0;
+
+		#(500 * CLK_PERIOD)
+		echo = 1;
+		#(500000 * CLK_PERIOD)
+
+		#(1 * CLK_PERIOD)
+		echo = 0;
+
+		#(10 * CLK_PERIOD)
+
+		$finish();
+		
+	end
+	
+endmodule 
+
